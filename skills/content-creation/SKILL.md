@@ -1,157 +1,248 @@
 ---
 name: content-creation
-description: Draft marketing content across channels — blog posts, social media, email newsletters, landing pages, press releases, and case studies. Use when writing any marketing content, when you need channel-specific formatting, SEO-optimized copy, headline options, or calls to action.
+description: Content templates, writing frameworks, ad creative formulas, SEO fundamentals, and CTA guidance for DTC marketing. Reference skill used automatically by other skills when producing content.
 user-invocable: false
 ---
 
 # Content Creation Skill
 
-Guidelines and frameworks for creating effective marketing content across channels.
+Guidelines and frameworks for creating effective DTC marketing content across channels.
+
+> If `brand/voice.md`, `brand/products.md`, or `brand/customers.md` exist, apply them automatically when generating content. Pull product details, customer language, and voice guidelines from these files.
+
+## Messaging Hierarchy
+
+Every piece of DTC content should follow this structure, explicitly or implicitly:
+
+1. **Why should I care?** — Lead with a pain point or aspiration the customer already feels
+2. **What is it?** — Introduce the product clearly and fast
+3. **Why this brand?** — Differentiator, social proof, or reason to believe
+4. **What should I do?** — Clear CTA
+
+If the content is long-form (blog, landing page), this maps to the overall arc. If it's short-form (ad, SMS), compress it into a single message.
 
 ## Content Type Templates
 
-### Blog Post Structure
-1. **Headline** — clear, benefit-driven, includes primary keyword (aim for 60 characters or less for SEO)
-2. **Introduction** (100-150 words) — hook the reader with a question, statistic, bold claim, or relatable scenario. State what the post will cover. Include primary keyword.
-3. **Body sections** (3-5 sections) — each with a descriptive subheading (H2). Use H3 for subsections. One core idea per section with supporting evidence, examples, or data.
-4. **Conclusion** (75-100 words) — summarize key takeaways, reinforce the main message, include a call to action.
-5. **Meta description** — under 160 characters, includes primary keyword, compels the click.
+### Product Description
+1. **Headline** — benefit-driven, SEO-aware, under 60 characters
+2. **One-line summary** — what it is + what it does in one sentence
+3. **Benefit bullets** (3-5) — lead with outcomes, not ingredients or features. "Wake up with visibly brighter skin" not "Contains 15% Vitamin C"
+4. **Sensory/lifestyle language** — how it feels, looks, smells. Make the product tangible before they touch it.
+5. **Ingredient/material story** — what's in it and why it matters. Connect ingredients to the benefit they deliver.
+6. **Social proof** — review quote, star count, or number of customers. Pull from `brand/customers.md` if available.
+7. **Variant/size info** — options, quantities, what's included
+8. **Shipping and returns** — free shipping threshold, return policy one-liner
+9. **Cross-sell** — "Pairs well with..." or "Complete the routine"
+10. **Meta description** — under 160 characters, includes primary keyword
+
+### Ad Creative Copy (Meta, TikTok, Google)
+
+#### 5 DTC Ad Frameworks
+
+**Problem-Agitate-Solve**
+- Hook: Name the pain clearly ("Tired of [problem]?")
+- Agitate: Make it felt ("You've tried [common solutions] and nothing works")
+- Solve: Product as the answer ("That's why we made [product]")
+- CTA: Clear next step
+
+**UGC Testimonial**
+- Hook: First-person, authentic ("I was skeptical, but...")
+- Experience: What using the product is like
+- Result: The transformation or outcome
+- CTA: "Link in bio" / "Shop now"
+
+**Founder Story**
+- Hook: Why the founder cared ("I couldn't find a [product] that...")
+- Differentiator: What makes this one different
+- Proof: Results, reviews, numbers
+- CTA: Invitation to try
+
+**Before/After**
+- Hook: The "before" state the customer recognizes
+- Transformation: What changed
+- Proof: Specific results, timeline, visual evidence
+- CTA: "See for yourself"
+
+**"3 Reasons Why" Listicle**
+- Hook: "3 reasons [product] is [claim]"
+- Each reason: One sentence, standalone, punchy
+- CTA: Quick close
+
+#### Ad Copy Specs by Platform
+| Element | Meta (Feed) | Meta (Stories/Reels) | TikTok | Google |
+|---------|-------------|---------------------|--------|--------|
+| Primary text | Up to 500 chars (125 visible) | Short overlay text | Voiceover/captions | N/A |
+| Headline | ~40 chars | N/A | N/A | ~30 chars |
+| Description | ~25 chars | N/A | N/A | ~90 chars |
+| Aspect ratio | 1:1 or 4:5 | 9:16 | 9:16 | N/A |
+| Tone | Varies | Native, personal | Native, conversational | Intent-driven |
+
+#### Hook Variants
+Produce 5-10 hook variants per ad concept. The first line is everything — test volume on hooks, not body copy. Hooks should each take a different angle: pain, curiosity, social proof, contrarian, urgency.
+
+#### TikTok-Specific Guidelines
+- Hook in first 1-2 seconds or you lose them
+- Must feel native — no corporate polish, no stock footage feel
+- Trending audio references where relevant
+- Text overlay for silent viewing
+- Conversational, first-person tone
+- "Show, don't sell" energy
+
+### Collection/Category Page Copy
+- **Collection headline** — clear, descriptive, SEO-friendly
+- **Description** (2-3 sentences) — what this collection is, who it's for, why it exists
+- **Product grouping logic** — why these products are together
+- **Cross-sell narrative** — how products in this collection work together
 
 ### Social Media Post Structure
-- **Hook** — first line grabs attention (question, bold statement, number)
-- **Body** — 2-4 concise points or a short narrative
-- **CTA** — what should the reader do next (comment, click, share, tag)
-- **Hashtags** — 3-5 relevant hashtags (platform-dependent)
 
-### Email Newsletter Structure
-- **Subject line** — under 50 characters, creates curiosity or states clear value
-- **Preview text** — complements the subject line, does not repeat it
-- **Header/hero** — visual anchor and one-line value statement
-- **Body sections** — 2-3 content blocks, each scannable with a bold intro sentence
-- **Primary CTA** — one clear action per email
-- **Footer** — unsubscribe link, company info, social links
+#### Instagram
+- **Caption hook** — first line grabs, must work before the "more" truncation
+- **Body** — storytelling, education, or personality. Line breaks for readability.
+- **CTA** — save, share, comment, or link in bio
+- **Hashtags** — 15-20 mixed reach and niche, in first comment or at end
+- **Content themes**: behind-the-scenes, customer stories, product in use, founder POV, educational, seasonal, UGC reposts
 
-### Landing Page Structure
-- **Headline** — primary benefit in under 10 words
-- **Subheadline** — elaborates on the headline with supporting context
-- **Hero section** — headline, subheadline, primary CTA, supporting image or video
-- **Value propositions** — 3-4 benefit-driven sections with icons or images
-- **Social proof** — testimonials, logos, stats, case study snippets
-- **Objection handling** — FAQ or trust signals
-- **Final CTA** — repeat the primary call to action
+#### TikTok
+- **Hook** — first 1-2 seconds must stop the scroll
+- **Format** — native, unpolished, personality-driven
+- **Sound** — reference trending audio when relevant
+- **Text overlay** — key message visible for silent viewing
+- **CTA** — subtle ("link in bio", "comment if you want to know more")
+- **Content themes**: tutorials, "get ready with me", day-in-the-life, founder stories, myth-busting, product reveals
 
-### Press Release Structure
-- **Headline** — factual, newsworthy, under 80 characters
-- **Subheadline** — optional, adds context
-- **Dateline** — city, state, date
-- **Lead paragraph** — who, what, when, where, why in 2-3 sentences
-- **Body paragraphs** — supporting details, quotes, context
-- **Boilerplate** — company description (standardized)
-- **Media contact** — name, email, phone
+#### Pinterest
+- **Pin title** — descriptive, keyword-rich
+- **Pin description** — search-optimized, includes keywords naturally
+- **Format** — vertical (2:3), clean imagery, text overlay for context
+- **Content themes**: gift guides, how-tos, seasonal collections, lifestyle aspirational
 
-### Case Study Structure
-- **Title** — "[Customer] achieves [result] with [product]"
-- **Snapshot** — customer name, industry, company size, product used, key result (sidebar or callout box)
-- **Challenge** — what problem the customer faced
-- **Solution** — what was implemented and how
-- **Results** — quantified outcomes with specific metrics
-- **Quote** — customer testimonial
-- **CTA** — learn more, get a demo, read more case studies
+### Email Structure
+- **Subject line** — under 50 characters, create curiosity, state value, or add urgency
+- **Preview text** — complements subject, doesn't repeat it
+- **Hero** — one visual, one headline, mobile-first
+- **Body** — short paragraphs, scannable, bold key phrases, 2-3 content blocks max
+- **CTA** — one primary action per email, visually distinct button
+- **Footer** — unsubscribe, company info, social links
 
-## Writing Best Practices by Channel
+### SMS Message Structure
+- ≤160 characters total
+- Brand name first: "[Brand]: Your order just shipped!"
+- Clear CTA with shortened link
+- Urgency when appropriate (limited time, low stock)
+- STOP compliance: "Reply STOP to opt out"
 
-### Blog
-- Write at an 8th-grade reading level for broad audiences; adjust up for technical audiences
-- Use short paragraphs (2-4 sentences)
-- Include subheadings every 200-300 words
-- Use bullet points and numbered lists to break up text
-- Include at least one data point, example, or quote per section
-- Write in active voice
-- Front-load key information in each section
+### Gift Guide Structure
+- **Occasion header** — "Mother's Day Gift Guide" / "Gifts for the [Person] Who [Trait]"
+- **Price tiers** — Under $25, $25-50, $50-100, $100+
+- **Per product** — photo, name, one-line pitch (gifting angle, not self-purchase), price, link
+- **Bundle suggestions** — pre-built sets at key price points
+- **"Not sure?" recommendation** — quiz, bestseller, or crowd-favorite pick
+- **Gift-wrapping/personalization** callout if available
 
-### Social Media
-- **LinkedIn**: professional but human, paragraph breaks for readability, personal stories and lessons perform well, 1,300 characters is the sweet spot before "see more"
-- **Twitter/X**: concise and punchy, strong opening words, threads for longer narratives, engage with replies
-- **Instagram**: visual-first captions, storytelling hooks, line breaks for readability, hashtags in first comment or at end
-- **Facebook**: conversational tone, questions drive comments, shorter posts (under 80 characters) get more engagement for links
+### Influencer/UGC Brief Structure
+- **Brand overview** — who we are, what we stand for, in 2-3 sentences
+- **Product** — what to feature, key claims, how to use it
+- **Key messages** (2-3) — talking points, not a script. Authentic > polished.
+- **Content requirements** — format (Reel, TikTok, static, Story), length, platforms, deliverables
+- **Usage rights** — organic only, paid amplification, duration of usage
+- **FTC disclosure** — must include #ad or #partner, visible in first 3 seconds of video or above fold in caption
+- **Do's** — show real usage, be honest, use natural lighting, mention specific benefits
+- **Don'ts** — no medical/health claims, no competitor bashing, no scripts (guidelines only)
+- **Example references** — links to posts that capture the right vibe
+- **Compensation/gifting** — terms if applicable
 
-### Email
-- Write subject lines that create urgency, curiosity, or state clear value
-- Personalize where possible (name, company, behavior)
-- One primary CTA per email — make it visually distinct
-- Keep body copy scannable: bold key phrases, short paragraphs, bullet points
-- Test everything: subject lines, send times, CTA copy, layout
-- Mobile-first: most email is read on mobile
+### Product Launch Announcement
+Consumer-facing, not a press release. Three-phase sequence:
 
-### Web (Landing Pages, Product Pages)
-- Lead with benefits, not features
-- Use "you" language — speak to the reader directly
-- Minimize jargon unless the audience expects it
-- Every section should answer "so what?" from the reader's perspective
-- Reduce friction: fewer form fields, clear next steps, trust signals near CTAs
+**Phase 1 — Teaser** (1-2 weeks before): Build anticipation. "Something new is coming..." Tease the problem it solves without revealing the product. Email, Instagram Story, TikTok.
+
+**Phase 2 — Reveal** (launch day): Full product introduction. Hero claims, what it is, why it exists. Email, all social, site banner. Launch offer if applicable.
+
+**Phase 3 — Available Now** (launch day + 1-7 days): Purchase CTA, urgency, social proof from early access or pre-orders. SMS, retargeting ads, email follow-up.
+
+## Writing Best Practices
+
+### General
+- Write at an 8th-grade reading level for broad consumer audiences
+- Short paragraphs (2-4 sentences)
+- Active voice
+- Front-load key information
+- "You" language — speak to the customer directly
+- Lead with benefits, support with features
+
+### Product Copy
+- Sensory language: describe what the customer will experience, not just what the product contains
+- Social proof woven in, not bolted on
+- Answer "so what?" for every feature mentioned
+- Mobile-first: most shopping is on phone
+
+### Ad Copy
+- Hook is everything — the first line or first 2 seconds determines performance
+- One idea per ad. Don't try to say everything.
+- Conversational > corporate
+- Specificity beats vague claims: "cleared my skin in 2 weeks" beats "improves skin health"
+- Test volume on hooks, not body copy
 
 ## SEO Fundamentals for Content
 
 ### Keyword Strategy
-- Identify one primary keyword and 2-3 secondary keywords per piece
-- Use the primary keyword in: headline, first paragraph, one subheading, meta description, URL slug
-- Use secondary keywords naturally in body copy and subheadings
-- Do not keyword-stuff — write for humans first
+- One primary keyword and 2-3 secondary keywords per piece
+- Primary keyword in: headline, first paragraph, one subheading, meta description, URL slug
+- Secondary keywords naturally in body and subheadings
+- Don't keyword-stuff — write for humans first
 
 ### On-Page SEO Checklist
 - Title tag: under 60 characters, includes primary keyword
 - Meta description: under 160 characters, includes primary keyword, compels click
 - URL slug: short, descriptive, includes primary keyword
-- H1: one per page, matches or closely reflects the title tag
-- H2/H3: descriptive, include secondary keywords where natural
+- H1: one per page, matches or closely reflects title tag
+- H2/H3: descriptive, include secondary keywords naturally
 - Image alt text: descriptive, includes keyword where relevant
-- Internal links: 2-3 links to related content on your site
-- External links: 1-2 links to authoritative sources
+- Internal links: 2-3 to related products or content
+- Schema markup: Product, Review, FAQ structured data for product pages
 
-### Content-SEO Integration
-- Aim for comprehensive coverage of the topic (search engines reward depth)
-- Answer related questions (check "People Also Ask" for ideas)
-- Update and refresh high-performing content regularly
-- Structure content for featured snippets: definition paragraphs, numbered lists, tables
+### DTC-Specific SEO Patterns
+- "Best [product type] for [need]" — high-intent, comparison content
+- "[Product] vs [Competitor product]" — captures comparison shoppers
+- "[Ingredient/material] benefits" — educational, top-of-funnel
+- "How to [use product]" — tutorial content, drives product page traffic
+- Product page SEO: unique descriptions per product (no manufacturer copy), review content as on-page SEO signal
 
 ## Headline and Hook Formulas
 
-### Headline Formulas
-- **How to [achieve result] [without common obstacle]** — "How to Double Your Email Open Rates Without Sending More Emails"
-- **[Number] [adjective] ways to [achieve result]** — "7 Proven Ways to Reduce Customer Churn"
-- **Why [common belief] is wrong (and what to do instead)** — "Why More Content Is Not the Answer (And What to Do Instead)"
-- **The [adjective] guide to [topic]** — "The Complete Guide to B2B Content Marketing"
-- **[Do this], not [that]** — "Build a Community, Not Just an Audience"
-- **What [impressive result] taught us about [topic]** — "What 10,000 A/B Tests Taught Us About Email Subject Lines"
-- **[topic]: what [audience] needs to know in [year]** — "SEO: What Marketers Need to Know in 2025"
+### DTC Headline Formulas
+- **The result they want**: "Wake up with visibly brighter skin"
+- **Social proof lead**: "Why 50,000+ customers switched to [product]"
+- **Problem-solution**: "Tired of [problem]? Meet [product]"
+- **Curiosity**: "The one thing dermatologists say you're doing wrong"
+- **Specificity**: "3 ingredients. 2 weeks. Skin you'll actually love."
+- **Before/after**: "From [before state] to [after state] in [timeframe]"
+- **"Best of" framing**: "The best [product type] for [specific need]"
 
 ### Hook Formulas (Opening Lines)
-- **Surprising statistic**: "73% of marketers say their biggest challenge is not budget — it is focus."
-- **Contrarian statement**: "The best marketing campaigns start with saying no to most channels."
-- **Question**: "When was the last time a marketing email actually changed what you bought?"
-- **Scenario**: "Imagine launching a campaign and knowing, before it goes live, which messages will land."
-- **Bold claim**: "Most landing pages lose half their visitors in the first three seconds."
-- **Story opening**: "Last quarter, our team was spending 20 hours a week on reporting. Here is what we did about it."
+- **Personal transformation**: "I never thought I'd be the person who [positive outcome], but here I am."
+- **Surprising fact**: "[Stat]% of people don't realize [insight about their routine]."
+- **Contrarian**: "Stop [common advice]. Here's what actually works."
+- **Curiosity gap**: "There's a reason this [product] has a 10,000-person waitlist."
+- **Direct address**: "If you've tried everything for [problem] and nothing works, read this."
+- **Social proof**: "[Number] people bought this last month. Here's why."
 
 ## Call-to-Action Best Practices
 
-### CTA Principles
-- Use action verbs: "Get", "Start", "Download", "Join", "Try", "See"
-- Be specific about what happens next: "Start your free trial" is better than "Submit"
-- Create urgency when genuine: "Join 500 teams already using this" or "Limited spots available"
-- Reduce risk: "No credit card required", "Cancel anytime", "Free for 14 days"
-- One primary CTA per page or email — too many choices reduce conversions
+### DTC CTA Principles
+- Action verbs: "Shop", "Get", "Try", "Discover", "Add to Cart", "Grab Yours"
+- Specific about what happens: "Shop the Collection" beats "Learn More"
+- Risk reducers near CTAs: "Free shipping over $50", "30-day returns", "Cancel anytime"
+- One primary CTA per page or email
+- Urgency when genuine: "Only 12 left", "Sale ends tonight"
 
 ### CTA Examples by Context
-- **Blog post**: "Read our complete guide to [topic]" / "Subscribe for weekly insights"
-- **Landing page**: "Start free trial" / "Get a demo" / "See pricing"
-- **Email**: "Read the full story" / "Claim your spot" / "Reply and tell us"
-- **Social media**: "Drop a comment if you agree" / "Save this for later" / "Link in bio"
-- **Case study**: "See how [product] can work for your team" / "Talk to our team"
-
-### CTA Placement
-- Above the fold on landing pages (do not make users scroll to act)
-- After establishing value in emails (not in the first sentence)
-- At the end of blog posts (after you have earned the reader's trust)
-- In-line within content when contextually relevant (e.g., a related guide mention)
-- Repeat the primary CTA at the bottom of long-form pages
+- **Product page**: "Add to Cart" / "Subscribe & Save 15%"
+- **Collection page**: "Shop [Collection Name]"
+- **Email**: "Shop Now" / "Grab Yours Before It's Gone" / "Complete Your Routine"
+- **SMS**: "Shop now: [link]" / "Claim your gift: [link]"
+- **Ad**: "Shop Now" / "Try It Risk-Free" / "See Why 10,000+ Customers Switched"
+- **Social**: "Link in bio" / "Save this for later" / "Comment [word] and I'll DM you the link"
+- **Blog**: "Shop the products mentioned" / "Take our quiz to find your match"
+- **Gift guide**: "Send a Hint" / "Shop This Gift" / "Build a Custom Set"

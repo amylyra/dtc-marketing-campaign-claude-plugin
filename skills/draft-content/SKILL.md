@@ -1,6 +1,6 @@
 ---
 name: draft-content
-description: Draft blog posts, social media, email newsletters, landing pages, press releases, and case studies with channel-specific formatting and SEO recommendations. Use when writing any marketing content, when you need headline or subject line options, or when adapting a message for a specific platform, audience, and brand voice.
+description: Draft product descriptions, ad creative, social posts, email/SMS, landing pages, gift guides, and influencer briefs with channel-specific formatting and brand voice. Use when writing any DTC marketing content, when you need hook variants for ads, or when adapting a message for a specific platform and audience.
 argument-hint: "<content type and topic>"
 ---
 
@@ -8,7 +8,7 @@ argument-hint: "<content type and topic>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
 
-Generate marketing content drafts tailored to a specific content type, audience, and brand voice.
+Generate DTC marketing content drafts tailored to a specific content type, audience, channel, and brand voice.
 
 ## Trigger
 
@@ -19,99 +19,146 @@ User runs `/draft-content` or asks to draft, write, or create marketing content.
 Gather the following from the user. If not provided, ask before proceeding:
 
 1. **Content type** — one of:
-   - Blog post
-   - Social media post (specify platform: LinkedIn, Twitter/X, Instagram, Facebook)
-   - Email newsletter
-   - Landing page copy
-   - Press release
-   - Case study
+   - Product Description
+   - Ad Creative Copy (Meta, TikTok, Google)
+   - Collection/Category Page Copy
+   - Social Media Post (specify platform: Instagram, TikTok, Pinterest, Twitter/X, Facebook)
+   - Email Copy
+   - SMS Message
+   - Gift Guide
+   - Influencer/UGC Brief
+   - Product Launch Announcement
 
-2. **Topic** — the subject or theme of the content
+2. **Topic** — the product, collection, campaign, or theme
 
-3. **Target audience** — who this content is for (role, industry, seniority, pain points)
+3. **Target audience** — who this content is for (customer profile, lifestyle, pain points, aspirations)
 
 4. **Key messages** — 2-4 main points or takeaways to communicate
 
-5. **Tone** — e.g., authoritative, conversational, inspirational, technical, witty (optional if brand voice is configured)
+5. **Tone** — e.g., playful, luxe, clean, witty, warm, bold (optional if brand voice is configured)
 
-6. **Length** — target word count or format constraint (e.g., "1000 words", "280 characters", "3 paragraphs")
+6. **Length** — target word count or format constraint (e.g., "160 characters", "3 subject line options", "5 hook variants")
 
-## Brand Voice
+## Messaging Hierarchy
 
-- If the user has a brand voice configured in their local settings file, apply it automatically. Inform the user that brand voice settings are being applied.
-- If no brand voice is configured, ask: "Do you have brand voice guidelines you'd like me to follow? If not, I'll use a neutral professional tone."
-- Apply the specified or default tone consistently throughout the draft.
+Every piece of content should follow this structure (explicitly or implicitly):
+
+1. **Why should I care?** (pain point or aspiration)
+2. **What is it?** (product, clear and fast)
+3. **Why this brand?** (differentiator, social proof)
+4. **What should I do?** (CTA)
+
+## Brand & Customer Voice Integration
+
+- If `brand/voice.md` exists, auto-apply voice and tone. Inform the user that brand voice settings are being applied.
+- If `brand/products.md` exists, pull product details, claims, and differentiators.
+- If `brand/customers.md` exists, use customer language bank for ad hooks, email subject lines, and social proof.
+- If `brand/` doesn't exist, prompt: "I don't have your brand context yet. Want to run `/brand-review` to set that up, or paste your guidelines now?"
 
 ## Content Generation by Type
 
-### Blog Post
-- Engaging headline (provide 2-3 options)
-- Introduction with a hook (question, statistic, bold statement, or story)
-- 3-5 organized sections with descriptive subheadings
-- Supporting points, examples, or data references in each section
-- Conclusion with a clear call to action
-- SEO considerations: suggest a primary keyword, include it in the headline and first paragraph, use related keywords in subheadings
+### Product Description
+- Headline (benefit-driven, SEO-aware)
+- One-line summary ("what it is + what it does" in one sentence)
+- Benefit bullets (3-5, lead with outcomes not features)
+- Sensory/lifestyle language (how it feels, looks, smells — make it tangible)
+- Ingredient/material story (what's in it and why it matters)
+- Social proof placement ("Over 10,000 5-star reviews" or pull from `brand/customers.md`)
+- Variant/size info
+- Shipping/returns note
+- Cross-sell suggestion ("Pairs well with...")
+- Pull from `brand/products.md` if available
+
+### Ad Creative Copy (Meta, TikTok, Google)
+
+Provide 5 DTC ad frameworks, each with hook/body/CTA structure:
+
+- **Problem-Agitate-Solve**: Name the pain > make it felt > introduce product as solution
+- **UGC Testimonial**: "I tried [product] and..." > experience > result > CTA
+- **Founder Story**: Why I created this > what makes it different > invitation to try
+- **Before/After**: The transformation > proof > CTA
+- **"3 Reasons Why"**: Listicle format, punchy, each reason stands alone
+
+For each framework:
+- Provide 5-10 hook variants (the first line is everything — test volume)
+- Platform specs: 9:16 for Reels/TikTok, 1:1 for feed, 4:5 for Meta feed
+- Ad copy length by placement: primary text (125 chars visible, up to 500), headline (40 chars), description (25 chars)
+- Note: TikTok ads should feel native — no corporate polish, trending audio references, conversational tone
+
+### Collection/Category Page Copy
+- Collection headline
+- Collection description (2-3 sentences: what this collection is, who it's for, why it exists)
+- Product grouping logic
+- Cross-sell/upsell narrative
 
 ### Social Media Post
-- Platform-appropriate format and length
-- Hook in the first line
-- Hashtag suggestions (3-5 relevant hashtags)
-- Call to action or engagement prompt
-- Emoji usage appropriate to brand and platform
-- If LinkedIn: professional framing, paragraph breaks for readability
-- If Twitter/X: concise, punchy, within character limit
-- If Instagram: visual-first language, story-driven, hashtag block
 
-### Email Newsletter
-- Subject line (provide 2-3 options with open-rate considerations)
+Platforms in priority order: Instagram, TikTok, Pinterest, then Twitter/X, Facebook.
+
+- **Instagram**: carousel-friendly, caption with hook + story + CTA, hashtag strategy (15-20 mixed reach/niche), save-worthy content
+- **TikTok**: hook in first 1-2 seconds, native feel (not polished), trending sound references, text overlay guidance, conversational tone
+- **Pinterest**: descriptive, keyword-rich, vertical image, pin description optimized for search
+- **Twitter/X**: concise, punchy, within character limit, engagement prompt
+- **Facebook**: slightly longer form, community-oriented, shareable
+
+Include content themes: behind-the-scenes, customer stories, product in use, founder POV, educational, seasonal.
+
+### Email Copy
+- Subject line (3 options with different angles: curiosity, benefit, urgency)
 - Preview text
-- Greeting
-- Body sections with clear hierarchy
-- Call to action button text
-- Sign-off
-- Unsubscribe note reminder
+- Body structure for DTC: hero image guidance, headline, short copy (mobile-first), product showcase, CTA button
+- Promo email variant: offer, deadline, product, CTA
+- Newsletter variant: value-first content, product weave, soft CTA
 
-### Landing Page Copy
-- Headline and subheadline
-- Hero section copy
-- Value propositions (3-4 benefit-driven bullets or sections)
-- Social proof placeholder (suggest testimonial or stat placement)
-- Primary and secondary CTAs
-- FAQ section suggestions
-- SEO: meta title and meta description suggestions
+### SMS Message
+- 160 characters or fewer
+- Clear CTA with link
+- Urgency when appropriate
+- STOP compliance language
+- Examples by type: flash sale, back-in-stock, shipping notification, abandoned cart, new drop
 
-### Press Release
-- Headline following press release conventions
-- Dateline and location
-- Lead paragraph (who, what, when, where, why)
-- Supporting quotes (provide placeholder guidance)
-- Company boilerplate placeholder
-- Media contact placeholder
-- Standard press release formatting
+### Gift Guide
+- Occasion-based (Mother's Day, Valentine's, Holiday, etc.)
+- Shift language from self-purchase to gifting: "For the [person] who [trait]"
+- Price tier organization ($under 25, $25-50, $50-100, $100+)
+- Bundle suggestions
+- "Not sure what to get?" recommendation logic
+- Gift-wrapping/personalization callouts
 
-### Case Study
-- Title emphasizing the result
-- Customer overview (industry, size, challenge)
-- Challenge section
-- Solution section (what was implemented)
-- Results section with metrics (prompt user for data)
-- Customer quote placeholder
-- Call to action
+### Influencer/UGC Brief
+- Brand overview (who we are, what we stand for)
+- Product to feature (details, key claims, how to use)
+- Key messages (2-3, not a script — talking points)
+- Content requirements: format (Reel, TikTok, static, Story), length, platforms, number of deliverables
+- Usage rights (organic only, paid amplification, duration)
+- FTC disclosure requirements (must include #ad or #partner, where to place it)
+- Do's and don'ts (authentic > polished, show real usage, don't make medical claims)
+- Example content references (links to posts that capture the right vibe)
+- Compensation/gifting terms (if applicable)
+
+### Product Launch Announcement
+
+Consumer-facing, three-phase sequence:
+
+- **Teaser**: Build anticipation without revealing everything. "Something new is coming..."
+- **Reveal**: Full product introduction, hero claims, launch offer
+- **Available Now**: Purchase CTA, urgency, social proof from early access
+
+Provide copy across: email, SMS, Instagram, TikTok, site banner.
 
 ## SEO Considerations (for web content)
 
-For blog posts, landing pages, and other web-facing content:
+For product descriptions, collection pages, and landing pages:
 - Suggest a primary keyword based on the topic
-- Recommend keyword placement: headline, first paragraph, subheadings, meta description
-- Suggest internal and external linking opportunities
-- Recommend a meta description (under 160 characters)
-- Note image alt text opportunities
+- Recommend keyword placement: title tag, H1, first paragraph, meta description
+- Suggest internal linking opportunities
+- Recommend image alt text
 
 ## Output
 
 Present the draft with clear formatting. After the draft, include:
-- A brief note on what brand voice and tone were applied
-- Any SEO recommendations (for web content)
-- Suggestions for next steps (e.g., "Review with your team", "Add customer quotes", "Pair with a visual")
+- A brief note on what brand voice was applied
+- SEO recommendations (for web content)
+- Suggestions for next steps
 
-Ask: "Would you like me to revise any section, adjust the tone, or create a variation for a different channel?"
+Ask: "Would you like me to revise, adjust the tone, create a variation for another channel, or generate more hook variants?"

@@ -59,9 +59,19 @@ For each keyword opportunity, assess:
 - **Question-based keywords** — "how to", "what is", "why does" queries that mirror People Also Ask results
 - **Intent classification** — informational, navigational, commercial, or transactional
 
+#### DTC-Specific Keyword Patterns
+Prioritize these high-intent patterns for e-commerce:
+- **"Best [product type] for [need]"** — comparison/commercial intent, high conversion ("best moisturizer for dry skin")
+- **"[Product] vs [Product]"** — captures comparison shoppers actively deciding
+- **"[Ingredient/material] benefits"** — educational, top-of-funnel, builds trust
+- **"[Product type] for [audience]"** — targeted commercial ("skincare for sensitive skin", "gifts for mom")
+- **"How to [use product/solve problem]"** — tutorial intent, drives product page traffic
+- **"[Brand] review"** — branded, high-intent. Ensure your own content ranks for this.
+- **"Is [product] worth it"** — consideration stage, perfect for testimonial-rich content
+
 ### 2. On-Page SEO Audit
 
-For each key page (homepage, top landing pages, recent blog posts), evaluate:
+For each key page (homepage, product pages, collection pages, top landing pages, blog posts), evaluate:
 
 - **Title tags** — present, unique, within 50-60 characters, includes target keyword
 - **Meta descriptions** — present, compelling, within 150-160 characters, includes a call to action
@@ -72,6 +82,29 @@ For each key page (homepage, top landing pages, recent blog posts), evaluate:
 - **Image alt text** — all images have descriptive alt attributes, keywords included where relevant
 - **URL structure** — clean, readable, includes keywords, no excessive parameters or depth
 
+#### Product Page SEO (DTC-Specific)
+Product pages are the primary conversion pages for DTC. Audit each for:
+- **Unique product descriptions** — no manufacturer copy, no duplicate content across variants
+- **Product title optimization** — includes product name + primary keyword ("Vitamin C Brightening Serum" not just "Serum")
+- **Review content on-page** — customer reviews generate unique, keyword-rich content. Ensure reviews are indexable (not loaded via JS that search engines can't see).
+- **Product schema markup** — `Product` structured data with: name, description, image, price, currency, availability, review/aggregateRating, SKU, brand
+- **Image optimization** — descriptive alt text per image (not "IMG_001"), compressed file sizes, multiple angles
+- **Cross-sell/related product links** — internal linking between related products improves crawl depth and session duration
+
+#### Collection Page SEO (DTC-Specific)
+Collection pages often rank for category-level keywords ("natural skincare", "men's grooming kits"):
+- **Collection page titles** — descriptive, keyword-rich ("Natural Skincare for Sensitive Skin" not "Collection 1")
+- **Collection descriptions** — unique, 100-200 words of indexable text above or below the product grid
+- **URL taxonomy** — clean hierarchy (`/collections/moisturizers/` not `/collections?filter=type_moisturizer`)
+- **Faceted navigation** — ensure filters don't create duplicate URLs. Use canonical tags or noindex for filtered views.
+- **Breadcrumbs** — with `BreadcrumbList` schema markup for rich results
+
+#### Google Shopping / Merchant SEO
+- **Product feed quality** — titles include brand + product name + key attribute, descriptions are detailed and unique
+- **Google Merchant structured data** — `Product` schema on every PDP with price, availability, GTIN/MPN if applicable
+- **Product reviews markup** — `AggregateRating` schema to display star ratings in Shopping results
+- **Shipping and returns info** — structured data for shipping policies improves Shopping eligibility
+
 ### 3. Content Gap Analysis
 
 Identify what's missing from the user's content strategy:
@@ -79,9 +112,10 @@ Identify what's missing from the user's content strategy:
 - **Competitor topic coverage** — topics and keywords competitors rank for that the user's site does not cover
 - **Content freshness** — pages that haven't been updated in 12+ months and may be losing rankings
 - **Thin content** — pages with insufficient depth to rank (under 300 words for informational queries, lacking substance)
-- **Missing content types** — formats competitors use that the user doesn't (guides, comparison pages, glossaries, tools, templates)
-- **Funnel gaps** — missing content at specific buyer journey stages (awareness, consideration, decision)
+- **Missing content types** — formats competitors use that the user doesn't (guides, comparison pages, gift guides, ingredient/material deep-dives, "best of" roundups, quizzes)
+- **Funnel gaps** — missing content at specific stages: discovery (educational, "best of"), consideration (comparison, reviews, "vs" pages), conversion (product pages, landing pages)
 - **Topic clusters** — opportunities to build pillar pages with supporting content
+- **Review content gaps** — competitors with more reviews generate more indexable content. Identify where review volume is a ranking disadvantage.
 
 ### 4. Technical SEO Checklist
 
@@ -89,7 +123,7 @@ Evaluate technical foundations that affect crawlability and rankings:
 
 - **Page speed** — identify slow-loading pages and likely causes (large images, render-blocking scripts, excessive redirects)
 - **Mobile-friendliness** — responsive design, tap targets, font sizes, viewport configuration
-- **Structured data** — opportunities for schema markup (FAQ, HowTo, Product, Article, Organization, Breadcrumb)
+- **Structured data** — opportunities for schema markup (Product, Review, AggregateRating, FAQ, HowTo, Article, BreadcrumbList, Organization, LocalBusiness)
 - **Crawlability** — robots.txt configuration, XML sitemap presence and accuracy, canonical tags, noindex/nofollow usage
 - **Broken links** — internal and external 404s, redirect chains
 - **HTTPS** — secure connection, mixed content issues

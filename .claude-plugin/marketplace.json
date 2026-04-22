@@ -4,13 +4,13 @@
     "name": "Amy Yuan"
   },
   "metadata": {
-    "description": "Marketing knowledgebase plugin for Claude Code — content creation, campaign planning, SEO audits, brand review, and performance reporting."
+    "description": "DTC marketing plugin — campaign planning with promo economics, email/SMS retention flows, ad creative drafting, brand voice management, competitive intelligence, and performance reporting built around contribution margin."
   },
   "plugins": [
     {
       "name": "marketing",
-      "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
-      "version": "1.2.0",
+      "description": "DTC marketing plugin with promo calendar economics, email/SMS flows, ad creative frameworks, brand onboarding, competitive intelligence, SEO audits, and contribution-margin-first performance reporting.",
+      "version": "2.0.0",
       "author": {
         "name": "Amy Yuan"
       },

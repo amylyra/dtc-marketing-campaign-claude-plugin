@@ -1,220 +1,383 @@
 ---
 name: email-sequence
-description: Design and draft multi-email sequences with full copy, timing, branching logic, exit conditions, and performance benchmarks. Use when building onboarding, lead nurture, re-engagement, win-back, or product launch flows, when you need a complete drip campaign with A/B test suggestions, or when mapping a sequence end-to-end with a flow diagram.
-argument-hint: "[sequence type]"
+description: Design and draft email + SMS flows with full copy, timing, branching logic, and performance benchmarks. Use when building welcome series, abandoned cart, post-purchase, win-back, or any DTC lifecycle flow — or when mapping a promo sequence end-to-end with SMS.
+argument-hint: "[flow type]"
 ---
 
-# Email Sequence
+# Email + SMS Flow Builder
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
 
-Design and draft complete email sequences with full copy, timing, branching logic, and performance benchmarks for any lifecycle or campaign use case.
+Design and draft complete email + SMS flows with full copy, timing, branching logic, and performance benchmarks for DTC lifecycle and campaign use cases. Every flow treats email and SMS as a unified retention system — same triggers, same flows, different message format per touchpoint.
 
 ## Trigger
 
-User runs `/email-sequence` or asks to create, design, build, or draft an email sequence, drip campaign, nurture flow, or onboarding series.
+User runs `/email-sequence` or asks to create, design, build, or draft an email flow, SMS flow, lifecycle sequence, abandoned cart flow, welcome series, post-purchase flow, win-back sequence, or any DTC retention flow.
+
+## Brand Context
+
+Before drafting any copy, check for the `brand/` directory:
+
+- If `brand/voice.md`, `brand/products.md`, and/or `brand/customers.md` exist, auto-apply brand voice, product references, and customer language to all email and SMS copy. Inform the user: "I found your brand context and will apply it to all copy."
+- If the `brand/` directory does not exist, prompt: "I don't have your brand context yet. Want to run `/brand-review` to set that up first, or paste your brand guidelines now?"
 
 ## Inputs
 
 Gather the following from the user. If not provided, ask before proceeding:
 
-1. **Sequence type** — one of:
-   - Onboarding
-   - Lead nurture
-   - Re-engagement
-   - Product launch
-   - Event follow-up
-   - Upgrade/upsell
+1. **Flow type** — one of:
+   - Welcome series
+   - Abandoned cart
+   - Post-purchase
+   - Browse abandonment
    - Win-back
-   - Educational drip
+   - VIP/Loyalty
+   - Back-in-stock
+   - Price drop
+   - Replenishment
+   - Review request
+   - Referral
+   - Birthday/Anniversary
+   - Product launch (promo)
+   - Flash sale (promo)
+   - Seasonal promo (promo)
 
-2. **Goal** — what the sequence should achieve (e.g., activate new users, convert leads to customers, reduce churn, drive event attendance, upsell to a higher tier)
+2. **Goal** — what the flow should achieve (e.g., convert first purchase, recover abandoned cart, drive repeat purchase, reactivate lapsed customers, collect reviews)
 
-3. **Audience** — who receives this sequence, what stage they are at, and any relevant segmentation details (role, industry, behavior triggers, lifecycle stage)
+3. **Audience** — who enters this flow, what behavioral trigger enrolls them, and any relevant segmentation details (purchase history, browse behavior, RFM segment, subscription status)
 
-4. **Number of emails** (optional) — if not specified, recommend a count based on the sequence type using the templates in the Sequence Type Templates section below
+4. **Number of messages** (optional) — if not specified, recommend a count based on the flow type using the templates in the Flow Type Templates section below
 
-5. **Timing/cadence preferences** (optional) — desired spacing between emails (e.g., "every 3 days", "weekly", "aggressive first week then taper off")
+5. **Timing/cadence preferences** (optional) — desired spacing between messages (e.g., "aggressive first 24 hours then taper", "match product usage cycle")
 
-6. **Brand voice** — if configured in local settings, apply automatically and inform the user. If not configured, ask: "Do you have brand voice guidelines I should follow? If not, I'll use a clear, conversational professional tone."
+6. **Brand voice** — if configured in `brand/voice.md`, apply automatically and inform the user. If not configured, ask: "Do you have brand voice guidelines I should follow? If not, I'll use a clear, conversational DTC tone."
 
 7. **Additional context** (optional):
    - Specific offers, discounts, or incentives to include
-   - CTAs or landing pages to link to
-   - Content assets available (blog posts, case studies, videos, guides)
-   - Product features to highlight
-   - Competitor differentiators to reference
+   - Product details, hero SKUs, or collections to feature
+   - Average order value and median reorder interval
+   - Existing tech stack (Klaviyo, Shopify, etc.)
+   - Subscription or replenishment options available
+
+## Always-On vs. Promo Distinction
+
+Clearly distinguish between these two categories for the user:
+
+### Always-On Lifecycle Flows (infrastructure, run continuously)
+These are the core retention system. They trigger based on customer behavior and run 24/7:
+- Welcome series
+- Abandoned cart
+- Post-purchase
+- Browse abandonment
+- Win-back
+- Replenishment
+- Review request
+- Back-in-stock
+- Price drop
+- Referral
+- Birthday/Anniversary
+
+### Promo-Specific Sequences (campaign-driven, time-bound)
+These layer on top of lifecycle flows and have a start/end date:
+- Product launch
+- Seasonal promo
+- Flash sale
+- VIP early access
+- Collaboration or limited edition drop
+
+When building a promo sequence, note which lifecycle flows it may conflict with and recommend suppression rules.
 
 ## Process
 
-### 1. Sequence Strategy
+### 1. Flow Strategy
 
-Before drafting any emails, define the overall sequence architecture:
+Before drafting any messages, define the overall flow architecture:
 
-- **Narrative arc** — what story does this sequence tell across all emails? What is the emotional and logical progression from first email to last?
-- **Journey mapping** — map each email to a stage of the buyer or user journey (awareness, consideration, decision, activation, expansion)
-- **Escalation logic** — how does the intensity, urgency, or value of each email build on the previous one?
-- **Success definition** — what specific action signals that the sequence has done its job and the recipient should exit?
+- **Flow category** — is this always-on lifecycle or promo-specific? State explicitly.
+- **Narrative arc** — what story does this flow tell across all touchpoints? What is the emotional and logical progression?
+- **Channel strategy** — which messages are email, which are SMS, and why. SMS should complement email, not duplicate it.
+- **Escalation logic** — how does urgency, value, or incentive level build across the flow?
+- **Success definition** — what specific action signals the flow has done its job and the recipient should exit?
 
-### 2. Individual Email Design
+### 2. Flow Diagram
 
-For each email in the sequence, produce:
+For each flow, provide a visual diagram showing:
+- Trigger event
+- Time delays between messages
+- Channel for each touchpoint (email or SMS)
+- Conditional branches (opened/didn't open, clicked/didn't click, purchased/didn't purchase)
+- Exit conditions
 
-#### Subject Line
+Example format:
+
+```
+[Trigger: Cart Abandoned] --> SMS 1 (1 hour): Cart reminder
+                                |
+                           Purchased? --Yes--> [EXIT: Recovered]
+                                |
+                                No
+                                |
+                                v
+                          Email 1 (4 hours): Cart contents + social proof
+                                |
+                           Purchased? --Yes--> [EXIT: Recovered]
+                                |
+                                No
+                                |
+                           Opened? --Yes--> Email 2 (24 hours): Urgency + reviews
+                                |                  |
+                                No            Purchased? --Yes--> [EXIT: Recovered]
+                                |                  |
+                                v                  No
+                          SMS 2 (24 hours):        |
+                          "Still thinking?         v
+                           Items selling fast"  Email 3 (48 hours): Final + incentive
+                                |                  |
+                                +---> [EXIT: 72-hour window closed]
+```
+
+### 3. Individual Message Design
+
+For each message in the flow, produce:
+
+#### Channel
+- **Email** or **SMS** — state which
+
+#### Timing
+- When this message sends relative to the trigger event or previous message
+- Note if timing should adjust based on engagement
+
+#### Subject Line (email only)
 - Provide 2-3 options per email
-- Vary approaches: curiosity, benefit-driven, urgency, personalization, question-based
+- Vary approaches: curiosity, benefit-driven, urgency, personalization, social proof
 - Keep under 50 characters where possible; note preview behavior on mobile
 
-#### Preview Text
+#### Preview Text (email only)
 - 40-90 characters that complement (not repeat) the subject line
 - Should add context or intrigue that increases open likelihood
 
-#### Email Purpose
-- One sentence explaining why this email exists and what it moves the recipient toward
+#### SMS Message Text (SMS only)
+- 160 characters or fewer
+- Clear CTA with shortened link
+- Include required STOP language on first SMS in any flow
+- Brand name identification at start or end
 
-#### Body Copy
+#### Message Purpose
+- One sentence explaining why this message exists and what it moves the recipient toward
+
+#### Body Copy (email only)
 - Full draft ready to use
 - Clear hierarchy: hook, body, CTA
 - Short paragraphs (2-3 sentences max)
 - Scannable formatting with bold key phrases where appropriate
-- Personalization tokens where relevant (e.g., first name, company name, product used)
+- Personalization tokens where relevant (first name, product name, cart contents, order details)
+- Product imagery placement notes
 
 #### Primary CTA
-- Button text and destination
-- One primary CTA per email (secondary CTA only if appropriate for the sequence stage)
+- Button text and destination (email)
+- Link destination (SMS)
+- One primary CTA per message
 
-#### Timing
-- Days after the trigger event or after the previous email
-- Note if timing should adjust based on engagement (e.g., "send sooner if they opened but did not click")
+#### Conditional Logic
+- What happens if they engage (open, click, purchase)
+- What happens if they do not engage
+- Exit conditions at this step
 
-#### Segment/Condition Notes
-- Who receives this email vs. who skips it
-- Any behavioral or attribute-based conditions (e.g., "only send to users who have not completed setup")
+### 4. Sequence Logic
 
-### 3. Sequence Logic
-
-Define the flow control for the sequence:
+Define flow control:
 
 - **Branching conditions** — alternate paths based on engagement. For example:
-  - "If opened email 2 but did not click CTA, send email 2b (softer re-ask) instead of email 3"
-  - "If clicked CTA in email 1, skip email 2 and go directly to email 3"
-- **Exit conditions** — when a recipient converts (completes the desired action), remove them from the sequence. Define what "conversion" means for this sequence.
-- **Re-entry rules** — can someone re-enter the sequence? Under what conditions? (e.g., "if a user churns again 90 days later, re-enter the win-back sequence")
-- **Suppression rules** — do not send if the recipient is already in another active sequence, has unsubscribed from marketing, or has contacted support in the last 48 hours
+  - "If opened email 1 but did not click, send SMS nudge instead of email 2"
+  - "If clicked but did not purchase, branch to incentive path"
+  - "If purchased, exit flow and enter post-purchase flow"
+- **Exit conditions** — when a recipient converts, remove them from the flow. Define what "conversion" means for this specific flow.
+- **Re-entry rules** — can someone re-enter the flow? Under what conditions? (e.g., "if they abandon cart again 7 days later, re-enter"; "win-back flow: re-enter if they lapse again after 90 days")
+- **Suppression rules** — do not send if:
+  - The recipient is already in a higher-priority flow
+  - They have purchased since entering the flow
+  - They have contacted support in the last 48 hours
+  - They are in a promo-specific sequence that conflicts
+  - SMS: they have not opted in or are outside quiet hours
 
-### 4. Performance Benchmarks
+### 5. SMS Compliance
 
-Provide expected benchmarks based on the sequence type so the user can set targets:
+For any flow that includes SMS, include this compliance section:
 
-| Metric | Onboarding | Lead Nurture | Re-engagement | Win-back |
-|--------|-----------|--------------|---------------|----------|
-| Open rate | 50-70% | 20-30% | 15-25% | 15-20% |
-| Click-through rate | 10-20% | 3-7% | 2-5% | 2-4% |
-| Conversion rate | 15-30% | 2-5% | 3-8% | 1-3% |
-| Unsubscribe rate | <0.5% | <0.5% | 1-2% | 1-3% |
+- **TCPA requirements**: Must have express written consent before sending marketing SMS
+- **Opt-in**: Single or double opt-in at checkout, pop-up, or keyword
+- **Quiet hours**: Do not send SMS between 9pm and 9am in the recipient's local timezone
+- **Required language**: First SMS in any flow must include brand name and STOP instructions (e.g., "Reply STOP to unsubscribe")
+- **Frequency**: State the expected SMS frequency per flow so it can be disclosed at opt-in
 
-Adjust benchmarks based on industry and audience if the user has provided that context.
+### 6. Performance Benchmarks
 
-## Sequence Type Templates
+Provide expected benchmarks for the flow type:
 
-Use these as starting frameworks. Adapt length and content based on the user's goal and audience.
+| Flow | Email Open Rate | Email CTR | SMS CTR | Key Metric |
+|------|----------------|-----------|---------|------------|
+| Welcome | 50-60% | 8-12% | 10-15% | First purchase rate |
+| Abandoned cart | 40-50% | 5-10% | 10-20% | Recovery rate 5-15% |
+| Post-purchase | 50-70% | 5-8% | 8-12% | Review submission rate, repeat purchase rate |
+| Browse abandonment | 35-45% | 3-6% | 8-12% | Return-to-site rate |
+| Win-back | 20-30% | 2-4% | 5-8% | Reactivation rate |
+| Back-in-stock | 50-65% | 10-15% | 15-25% | Purchase rate |
+| Replenishment | 45-55% | 8-12% | 10-15% | Reorder rate |
 
-**Onboarding (5-7 emails over 14-21 days):**
-Welcome and set expectations -- Quick win to demonstrate value -- Core feature deep dive -- Advanced feature or integration -- Social proof and community -- Check-in and feedback request -- Upgrade prompt or next steps
+Adjust benchmarks based on the brand's category, price point, and purchase frequency if context is available.
 
-**Lead Nurture (4-6 emails over 3-4 weeks):**
-Value-first educational content -- Pain point identification -- Solution positioning with proof -- Social proof and results -- Soft CTA (trial, demo, resource) -- Direct CTA (buy, book, sign up)
+## Flow Type Templates
 
-**Re-engagement (3-4 emails over 10-14 days):**
-"We miss you" with a compelling reason to return -- Value reminder highlighting what they are missing -- Incentive or exclusive offer -- Last chance with clear deadline
+Use these as starting frameworks. Adapt length and content based on the user's goal and audience. Priority order for new brands building their retention system from scratch:
 
-**Win-back (3-5 emails over 30 days):**
-Friendly check-in asking what went wrong -- What is new since they left -- Special offer or incentive to return -- Feedback request (even if they do not come back) -- Final goodbye with door open
+### 1. Welcome Series (3-5 emails + SMS over 7-14 days)
+**Priority: Build first.** This is the highest-volume flow.
+- SMS 1 (immediate): Thank you + discount code reminder
+- Email 1 (immediate): Welcome, brand story, hero product intro, set expectations
+- Email 2 (Day 2): Social proof — reviews, UGC, community
+- Email 3 (Day 4): Hero product deep dive or best-sellers showcase
+- Email 4 (Day 7): First-purchase incentive if they haven't bought
+- Email 5 (Day 10): Segment by interest — ask preferences or use browse behavior to personalize
+- Conditional: If they purchase at any point, exit and enter post-purchase flow
 
-**Product Launch (4-6 emails over 2-3 weeks):**
-Teaser or pre-announcement -- Launch announcement with full details -- Feature spotlight or use case -- Social proof and early results -- Limited-time offer or bonus -- Last chance or reminder
+### 2. Abandoned Cart (3 emails + 2 SMS over 72 hours)
+**Priority: Build second.** Highest direct revenue recovery.
+- SMS 1 (1 hour): Simple reminder with cart link
+- Email 1 (4 hours): Cart contents with product images, no discount yet
+- Email 2 (24 hours): Social proof — reviews for carted items, "others are buying this"
+- SMS 2 (36 hours): Urgency — "items selling fast" or low stock
+- Email 3 (48 hours): Final touch — optional incentive (free shipping or small discount), urgency/scarcity
+- Conditional: Exit immediately on purchase. If no purchase after 72 hours, exit and optionally enter browse abandonment retargeting.
 
-**Event Follow-up (3-4 emails over 7-10 days):**
-Thank you with key takeaways or recordings -- Resource roundup from the event -- Related offer or next step -- Feedback survey
+### 3. Post-Purchase (5-7 emails + SMS over 30-60 days)
+**Priority: Build third.** Highest ROI, most underbuilt flow for DTC brands.
+1. **Order confirmation** (immediate, email): Thank you, order details, cross-sell recommendation ("pairs well with..."), set expectation for shipping timeline
+2. **Shipping notification** (when shipped, email + SMS): Tracking link + brand storytelling moment ("Here's why we made this...")
+3. **Delivery confirmation** (when delivered, email): "Your order arrived!" + care/usage tips + review request teaser
+4. **Review request** (5-7 days post-delivery, email): Ask for review, optional photo incentive, make it easy with direct link to review form
+5. **Replenishment reminder** (timed to product lifecycle, email + SMS): "Running low?" + easy reorder link + subscription offer
+6. **Second purchase incentive** (if no repeat purchase by 2x median reorder interval, email): Personalized recommendation based on first purchase + modest incentive
+7. **Cross-sell** (ongoing, email): Related products based on purchase history
 
-**Upgrade/Upsell (3-5 emails over 2-3 weeks):**
-Usage milestone or success celebration -- Feature gap or limitation they are hitting -- Upgrade benefits with proof -- Limited-time incentive -- Direct comparison of plans
+### 4. Browse Abandonment (2-3 emails + 1 SMS over 48 hours)
+- Email 1 (2 hours): "Still looking at [product]?" with product image and link
+- SMS 1 (6 hours): Brief nudge with product link
+- Email 2 (24 hours): Social proof for browsed products + related items
+- Email 3 (48 hours): "These are going fast" or category best-sellers
+- Conditional: Exit on purchase. Do not send if they have entered abandoned cart flow.
 
-**Educational Drip (5-8 emails over 4-6 weeks):**
-Introduction and what they will learn -- Lesson 1: foundational concept -- Lesson 2: intermediate concept -- Lesson 3: advanced concept -- Practical application or exercise -- Resource roundup -- Graduation and next steps
+### 5. Win-Back (3-4 emails + 1 SMS over 30-60 days)
+- Email 1 (Day 0, triggered by lapse threshold): "We miss you" — what's new since their last purchase
+- Email 2 (Day 10): New products, best-sellers, or content they missed
+- SMS 1 (Day 20): Short, personal "Come back" with incentive
+- Email 3 (Day 30): Escalating offer — meaningful discount or free gift with purchase
+- Email 4 (Day 45): Final attempt — "Is this goodbye?" with survey link + last-chance offer
+- Conditional: Exit on purchase. If no engagement after full sequence, suppress from marketing for 30 days then move to sunset flow.
 
-## Tool Integration
+### 6. VIP/Loyalty (ongoing, triggered by RFM segment)
+- Early access to new products or restocks
+- Exclusive previews or behind-the-scenes content
+- Thank-you messages at purchase milestones
+- Birthday/anniversary offers
+- Surprise gifts or bonus loyalty points
 
-### If ~~email marketing is connected (e.g., Klaviyo, Mailchimp, Customer.io)
-- Reference how to set up the sequence as a flow or automation in the platform
-- Note any platform-specific features to use (e.g., smart send time, conditional splits, A/B testing)
-- Map the branching logic to the platform's visual flow builder concepts
+### 7. Back-in-Stock (1 email + 1 SMS, triggered)
+- SMS (immediate on restock): "[Product] is back! Limited quantities." + link
+- Email (immediate or 30 min after SMS): Product details, urgency, easy purchase CTA
+- Conditional: Only send to profiles who browsed or wishlisted the item. Exit on purchase.
 
-### If ~~marketing automation or ~~CRM is connected (e.g., HubSpot, Marketo)
-- Reference lead scoring data to inform segmentation and exit conditions
-- Use lifecycle stage data to tailor messaging per segment
-- Note how to set enrollment triggers based on CRM properties or list membership
+### 8. Price Drop (1-2 emails + 1 SMS, triggered)
+- SMS (immediate): "[Product] just dropped to [price]!" + link
+- Email 1 (immediate or 1 hour after SMS): Price comparison, product details, urgency
+- Email 2 (24 hours, if no purchase): "Price won't last" reminder
+- Conditional: Only send to profiles who browsed or wishlisted the item. Exit on purchase.
 
-### If no tools are connected
-- Deliver all email content in copy-paste-ready format
-- Include a setup checklist the user can follow in any email platform:
-  1. Create the automation or flow
-  2. Set the enrollment trigger
-  3. Add each email with the specified delays
-  4. Configure branching and exit conditions
-  5. Set up tracking for the recommended metrics
+### 9. Replenishment (1-2 emails + 1 SMS, triggered by product usage cycle)
+- Email 1 (timed to expected product depletion): "Running low on [product]?" + reorder link + subscription offer
+- SMS 1 (3 days later if no reorder): Quick reminder with reorder link
+- Email 2 (7 days later if no reorder): Last reminder + "Don't run out" + possible incentive
+- Conditional: Exit on reorder. Adjust timing based on actual reorder data.
+
+### 10. Review Request (1-2 emails, triggered post-delivery)
+- Email 1 (5-7 days after delivery): Ask for review with direct link, optional photo/video incentive
+- Email 2 (10-14 days after delivery, if no review): Softer follow-up — "Your opinion matters" + even simpler review process
+- Conditional: Exit on review submission. Do not send if customer has contacted support about this order.
+
+### 11. Referral (1-2 emails, triggered)
+- Email 1 (triggered after positive review or 2nd purchase): Introduce referral program, "Share with friends, you both get [reward]"
+- Email 2 (7 days later if no referral action): Reminder with social sharing links
+- Conditional: Only trigger for customers with positive engagement signals.
+
+### 12. Birthday/Anniversary (1 email + 1 SMS, triggered)
+- Email (on birthday or purchase anniversary): Personal offer or gift, "This one's for you"
+- SMS (same day): Short birthday wish + offer code
+- Conditional: Requires date of birth or first purchase date in profile.
+
+## Klaviyo-Specific Guidance
+
+Since Klaviyo is connected via MCP:
+
+### Flow Builder Concepts
+- Reference Klaviyo's visual flow builder when describing trigger setup, time delays, conditional splits, and branching
+- Use Klaviyo terminology: flows (not automations), profiles (not contacts), metrics (not events)
+- Note where to use conditional splits vs. trigger splits
+
+### Segmentation
+- Recommend segment creation for flow targeting (e.g., "Create a segment for customers who purchased 60+ days ago and have not purchased since" for win-back)
+- Reference Klaviyo profile properties for personalization: first name, last order date, total order count, predicted next order date, lifetime value
+
+### Catalog Integration
+- Back-in-stock and price drop flows use Klaviyo catalog feeds — note that the catalog must be synced from the ecommerce platform
+- Product recommendations in post-purchase and browse abandonment can pull from Klaviyo's catalog-based recommendations
+
+### A/B Testing
+- Recommend A/B tests within flows: subject lines, send times, content variants, incentive levels
+- Klaviyo supports A/B splits within flow branches — use these for optimization
+- Suggest testing: discount percentage vs. free shipping, urgency vs. social proof, short vs. long copy
+
+### Profile Properties for Personalization
+- First name, last purchased product, cart contents, browse history
+- Predicted gender, predicted next order date (if Klaviyo predictive analytics is enabled)
+- Custom properties synced from ecommerce platform (subscription status, loyalty tier, etc.)
 
 ## Output
 
-Present the complete sequence with the following sections:
+Present the complete flow with the following sections:
 
-### Sequence Overview Table
+### Flow Overview Table
 
-| # | Subject Line | Purpose | Timing | Primary CTA | Condition |
-|---|-------------|---------|--------|-------------|-----------|
+| # | Channel | Timing | Subject / SMS Text | Purpose | CTA | Condition |
+|---|---------|--------|-------------------|---------|-----|-----------|
 
-### Full Email Drafts
-Each email with subject line options, preview text, purpose, body copy, CTA, timing, and segment notes.
+### Full Message Drafts
+Each message with channel, timing, subject line options (email) or message text (SMS), preview text (email), purpose, body copy (email), CTA, and conditional logic.
 
-### Sequence Flow Diagram
-A text-based diagram showing the email flow, branching paths, and exit points. Use a clear format such as:
-
-```
-[Trigger] --> Email 1 (Day 0)
-                |
-          Opened? --Yes--> Email 2 (Day 3)
-                |              |
-                No        Clicked CTA? --Yes--> [EXIT: Converted]
-                |              |
-                v              No
-          Email 1b (Day 2)     |
-                |              v
-                +--------> Email 3 (Day 7)
-                               |
-                               v
-                          Email 4 (Day 10)
-                               |
-                          [EXIT: Sequence complete]
-```
+### Flow Diagram
+Text-based diagram showing the flow with email and SMS touchpoints, branching paths, time delays, and exit points.
 
 ### Branching Logic Notes
-Summary of all conditions, exits, and suppressions in a reference list.
+Summary of all conditions, exits, re-entry rules, and suppressions in a reference list.
+
+### SMS Compliance Checklist
+TCPA requirements, opt-in method, quiet hours, required STOP language, and frequency disclosure for this specific flow.
 
 ### A/B Test Suggestions
-- 2-3 recommended A/B tests (subject lines, CTA text, send time, email length)
+- 2-3 recommended A/B tests specific to this flow type
 - What to test, how to split, and how to measure the winner
+- Include at least one test comparing email-only vs. email+SMS for a specific touchpoint
 
 ### Metrics to Track
-- Primary conversion metric for the sequence
-- Per-email metrics: open rate, CTR, unsubscribe rate
-- Sequence-level metrics: overall conversion rate, time to conversion, drop-off points
-- Recommended review cadence (e.g., "Review performance weekly for the first month, then monthly")
+- Primary conversion metric for the flow (e.g., recovery rate, first purchase rate, repeat purchase rate)
+- Per-message metrics: open rate (email), CTR (email and SMS), unsubscribe rate, revenue attributed
+- Flow-level metrics: overall conversion rate, revenue per recipient, time to conversion
+- Recommended review cadence: "Review performance weekly for the first month, then bi-weekly"
 
-## After the Sequence
+## After the Flow
 
 Ask: "Would you like me to:
-- Revise the copy or tone for any specific email?
-- Add a branching path for a specific scenario?
-- Create a variation of this sequence for a different audience segment?
-- Draft the A/B test variants for the subject lines?
-- Build a companion sequence (e.g., a post-purchase follow-up after this lead nurture converts)?"
+- Revise the copy or tone for any specific message?
+- Add or remove an SMS touchpoint?
+- Create a variation of this flow for a different customer segment?
+- Draft the A/B test variants for subject lines or incentive levels?
+- Build the next priority flow for your retention system?
+- Set up the Klaviyo segments needed for this flow?"
