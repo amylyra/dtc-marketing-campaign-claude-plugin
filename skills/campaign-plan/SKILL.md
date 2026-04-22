@@ -14,6 +14,20 @@ Generate a comprehensive marketing campaign brief with objectives, audience, mes
 
 User runs `/campaign-plan` or asks to plan, design, or build a marketing campaign.
 
+## Prerequisite Check
+
+Before gathering any inputs or generating a campaign brief, check whether a competitive analysis has already been completed in this conversation.
+
+- **If a `/competitive-brief` has been run**: proceed directly to Inputs. Pull any relevant positioning gaps, messaging opportunities, and content gaps from that research to inform the campaign.
+- **If no competitive brief exists**: pause and recommend it first.
+
+Say: "Before we build the campaign plan, it's worth running a quick competitive brief — it'll tell us which positioning angles are already owned and what's unclaimed, so the campaign doesn't land in crowded territory. Want me to run `/competitive-brief` first? Just share the competitors you want to look at and I'll go."
+
+Only skip this recommendation if:
+- The user explicitly says they want to skip competitive research
+- The campaign is purely internal (e.g., customer retention, employee comms)
+- The user has provided their own competitive research as context
+
 ## Inputs
 
 Gather the following from the user. If not provided, ask before proceeding:
