@@ -1,0 +1,20 @@
+{
+  "name": "marketing-knowledgebase-plugin",
+  "owner": {
+    "name": "Amy Yuan"
+  },
+  "metadata": {
+    "description": "Marketing knowledgebase plugin for Claude Code — content creation, campaign planning, SEO audits, brand review, and performance reporting."
+  },
+  "plugins": [
+    {
+      "name": "marketing",
+      "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Amy Yuan"
+      },
+      "source": "./"
+    }
+  ]
+}
