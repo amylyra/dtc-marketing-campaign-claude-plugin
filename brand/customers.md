@@ -71,3 +71,56 @@
 -
 -
 -
+
+---
+
+## Example: Glow Lab (Skincare)
+
+> Delete this section and fill in the templates above with your own customer data.
+
+### Primary Customer
+- **Who they are**: Women 25-40, college-educated, interested in wellness and clean beauty. Urban or suburban. Spends $50-150/month on skincare.
+- **Why they buy**: Wants effective products without the guesswork. Tired of 12-step routines. Cares about ingredients but doesn't want to become a chemist.
+- **How they discover us**: Instagram Reels, TikTok skincare creators, Google search ("best vitamin C serum"), friend referrals
+- **What they care about**: Ingredient transparency, real results (before/afters), simple routines, cruelty-free, fragrance-free options
+- **What they say when they love it**: "My skin has never looked this good." "I've simplified my routine to just these two products." "The texture is incredible — no stickiness."
+- **What they say when they hesitate**: "Is $48 too much for a serum?" "Will this work for my skin type?" "I've been burned by Vitamin C serums before."
+- **How they talk**: Enthusiastic but research-driven. Uses terms like "holy grail," "game changer," "my skin is glowing." Shares shelfies. Tags friends.
+
+### Secondary Customer: Gift-Giver
+- **Who they are**: Partners (25-45) or daughters (20-35) buying for moms, girlfriends, wives
+- **Why they buy**: Holiday, birthday, Mother's Day. Want to give something that feels thoughtful and premium without being intimidating.
+- **What they need to know**: "This is the one she'll actually use." Gift sets with clear "this is for her" messaging. Easy returns. Gift wrapping.
+- **What they say**: "I have no idea what she uses but she's into skincare." "Is this a safe gift for someone with sensitive skin?"
+
+### VIP / Repeat Buyer
+- **Behavior**: 3+ orders per year, subscribed to 1-2 products, AOV $65+
+- **What they respond to**: Early access to new launches, VIP-only bundles, surprise GWP
+- **What they don't respond to**: Deep discounts (they already buy at full price)
+
+### Social Proof Themes
+1. "Results within the first 2 weeks"
+2. "Finally a simple routine that works"
+3. "My sensitive skin loves this"
+4. "Better than the $100+ serums I've tried"
+5. "The texture — no stickiness, absorbs instantly"
+
+### Customer Language Bank
+
+#### Praise
+- "Holy grail serum. I'm on my 4th bottle."
+- "My dark spots are actually fading. I have photos to prove it."
+- "I simplified my entire routine to this + moisturizer. Best decision ever."
+- "The glow is REAL. My coworkers keep asking what I changed."
+
+#### Objections
+- "Is it worth the price? I can get Vitamin C at the drugstore."
+- "I have sensitive skin — will this irritate me?"
+- "I've tried Vitamin C serums before and they all oxidize."
+- "Shipping takes too long."
+
+#### Wishes / Requests
+- "Please make an eye cream!"
+- "Would love a tinted SPF."
+- "Any plans for a body line?"
+- "Can you do bigger sizes? I go through the serum so fast."

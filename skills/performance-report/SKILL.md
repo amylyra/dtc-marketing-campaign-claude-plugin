@@ -41,6 +41,13 @@ User runs `/performance-report` or asks for a marketing report, performance anal
 
 4. **Comparison baseline** — prior period, same period last year, or counterfactual
 
+### Brand Context
+
+If `brand/` directory exists, auto-apply:
+- **`brand/products.md`** — reference product names, price points, and margin structure when analyzing revenue, AOV, and contribution margin
+- **`brand/customers.md`** — segment performance by customer profiles (primary buyer, gift-giver, VIP, lapsed) rather than generic new/returning splits
+- **`brand/voice.md`** — no direct impact on reporting, but reference brand messaging pillars when evaluating content-driven metrics (email subject line performance, ad creative hooks)
+
 ## Core KPI Stack
 
 Track only these — more creates noise without insight:

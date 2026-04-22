@@ -34,6 +34,15 @@ Gather the following from the user:
    - Pricing and promo strategy
    - Content and SEO gaps
 
+### Brand Context
+
+If `brand/` directory exists, auto-apply:
+- **`brand/products.md`** — compare competitor products against your own by name, price, and positioning. Include your brand's column in the messaging comparison matrix.
+- **`brand/customers.md`** — evaluate whether competitors are targeting the same customer segments or different ones. Note overlapping vs. underserved audiences.
+- **`brand/voice.md`** — compare competitor brand voice and tone against your own. Identify where your voice is distinct vs. where it blends in.
+
+If `brand/` doesn't exist, run the competitive brief without your brand's column in comparison matrices. Note: "For a side-by-side comparison, run `/brand-review setup` first to document your brand's positioning."
+
 ## Research Process
 
 For each competitor, research using web search:

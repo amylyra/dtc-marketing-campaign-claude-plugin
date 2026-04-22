@@ -33,6 +33,13 @@ Gather the following from the user. If not provided, ask before proceeding:
 
 4. **Competitors** (optional) — domains or companies to compare against. If not provided and the audit type requires competitor data, use web search to identify 2-3 likely competitors based on the user's domain and keyword space.
 
+### Brand Context
+
+If `brand/` directory exists, auto-apply:
+- **`brand/products.md`** — validate keyword opportunities against actual product catalog. Prioritize keywords that match products you sell. Flag keyword suggestions for products you don't carry.
+- **`brand/customers.md`** — align keyword intent with customer segments. Prioritize keywords matching how your customers search (using language from the customer language bank).
+- **`brand/voice.md`** — apply brand terminology preferences when recommending title tags, meta descriptions, and content topics.
+
 ## Process
 
 ### 1. Keyword Research

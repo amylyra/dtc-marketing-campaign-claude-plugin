@@ -2,6 +2,25 @@
 
 A DTC marketing plugin for Claude Code and Claude.ai. Campaign planning with promo economics, email/SMS retention flows, ad creative drafting, brand voice management, competitive intelligence, SEO audits, and performance reporting — all built around contribution margin as the north star.
 
+## Getting Started
+
+### First-Time Setup (15-30 minutes)
+
+```
+1. /brand-review setup     → populate brand voice, product catalog, customer profiles
+2. /campaign-plan           → build your first campaign brief
+3. /draft-content           → write content assets  ┐
+   /email-sequence          → build retention flows  ┤ run in parallel
+4. /brand-review            → QA everything before launch
+5. /performance-report      → post-mortem after campaign ends
+```
+
+Step 1 is the most important — every other skill reads from the `brand/` files it creates. You can run any skill standalone, but output quality improves significantly with brand context.
+
+The `brand/` templates include a worked example (Glow Lab skincare) to show what "done" looks like. Delete the examples and fill in your own brand.
+
+---
+
 ## Architecture
 
 ### The Foundation: Brand Knowledge
