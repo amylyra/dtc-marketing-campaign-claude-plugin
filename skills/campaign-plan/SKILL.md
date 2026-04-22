@@ -63,10 +63,13 @@ Recommend channels based on audience and goal. For each channel, include:
 - Estimated effort level (low, medium, high)
 - Budget allocation suggestion (if budget was provided)
 
-Consider channels from:
-- Owned: blog, email, website, social media profiles
-- Earned: PR, influencer partnerships, guest posts, community engagement
-- Paid: search ads, social ads, display, sponsored content, events
+**Always start with the storefront/site.** Before recommending any outbound channel, assess and address the destination first. Every campaign sends traffic somewhere — if the site, landing page, or product page isn't ready to convert, all other channel activity is wasted spend. Site readiness is a prerequisite, not an afterthought.
+
+Consider channels in this order:
+1. **Storefront/Site** (always first): landing pages, product pages, pricing pages, homepage, conversion flows, on-site CTAs
+2. **Owned**: blog, email, social media profiles
+3. **Earned**: PR, influencer partnerships, guest posts, community engagement
+4. **Paid**: search ads, social ads, display, sponsored content, events
 
 ### 5. Content Calendar
 Create a week-by-week (or day-by-day for short campaigns) content calendar:
@@ -81,11 +84,19 @@ Format as a table:
 |------|--------------|---------|-------------|--------|
 
 ### 6. Content Pieces Needed
-List every content asset required for the campaign:
-- Asset name and type (blog post, email, social post, ad creative, landing page, etc.)
+List every content asset required for the campaign. **Always lead with site/storefront assets** — these must be production-ready before any outbound content goes live.
+
+- Asset name and type (landing page, product page, blog post, email, social post, ad creative, etc.)
 - Brief description of what it should contain
 - Priority (must-have vs. nice-to-have)
 - Suggested timeline for creation
+
+Site/storefront assets to consider first:
+- Campaign landing page
+- Updated product or pricing page
+- On-site CTAs and banners
+- Conversion flow (signup, checkout, demo request)
+- Thank-you or confirmation page
 
 ### 7. Success Metrics
 Define KPIs aligned to the campaign objective:
@@ -155,18 +166,32 @@ Message hierarchy:
 4. What should I do? (call to action)
 
 #### Channel
-Select channels based on where your audience is, not where you are most comfortable. See the Channel Selection Guide below.
+Select channels based on where your audience is, not where you are most comfortable. **Always begin with the storefront/site** — confirm the destination is optimized to receive and convert traffic before activating any outbound channel. See the Channel Selection Guide below.
 
 #### Measure
 Define how you will know the campaign worked. See Success Metrics by Campaign Type below.
 
 ### Channel Selection Guide
 
+#### Storefront / Site (Always First)
+
+The site is the conversion layer for every campaign. Before any outbound channel is activated, confirm the following are ready:
+
+| Asset | Best For | Typical Metrics | Effort |
+|-------|----------|----------------|--------|
+| Campaign landing page | Focused conversion, paid traffic, email CTAs | Conversion rate, bounce rate, form fills | Medium |
+| Product / pricing page | Consideration, decision-stage traffic | Conversion rate, demo requests, purchases | Medium |
+| Homepage updates | Broad awareness, brand-level campaigns | Bounce rate, pages per session, conversions | Medium |
+| On-site CTAs and banners | Capturing existing traffic for campaign | CTR, conversion rate | Low |
+| Conversion flows | Checkout, signup, demo request completion | Completion rate, drop-off points | Medium-High |
+
+If any site asset is not ready, it must be flagged as a **blocking dependency** in the content calendar — no outbound channel should launch until it is live.
+
 #### Owned Channels
 
 | Channel | Best For | Typical Metrics | Effort |
 |---------|----------|----------------|--------|
-| Blog/Website | SEO, thought leadership, education | Traffic, time on page, conversions | Medium |
+| Blog | SEO, thought leadership, education | Traffic, time on page, conversions | Medium |
 | Email | Nurture, retention, announcements | Open rate, CTR, conversions | Low-Medium |
 | Social (organic) | Awareness, community, brand building | Engagement, reach, follower growth | Medium |
 | Webinars | Education, lead gen, product demos | Registrations, attendance, pipeline | High |
@@ -203,12 +228,13 @@ When choosing channels, consider:
 ### Content Calendar Creation
 
 #### Calendar Planning Process
-1. **Start with milestones**: campaign launch, event dates, product releases, seasonal moments
-2. **Work backward**: what needs to be live and when? What is the production lead time?
-3. **Map content to funnel stages**: ensure coverage across awareness, consideration, and conversion
-4. **Batch by theme**: group related content pieces into weekly or bi-weekly themes
-5. **Balance channels**: do not over-index on one channel; ensure the audience sees the campaign across touchpoints
-6. **Build in flexibility**: leave 20% of calendar slots open for reactive or opportunistic content
+1. **Lock site/storefront assets first**: landing pages, product pages, and conversion flows must be production-ready before any outbound activity. Mark these as blocking dependencies.
+2. **Start with milestones**: campaign launch, event dates, product releases, seasonal moments
+3. **Work backward**: what needs to be live and when? What is the production lead time?
+4. **Map content to funnel stages**: ensure coverage across awareness, consideration, and conversion
+5. **Batch by theme**: group related content pieces into weekly or bi-weekly themes
+6. **Balance channels**: do not over-index on one channel; ensure the audience sees the campaign across touchpoints
+7. **Build in flexibility**: leave 20% of calendar slots open for reactive or opportunistic content
 
 #### Content Cadence Guidelines
 - **Blog**: 1-4 posts per week depending on team size and goals
