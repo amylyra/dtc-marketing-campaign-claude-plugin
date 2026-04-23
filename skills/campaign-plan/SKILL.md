@@ -349,49 +349,107 @@ Do not ask about materials yet — let the user focus on strategy alignment.
 
 ### Step 2: Site Creative Assets
 
-**Open with:** "Before I build the asset list — what do you already have? Past campaign assets, brand guide, Figma/UI kit, previous creative that worked?"
+**Step 2 has two parts:** first confirm WHAT to build, then produce copy direction for the confirmed list.
 
-Then produce a **prioritized asset list** — tiered by impact for this specific campaign, not a flat checklist. Reference the Site Creative Asset Checklist and Brand Guide & Design System sections above.
+#### Part A: Scope the Asset List
 
-**Tier the assets based on the specific campaign:**
+**Open with two questions:**
+1. "What do you already have? Past campaign assets, brand guide, Figma/UI kit, previous creative that worked?"
+2. "Here's what I'd recommend for this campaign — check off what you need:"
 
-**Essential** (make or break — highest-traffic, highest-conversion placements):
-- Typically: HP Banner, Collection Page Banner, Announcement Bar
+Present a checklist with your recommended tier for each asset. The user confirms, adds, or removes before you write anything.
 
-**Recommended** (amplify if the team has bandwidth):
-- Typically: Nav Super Menu Merch, Collection Page Inline Promo Spot, PDP Badges/Callouts
+> **Site assets for [campaign name]:**
+>
+> **Essential** (recommend for this campaign):
+> - [ ] HP Banner
+> - [ ] Collection Page Banner (Shop All)
+> - [ ] Announcement Bar
+>
+> **Recommended** (if team has bandwidth):
+> - [ ] Nav Super Menu Merch
+> - [ ] Collection Page Inline Promo Spot
+> - [ ] PDP Badges / Callouts
+>
+> **Only if needed:**
+> - [ ] Landing Page *(only if paid traffic needs a dedicated destination)*
+> - [ ] Cart / Checkout Messaging *(only if threshold offer or upsell play)*
+> - [ ] Pop-up / Slide-in *(only if running email/SMS capture for this campaign)*
+>
+> "Which of these do you need? I'll write copy direction for your confirmed list."
 
-**Only if needed** (conditional on campaign mechanics):
-- Landing Page, Cart/Checkout Messaging, Pop-up/Slide-in
+Adapt the recommended tiers based on the specific campaign — a threshold-offer campaign makes Cart Messaging essential; a brand awareness campaign may skip PDP Badges. Reference the Site Creative Asset Checklist above.
 
-For each asset in the list, provide:
+**Wait for the user to confirm their list before proceeding to Part B.**
+
+#### Part B: Copy Direction for Confirmed Assets
+
+For each asset the user confirmed, provide:
 - **Specific copy direction tied to the campaign story** — not generic. Reference brand voice and energy.
 - Key message (from Step 1 messaging hierarchy)
 - Design notes from brand guide / UI kit / Figma if available
 
-If the user provided existing materials, note which assets can be adapted vs. built from scratch.
+If the user mentioned existing materials, note which assets can be adapted vs. built from scratch.
 
-**Gate:** "Here's the prioritized asset list with copy direction. Anything to add, remove, or change?"
+**Gate:** "Here's the copy direction for your confirmed assets. Anything to adjust?"
 
 ### Step 3: Channels + Calendar
 
-**Ask now (deferred from intake):** Budget range, channel preferences/constraints.
+**Step 3 has two parts:** first confirm WHICH channels and HOW MANY sends/concepts, then produce creative direction + calendar for the confirmed scope.
 
-**Produce a concise channel plan.** Reference the Channel Reference section above. Only include channels relevant to this campaign.
+#### Part A: Scope the Channel Plan
 
-**Tiered channels (essential / recommended / optional):**
+**Ask:** Budget range, channel preferences/constraints.
 
-For each channel, include **creative direction** — not full concepts, but enough that `/draft-content` knows what to build. One line per concept describing the angle and which campaign arc phase it serves.
+Then present a channel checklist with recommended sends/concepts. The user confirms scope before you write creative direction.
 
-- **Email** — Essential: Announcement + Last chance (2 sends). Recommended: VIP early access, segment-specific variants. Optional: educational content, post-campaign nurture.
-  - Creative direction per send: angle, arc phase, subject line direction. Example: "Announcement: educate phase — lead with the problem, not the product. Subject line direction: scenario-based ('Your water bottle freezes at 10,000ft')."
-- **Meta paid** — Essential: 2-3 ad concepts + retargeting creative. Recommended: 5-10 hook variants, UGC-style creative, lookalike audiences. Optional: whitelisted influencer ads, broad awareness.
-  - Creative direction per concept: framework (PAS, UGC, comparison, etc.), angle, target audience. Example: "Concept 1: Problem-Agitate-Solve field test video (prove phase). Concept 2: Comparison ad — '$34 to fix a $45 problem' (differentiate phase)."
+> **Email sends for [campaign name]:**
+>
+> **Essential:**
+> - [ ] Launch announcement — [date]
+> - [ ] Last chance — [date]
+>
+> **Recommended:**
+> - [ ] VIP early access — [date]
+> - [ ] [Segment]-specific variant (e.g., gift guide) — [date]
+>
+> **Optional:**
+> - [ ] Public launch
+> - [ ] Post-campaign nurture
+>
+> **Meta paid concepts:**
+> - [ ] Concept 1: [angle, e.g., "field test video — Problem-Agitate-Solve"]
+> - [ ] Concept 2: [angle, e.g., "comparison ad — '$34 to fix a $45 problem'"]
+> - [ ] Concept 3: [angle, e.g., "UGC testimonial"]
+> - [ ] Retargeting (product-specific)
+>
+> **SMS** (essentials only):
+> - [ ] Launch SMS — [date]
+> - [ ] Last chance SMS — [date]
+>
+> **Google** (essentials only):
+> - [ ] Shopping feed update + branded search
+>
+> **Other** (brief recommendations):
+> - [ ] Organic social
+> - [ ] Influencer/UGC
+> - [ ] SEO content
+>
+> "Which sends and concepts do you want? Anything to add or cut?"
 
-**Essentials-only channels (no tiering — just the core):**
-- **SMS** — Launch + Last chance (2 sends max). Include message angle.
-- **Google** — Shopping feed update + branded search.
-- **Organic social, Influencer/UGC, SEO** — Brief, relevant recommendations only.
+Adapt the recommended list based on the campaign type, budget, and audience. Reference the Channel Reference section above.
+
+**Wait for the user to confirm before proceeding to Part B.**
+
+#### Part B: Creative Direction + Calendar
+
+For each confirmed email send, provide: **angle, arc phase, subject line direction.** Example: "Announcement: educate phase — lead with the problem, not the product. Subject line direction: scenario-based."
+
+For each confirmed Meta concept, provide: **framework, angle, target audience.** Example: "Concept 1: Problem-Agitate-Solve field test video (prove phase). Audience: cold prospecting."
+
+For SMS: include message angle for each confirmed send.
+
+For other channels: brief, relevant recommendations only.
 
 **Campaign timeline** — simple date/milestone/asset table. Site assets from Step 2 are blocking dependencies; outbound builds in parallel.
 

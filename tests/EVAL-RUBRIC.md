@@ -127,8 +127,10 @@ Check the output against the skill's SKILL.md — every required section should 
 - [ ] Step 1A gate asks user to pick, mix, or riff — not "shall I continue?"
 - [ ] Step 1B: theme iterated based on user feedback, then locked strategy in table format (theme, audience, messages, offer, kill threshold, promo economics)
 - [ ] Step 1B gate confirms strategy lock before proceeding to assets
-- [ ] Step 2 complete: site creative asset checklist tiered (essential/recommended/only-if-needed), copy direction per asset tied to campaign story, brand guide/UI kit consulted
-- [ ] Step 3 complete: email tiered with creative direction per send (angle + arc phase), Meta tiered with creative direction per concept (framework + angle), SMS essentials with message angle, Google essentials, campaign timeline table, budget allocation
+- [ ] Step 2A: asset checklist presented for user to confirm scope (not just produced — user picks which assets to build)
+- [ ] Step 2B: copy direction produced ONLY for user-confirmed assets, tied to campaign story, brand guide/UI kit consulted
+- [ ] Step 3A: channel checklist presented for user to confirm scope — which email sends, which Meta concepts, SMS sends (user picks, not assumed)
+- [ ] Step 3B: creative direction produced ONLY for user-confirmed sends/concepts (angle + arc phase), campaign timeline table, budget allocation
 - [ ] Step 4 complete: 3-5 KPIs with targets, 2-3 risks with mitigations, condensed execution checklist (top 5 questions), campaign brief saved to `campaigns/`, smart handoff menu listing specific concepts from Step 3
 - [ ] Gates present between each step (user sign-off requested)
 - [ ] Materials question asked at start of Step 2 (not Step 1)

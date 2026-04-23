@@ -223,9 +223,12 @@ The template (#3 in SKILL.md) has 7 touchpoints:
 - Step 1A gate: "Which direction resonates?" (not "shall I continue?")
 - Step 1B: locked strategy in table format after user picks/iterates
 - Step 1B gate: "Strategy locked. Ready for site assets?"
-- Step 2 opening: "What do you already have?" (materials question)
-- Step 2 gate: "Here's the prioritized asset list. Anything to add, remove, or change?"
-- Step 3 gate: "Channel plan and calendar look right?"
+- Step 2A: materials question + asset checklist presented for user to pick scope
+- Step 2A gate: "Which of these do you need?" (user confirms list BEFORE copy direction)
+- Step 2B: copy direction produced only for confirmed assets
+- Step 3A: channel checklist presented — email sends, Meta concepts, SMS (user confirms scope)
+- Step 3A gate: "Which sends and concepts do you want?" (user confirms BEFORE creative direction)
+- Step 3B: creative direction + calendar produced only for confirmed scope
 - Step 4 ends with: "What do you want me to draft first?" (not a gate — final output)
 - No content from later steps bleeds into earlier steps
 - Budget is NOT asked in Step 1 (deferred to Step 3)

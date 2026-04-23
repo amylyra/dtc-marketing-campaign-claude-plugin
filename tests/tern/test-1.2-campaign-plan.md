@@ -57,67 +57,111 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 
 ---
 
-## Step 2: Site Creative Assets
+## Step 2A: Scope Site Assets
 
-**Materials question:** "Before I build the asset list — what do you already have? Past campaign assets, brand guide, Figma/UI kit, previous creative that worked?"
+**Materials question:** "What do you already have? Past campaign assets, brand guide, Figma/UI kit, previous creative that worked?"
 
 *(Simulated answer: "We have product photography from last year. No Figma kit. Brand guide is in brand/voice.md.")*
 
-**Prioritized asset list:**
+**Asset checklist:**
 
-### Essential
+> **Site assets for Ski Season + BFCM:**
+>
+> **Essential** (recommend for this campaign):
+> - [x] HP Banner
+> - [x] Collection Page Banner (Shop All)
+> - [x] Announcement Bar
+>
+> **Recommended** (if team has bandwidth):
+> - [ ] Nav Super Menu Merch
+> - [ ] Collection Page Inline Promo Spot
+> - [x] PDP Badges / Callouts
+>
+> **Only if needed:**
+> - [ ] BFCM Landing Page *(only if running paid to dedicated destination)*
+> - [x] Cart / Checkout Messaging *(threshold offer active — recommend including)*
+> - [ ] Pop-up / Slide-in
+>
+> "Which of these do you need? I'll write copy direction for your confirmed list."
+
+*(Simulated answer: "Essential + PDP Badges + Cart Messaging. Skip the rest.")*
+
+---
+
+## Step 2B: Copy Direction for Confirmed Assets
 
 | Asset | Copy Direction | Notes |
 |-------|---------------|-------|
 | HP Banner | Hero: Bottle Parka field photo on a snow-covered ridge. Headline: "Gear Up Before It Freezes." CTA: "Shop the Collection." Understated — let the photo do the work. | Adapt last year's winter photography. |
 | Collection Page Banner (Shop All) | "Winter Gear Protection — purpose-built insulation for the gear you already own." Product count + price range. | New — campaign-specific collection. |
-| Announcement Bar | Phase 1: "Free shipping on orders $60+" → Phase 2: "The Full Send: every Tern product, one kit, $108." | Swap copy at BFCM launch. Character limit: keep under 60 chars. |
-
-### Recommended
-
-| Asset | Copy Direction | Notes |
-|-------|---------------|-------|
-| Nav Super Menu Merch | "Winter Gear Protection" collection callout in nav dropdown. Link to collection page. | Drives discovery for non-homepage visitors. |
-| Collection Page Inline Promo Spot | Phase 2 only: "The Full Send — complete gear protection kit, $108" card within product grid. | Only needed during BFCM. |
+| Announcement Bar | Phase 1: "Free shipping on orders $60+" → Phase 2: "The Full Send: every Tern product, one kit, $108." | Swap copy at BFCM launch. Keep under 60 chars. |
 | PDP Badges | "Field-Tested at 14,000ft" badge on all SKUs. "Best Seller" on Bottle Parka. | Per-SKU. Apply to all 4 products. |
+| Cart Messaging | Free shipping threshold banner ($60). Bundle upsell: "Add Phone Parka for complete protection — save $24 with The Full Send." | Threshold offer active. |
 
-### Only if Needed
-
-| Asset | Copy Direction | Notes |
-|-------|---------------|-------|
-| BFCM Landing Page | Bundle-focused page with countdown timer, Full Send breakdown, free shipping callout. | Only if running paid to dedicated destination. Otherwise collection page suffices. |
-| Cart Messaging | Free shipping threshold banner ($60). Bundle upsell: "Add Phone Parka for complete protection — save $24 with The Full Send." | Threshold offer active — include. |
-
-**Gate:** "Here's the prioritized asset list with copy direction. Anything to add, remove, or change?"
+**Gate:** "Here's the copy direction for your confirmed assets. Anything to adjust?"
 
 ---
 
-## Step 3: Channels + Calendar
+## Step 3A: Scope Channel Plan
 
 **Budget:** ~$15K confirmed.
 
-### Email (tiered)
+> **Email sends:**
+> - [x] Launch announcement — Nov 1
+> - [x] BFCM last chance — Nov 29
+> - [x] VIP early BFCM access — Nov 25
+> - [x] Gift guide (gift-giver segment) — Nov 15
+> - [ ] Public launch — Nov 3
+> - [ ] BFCM public launch — Nov 27
+> - [ ] Holiday shipping cutoff — Dec 5
+>
+> **Meta paid concepts ($5K):**
+> - [x] Field test video (PAS framework, prove phase)
+> - [x] Comparison ad ("$34 to fix a $45 problem")
+> - [x] Retargeting (product-specific, PDP viewers)
+> - [ ] UGC testimonial (whitelisted creator content)
+> - [ ] Broad awareness (lookalike audiences)
+>
+> **SMS** (essentials only):
+> - [x] Launch SMS — Nov 3
+> - [x] BFCM last chance SMS — Nov 29
+>
+> **Google** (essentials only):
+> - [x] Shopping feed update + branded search
+>
+> **Other:**
+> - [x] Organic social (Instagram, TikTok, Pinterest)
+> - [x] Influencer/UGC ($3K — 3-5 micro-creators)
+>
+> "Which sends and concepts do you want? Anything to add or cut?"
 
-| Tier | Send | Timing | Creative Direction |
-|------|------|--------|--------------------|
-| **Essential** | Launch announcement | Nov 1 | Educate phase — lead with the problem, not the product. Subject line: scenario-based. |
-| **Essential** | BFCM last chance | Nov 29 | Convert phase — urgency, bundle value, countdown. Subject line: deadline + savings. |
-| **Recommended** | VIP early BFCM access | Nov 25 | Reward phase — insider access, no discount language. Subject line: exclusivity. |
-| **Recommended** | Gift guide (gift-giver segment) | Nov 15 | Gift-giver angle — "for the person who..." framing, price tiers. |
-| **Optional** | Public launch, BFCM public, holiday cutoff | Nov 3, Nov 27, Dec 5 | Supporting sends — standard cadence. |
+*(Simulated answer: "Add the public launch email and holiday cutoff. Skip BFCM public launch — VIP early access covers it. Add UGC testimonial concept for Meta.")*
 
-### Meta Paid — $5K (tiered)
+---
 
-| Tier | Concept | Creative Direction |
-|------|---------|-------------------|
-| **Essential** | Field test video | PAS framework, prove phase — "We tested 12 bottles at 14,000ft." Native feel. |
-| **Essential** | Comparison ad | Sharp Edge angle — "$34 to fix a $45 problem." Static or carousel. |
-| **Essential** | Retargeting | Product-specific, PDP viewers. CTA: return to product page. |
-| **Recommended** | UGC testimonial | Whitelisted creator content. "I switched last winter. Here's why." |
-| **Recommended** | 5+ hook variants per concept | Test volume on winning concepts. |
-| **Optional** | Broad awareness | Lookalike audiences beyond core outdoor segment. |
+## Step 3B: Creative Direction + Calendar
 
-### SMS — essentials only
+### Email — confirmed sends
+
+| Send | Timing | Creative Direction |
+|------|--------|--------------------|
+| Launch announcement | Nov 1 | Educate phase — lead with the problem, not the product. Subject line: scenario-based. |
+| Public launch | Nov 3 | Educate phase — broader audience. Subject line: direct benefit. |
+| Gift guide (gift-giver segment) | Nov 15 | Gift-giver angle — "for the person who..." framing, price tiers. |
+| VIP early BFCM access | Nov 25 | Reward phase — insider access, no discount language. Subject line: exclusivity. |
+| BFCM last chance | Nov 29 | Convert phase — urgency, bundle value, countdown. Subject line: deadline + savings. |
+| Holiday shipping cutoff | Dec 5 | Urgency — shipping deadline. Subject line: date-specific. |
+
+### Meta Paid — confirmed concepts ($5K)
+
+| Concept | Creative Direction |
+|---------|-------------------|
+| Field test video | PAS framework, prove phase — "We tested 12 bottles at 14,000ft." Native feel. |
+| Comparison ad | Sharp Edge angle — "$34 to fix a $45 problem." Static or carousel. |
+| UGC testimonial | Whitelisted creator content. "I switched last winter. Here's why." |
+| Retargeting | Product-specific, PDP viewers. CTA: return to product page. |
+
+### SMS — confirmed sends
 - Launch SMS (Nov 3): "Tern's ski season collection is live. Free shipping at $60. [link]" — educate phase.
 - BFCM last chance SMS (Nov 29): "The Full Send bundle ends tonight. $108 for every Tern product. [link]" — convert phase.
 
