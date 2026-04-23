@@ -186,6 +186,18 @@ Cross-reference the copy against `brand/products.md`:
 - Are objections being addressed (or accidentally reinforced)?
 - Does the tone match how the audience expects to be spoken to on this channel?
 
+#### Proof-to-Psychology Match
+
+If `brand/customers.md` includes Buyer Psychology sections, check whether the content uses the right TYPE of proof for the stated audience:
+
+- **Research-driven buyer** → needs data, specs, test results, peer reviews, comparison information. If the copy provides only vibes, lifestyle imagery, or emotional appeals without substantiation, the proof strategy is mismatched.
+- **Social/aspirational buyer** → needs UGC, creator endorsements, before/after transformations, volume social proof ("10,000 customers switched"). If the copy leads with specs and technical data without social validation, the proof strategy is mismatched.
+- **Gift-giver** → needs best-seller status, reviews from other gift-givers ("I got this for my husband and he uses it every day"), price-as-thoughtfulness framing, return policy reassurance. If the copy uses the primary buyer's proof strategy (specs, personal transformation), it's speaking to the wrong person.
+
+Flag mismatches as **Medium severity**: "Proof type doesn't match buyer psychology for [stated audience]. The [audience type] buyer needs [correct proof type], but this content leads with [actual proof type]."
+
+If buyer psychology sections don't exist in `brand/customers.md`, skip this check and note: "For more precise proof-matching, add Buyer Psychology sections to your customer profiles via `/brand-review setup`."
+
 #### Style Guide Compliance
 
 - Grammar and punctuation per style guide (Oxford comma, title case vs. sentence case, etc.)

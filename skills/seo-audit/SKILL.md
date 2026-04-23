@@ -76,6 +76,19 @@ Prioritize these high-intent patterns for e-commerce:
 - **"[Brand] review"** — branded, high-intent. Ensure your own content ranks for this.
 - **"Is [product] worth it"** — consideration stage, perfect for testimonial-rich content
 
+#### Novel Product / Category-Creating Keyword Strategy
+
+If the product name has no search volume (the brand is creating a new category), standard keyword research will return nothing useful. Shift strategy:
+
+1. **Target the problem, not the product**: "Water bottle freezing while skiing" has search volume. "Bottle parka" doesn't. Find the problem queries your product solves.
+2. **Target the current workaround**: "Best insulated water bottle sleeve" captures people searching for the closest existing solution. These are your best prospects — they know the problem and are actively looking for an answer.
+3. **Target [activity] + [problem] patterns**: "Winter hiking hydration", "phone dying in cold weather", "camera fogging in humidity." These queries capture problem-aware buyers before they've found any solution.
+4. **Build category-defining content**: "Why your water bottle freezes at altitude" or "The science of cold-weather hydration" — educate about the problem, then position your product as the solution. This content becomes the SEO foundation for a category that doesn't exist yet.
+5. **Own your product terms early**: Even with zero volume now, create definitive content for your product name and category name so you rank for them as the category grows. When someone DOES search your term, you should own the entire first page.
+6. **Monitor query emergence**: As the category grows, new search terms will appear. Track branded searches, product-name searches, and problem-variant queries monthly to catch emerging volume.
+
+The buyer is problem-aware but solution-unaware. SEO strategy must start at the problem, not the product.
+
 ### 2. On-Page SEO Audit
 
 For each key page (homepage, product pages, collection pages, top landing pages, blog posts), evaluate:

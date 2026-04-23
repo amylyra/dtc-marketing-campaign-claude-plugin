@@ -83,7 +83,7 @@ Produce 5-10 hook variants per ad concept. The first line is everything — test
 #### TikTok-Specific Guidelines
 - Hook in first 1-2 seconds or you lose them
 - Must feel native — no corporate polish, no stock footage feel
-- Trending audio references where relevant
+- Trending audio references where relevant — but for technical/performance brands, prioritize original audio or field ambience over trending sounds when trending audio would undermine credibility
 - Text overlay for silent viewing
 - Conversational, first-person tone
 - "Show, don't sell" energy
@@ -162,6 +162,15 @@ Consumer-facing, not a press release. Three-phase sequence:
 **Phase 3 — Available Now** (launch day + 1-7 days): Purchase CTA, urgency, social proof from early access or pre-orders. SMS, retargeting ads, email follow-up.
 
 ## Writing Best Practices
+
+### Matching Brand Energy
+Not every DTC brand is warm and enthusiastic. Match the brand's energy level from `brand/voice.md`:
+- **Technical / understated**: Specs are the story. Confidence, not excitement. Periods, not exclamation marks. Let performance data carry the message.
+- **Warm / community**: Personal, encouraging, celebratory. Emoji OK. Exclamation marks sparingly.
+- **Bold / disruptive**: Punchy, opinionated, high-energy. Short sentences. Strong POV.
+- **Luxe / elevated**: Refined, aspirational, measured. White space in copy. Fewer words, more weight per word.
+
+If `brand/voice.md` specifies "understated" or "technical," dial down enthusiasm and let the product speak. If it specifies "warm" or "bold," the default DTC tone is closer to correct.
 
 ### General
 - Write at an 8th-grade reading level for broad consumer audiences

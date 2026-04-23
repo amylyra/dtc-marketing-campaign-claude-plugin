@@ -70,6 +70,18 @@ The skill must ask: **"Why this offer instead of a cheaper incentive higher on t
 - **Build backwards**: Annual margin target -> acceptable discount penetration -> tentpole discount depth -> mid-tier mechanics -> no-promo zones. The calendar serves the P&L, not the other way around.
 - **Discount penetration guardrails**: 15-25% of revenue sold on discount is healthy. Above 35% is a structural problem — the brand is training customers to wait. Track full-price velocity between promos as a leading health indicator.
 
+## Offer Hierarchy by Product Type
+
+The main offer hierarchy above assumes multiple SKUs and a standard DTC product line. Adapt based on `brand/products.md` product profile:
+
+**Single-SKU brand:** The hero product IS the only product. Hierarchy compresses to: early access → free shipping → multi-unit discount (buy 2+, gift-giving play) → modest % off (last resort, tentpole only). Bundles and "% off secondary SKUs" don't apply.
+
+**Durable goods (non-consumable):** No replenishment lever for retention. Retention strategy = new product launches + seasonal re-engagement + cross-sell within product line + community + referral. Never assume subscription. Win-back is "new product" or "new season," not "time to restock."
+
+**Seasonal demand:** Include off-season strategy. Don't force standard promos in off-season — demand is structurally low. Options: clearance of prior-season inventory, pre-season early-bird pricing, brand-building content with no revenue target, product development with VIP beta testers.
+
+**Budget note:** For niche categories with strong creator communities (outdoor, fitness, specialty food), consider shifting 10-15% from broad paid to influencer/UGC. Creator credibility outperforms polished brand creative in trust-driven categories.
+
 ## Campaign Brief Structure
 
 Generate a campaign brief with the following sections:
@@ -86,6 +98,29 @@ Generate a campaign brief with the following sections:
 - Secondary audience segment (if applicable)
 - Audience explicitly excluded from this campaign (and why)
 - Where they discover brands and what influences purchase decisions
+
+### Audience Psychology and Channel Implications
+
+Each audience segment has different psychology that affects channel allocation, offer strategy, and content approach. Pull buyer psychology from `brand/customers.md`:
+
+**Research-driven buyer** (common in durable goods, technical, high-ticket):
+- Channels: SEO/content (buying guides, comparisons), YouTube reviews, Reddit, long-form blog
+- Offer strategy: Free shipping and bundles over discounts. They buy on merit. Discounts can raise suspicion.
+- Content: Specs, test data, peer reviews, comparison to alternatives
+- Retargeting: Serve review content and comparison data, not urgency-based ads
+
+**Social/aspirational buyer** (common in beauty, fashion, wellness):
+- Channels: Instagram, TikTok, creator partnerships. Discovery-driven.
+- Offer strategy: GWP, limited editions, seasonal bundles. Exclusivity and aspiration, not just savings.
+- Content: Before/after, UGC, lifestyle imagery, creator endorsements
+- Retargeting: Social proof — "10,000 people bought this month"
+
+**Gift-giver** (cross-category, seasonal):
+- Channels: Google Shopping ("gifts for [person]"), Pinterest (gift guides), Instagram (product-in-use showing gift appeal). NOT Reddit or deep content — they want curation, not research.
+- Offer strategy: Gift-wrapping, bundles at price tiers, free shipping, arrival guarantee. The offer is the SERVICE (easy gifting), not the discount.
+- Content: Gift guides by price tier, "for the person who [trait]" framing, reviews from other gift-givers
+- Timing: Nov 15 - Dec 20 (holiday), late Jan (Valentine's), late Apr (Mother's Day), late May (Father's Day)
+- Dedicate a separate content track for gift-givers when gifting is a significant use case
 
 Use this DTC audience template:
 > "[Demographics] who care about [values/lifestyle] and shop for [category] because [motivation]. They discover brands through [channels] and are influenced by [social proof type]."
@@ -357,6 +392,31 @@ Consumer-facing launch sequence:
 | Reactivation rate | Lapsed customers returning to purchase |
 | Time between purchases | Purchase frequency trend |
 | Subscription conversion rate | Shift from one-time to recurring revenue |
+
+### Off-Season / Counter-Seasonal Campaign
+
+For brands with concentrated seasonal demand. Don't try to force standard promos in off-season — demand is structurally low.
+
+| Strategy | When to Use | Key Metrics |
+|----------|-------------|-------------|
+| Clearance | Prior-season inventory or discontinued colors | Units moved, inventory cleared, margin preserved |
+| Pre-season early-bird | Next season's products, early commitment incentive | Pre-orders, email signups, early revenue |
+| Brand-building | Content, community, partnerships — no revenue target | Engagement, email list growth, organic traffic, brand search volume |
+| Product development | Beta testing with VIP customers, waitlist for new products | Waitlist signups, VIP engagement, product feedback |
+
+Off-season is for building the audience you'll monetize in-season. Content published in off-season indexes for SEO by the time peak season arrives.
+
+### Sport/Activity Season Launch
+
+For brands tied to activity seasons (ski season, surf season, hiking season, cycling season):
+
+| Phase | Timing | Activities |
+|-------|--------|------------|
+| Pre-season | 4-6 weeks before season | Influencer seeding, blog content for SEO, email list growth, product page updates, pre-order/early access |
+| Season launch | First week of season | Full campaign launch — storefront, paid, email/SMS, organic, influencer content goes live |
+| In-season sustain | Throughout peak months | UGC collection, retargeting, performance optimization, seasonal content |
+| End of season | Last 2-3 weeks | Clearance (if applicable), "last chance" messaging, off-season transition |
+| Off-season | Between seasons | See Off-Season strategy above |
 
 ### Brand Awareness
 

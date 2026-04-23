@@ -193,6 +193,16 @@ Define flow control:
   - "If purchased, exit flow and enter post-purchase flow"
 - **Exit conditions** — when a recipient converts, remove them from the flow. Define what "conversion" means for this specific flow.
 - **Re-entry rules** — can someone re-enter the flow? Under what conditions? (e.g., "if they abandon cart again 7 days later, re-enter"; "win-back flow: re-enter if they lapse again after 90 days")
+
+### Promo Psychology Rules
+
+These aren't just operational — they protect against psychological damage to the customer relationship:
+
+- **Buyer's remorse protection**: If a promo sequence follows a full-price period, suppress discount offers from customers who purchased at full price within the last 14 days. A customer who paid $34 anchored to that price as "fair." Seeing it for $28 ten days later reframes their purchase as a mistake. They don't feel smart — they feel cheated. Next time, they'll wait for the sale. You've permanently downgraded a full-price buyer into a discount-seeker.
+- **Discount escalation trap**: If a customer received a discount offer in the last 7 days from ANY flow, do not send a deeper discount from this flow. Escalating discounts teaches the buyer: "if I wait, the deal gets better." Once trained, this is nearly impossible to untrain.
+- **VIP discount paradox**: VIPs should receive ACCESS (early access, exclusive products) not DISCOUNTS. VIPs already buy at full price. A discount says "we think you need convincing" — it undermines the relationship. Give them status instead.
+- **Post-promo quiet period**: After a tentpole promo (BFCM, anniversary sale), insert a 7-14 day quiet period with no promotional emails. Immediately following a promo with another promo trains the "there's always a deal" mentality.
+
 - **Suppression rules** — do not send if:
   - The recipient is already in a higher-priority flow
   - They have purchased since entering the flow
@@ -225,6 +235,64 @@ Provide expected benchmarks for the flow type:
 | Replenishment | 45-55% | 8-12% | 10-15% | Reorder rate |
 
 Adjust benchmarks based on the brand's category, price point, and purchase frequency if context is available.
+
+## Flow Applicability by Product Type
+
+Not all 12 flows apply to every brand. Before building, check the product type in `brand/products.md`:
+
+| Flow | Consumable | Durable Goods | Fashion/Apparel | Subscription |
+|------|-----------|---------------|-----------------|-------------|
+| Welcome | Yes | Yes | Yes | Yes |
+| Abandoned cart | Yes | Yes | Yes | Yes |
+| Post-purchase | Yes | Yes (adapt: no replenishment) | Yes | Yes |
+| Browse abandonment | Yes | Yes | Yes | Yes |
+| Win-back | Yes | Yes (trigger: new product/season) | Yes (trigger: new collection) | Yes |
+| VIP/Loyalty | Yes | Yes | Yes | Yes |
+| Back-in-stock | Yes | Yes | Yes (high priority) | Rare |
+| Price drop | Yes | Yes | Yes (high priority) | No |
+| Replenishment | Yes | **Skip** | Rare | Built-in |
+| Review request | Yes | Yes | Yes | Yes |
+| Referral | Yes | Yes | Yes | Yes |
+| Birthday | Yes | **Skip unless lifestyle brand** | Yes | Yes |
+
+If a flow is marked "Skip," do not build it. Explain why to the user: "Replenishment flows don't apply to durable goods — your product lasts years. Instead, I'll build a new-product-notification flow and seasonal re-engagement."
+
+### Durable Goods Post-Purchase Adaptation
+
+Replace steps 5-6 from the standard post-purchase template (replenishment + second purchase incentive) with:
+5. **New product notification** — "You bought The Bottle Parka. Meet The Phone Parka." Triggered by new product launch or approaching next season.
+6. **Seasonal re-engagement** — "Ski season is back. Here's what's new." Timed to the start of the brand's peak season.
+7. **Referral prompt** — After positive review or 60 days post-purchase.
+
+### Adapting Flow Logic by Buyer Psychology
+
+The same trigger (e.g., cart abandonment) requires different recovery strategy depending on buyer psychology. Check `brand/customers.md` for buyer psychology before designing the flow.
+
+**Abandoned Cart — by buyer type:**
+
+| Buyer Psychology | Recovery Strategy | Message Focus | Incentive |
+|-----------------|-------------------|---------------|-----------|
+| Researched (durable, technical) | Provide proof — they're deciding, not distracted | Comparison data, peer reviews, FAQ, "here's why others chose this" | Last resort. Free shipping before %. |
+| Impulse (beauty, fashion) | Quick reminder — they were distracted | "Still thinking about it?" + social proof + urgency | Earlier in sequence. GWP or free shipping. |
+| Gift-giver | Reassure — they're uncertain about the gift | "Best-seller" validation, return policy, arrival date, reviews from other gift-givers | Gift-wrapping or free shipping. |
+| High-ticket ($200+) | Consultative — address specific objections | Warranty, customer service, detailed reviews, payment plan | Financing or bundle value, not %. |
+
+**Win-Back — by product type:**
+
+| Product Type | Win-Back Trigger | Win-Back Message |
+|-------------|-----------------|-----------------|
+| Consumable | X days past expected replenishment | "Running low? Time to restock." Rational, convenience-focused. |
+| Durable | New product launch or new season | "You bought X. Meet Y." Product-focused, not relationship-focused. |
+| Fashion | New collection or seasonal shift | "New arrivals — your style, updated." Identity-focused. |
+| Seasonal | Approaching peak season | "Season is back. Here's what's new." Contextual. |
+
+**Post-Purchase — by buyer psychology:**
+
+| Buyer Psychology | Post-Purchase Focus | Avoid |
+|-----------------|--------------------| ------|
+| Researched / skeptical | Prove they made the right call. Usage tips, care instructions, performance data. "Here's how to get the most out of it." | Over-communicating. Respect their intelligence. |
+| Social / enthusiast | Celebrate with them. Community, UGC request, "show us your [product]." | Being transactional too fast. Build relationship before cross-sell. |
+| Gift-giver | Confirmation that the gift will be loved. Tracking, unboxing preview. Then: pivot to making THEM a customer. | Sending product-usage emails to someone who gifted it — they don't have the product. |
 
 ## Flow Type Templates
 

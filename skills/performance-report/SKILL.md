@@ -132,6 +132,37 @@ This is the compounding asset. Brands that do this for two years have a structur
 - What changed in strategy and what impact it had
 - Channel mix shift and its effect
 
+### Seasonal Business Adjustments
+
+For brands with seasonal demand patterns (check `brand/products.md` Product Profile):
+
+- **Same-season YoY baseline**: Compare peak season to last year's peak season, not to the off-season. A 40% drop from peak to off-season is normal for a seasonal brand — don't flag it as a problem.
+- **Per-season discount penetration**: Track discount penetration separately for peak vs off-season. Off-season may legitimately run higher discount penetration to move inventory. Peak season should run lower (demand does the work).
+- **Season-aligned repeat purchase windows**: Don't measure 60-day repeat rates for a brand whose customers buy once per season. Use season-over-season repeat rate instead (e.g., "of customers who bought in ski season 2024, what % returned for ski season 2025?").
+- **Off-season metrics**: During off-season, shift focus from revenue metrics to leading indicators: email list growth, social engagement, content performance, pre-season waitlist signups. Revenue will be low — that's structural, not a problem to solve.
+- **Seasonal cohort analysis**: Segment cohorts by the season they were acquired. Holiday gift-recipient cohorts behave differently from peak-season self-purchase cohorts — track them separately.
+
+### New Brand / No Baseline Protocol
+
+When a brand has no historical data for comparison (new brand, first campaign, first season):
+
+- **Use industry benchmarks as guardrails, not targets**: DTC benchmarks provide direction but vary wildly by category, price point, and audience. State the benchmark, state your result, note whether you're above or below — don't treat the benchmark as a goal.
+- **Establish YOUR baseline**: The first campaign's primary value is creating a baseline for future comparison. Document everything with that lens: "This is our first BFCM. Here's what happened. This becomes our benchmark."
+- **Focus on leading indicators**: Without a baseline, lagging indicators (revenue vs last year) are meaningless. Focus on: conversion rate (is the site working?), CAC (is acquisition efficient?), email/SMS opt-in rate (are we building an audience?), AOV (are customers buying what we expected?).
+- **Cohort the first customers carefully**: Your first customers are disproportionately important. Track their behavior closely: how they found you, what they bought, whether they return. This cohort shapes your understanding of your real customer.
+- **Don't over-interpret**: With small sample sizes, variance is high. A 5% conversion rate on 200 visitors could easily be 3% or 7%. Flag statistical confidence issues rather than drawing conclusions from noise.
+
+### Cohort Segmentation by Acquisition Psychology
+
+When segmenting cohorts, go beyond channel attribution. Distinguish between:
+
+- **Full-price-acquired customers**: Bought at full price, no incentive. These are your highest-quality cohort — they valued the product enough to pay retail. Their repeat rate and LTV are your true baseline.
+- **Discount-acquired customers**: First purchase was incentivized (welcome discount, promo, BFCM). Their LTV is structurally lower unless they convert to full-price behavior. Track what % of discount-acquired customers make a second purchase at full price.
+- **Gift-received customers**: Didn't choose the brand — someone chose it for them. Their activation rate (first self-purchase) is the key metric. If they never self-purchase, they're not actually a customer.
+- **Creator/UGC-referred customers**: Acquired via influencer or creator content. Their expectations are set by the creator's framing, not your brand messaging. Monitor whether their satisfaction matches the creator's promise.
+
+This segmentation reveals whether your acquisition strategy is building a healthy customer base or borrowing from future margin.
+
 ## DTC Attribution Guidance
 
 Include this context in every report that touches paid media:

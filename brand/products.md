@@ -2,6 +2,18 @@
 
 > This file is your product knowledge base. Fill it in using `/brand-review` (setup mode) or edit directly. Every content skill in this plugin reads from this file to write accurate, on-brand product copy.
 
+## Product Profile
+
+<!-- Select the type that best describes your product line. This shapes which strategies, flows, and offers other skills recommend. -->
+
+- **Product type**: <!-- Consumable (skincare, supplements, food — regular replenishment) / Durable goods (gear, electronics, furniture — lasts months/years) / Fashion & apparel (seasonal collections, style-driven) / Subscription-native (box, membership, digital — recurring by default) -->
+- **Replenishment cycle**: <!-- e.g., "30 days", "6 months", "N/A — product lasts years" -->
+- **Seasonal demand**: <!-- e.g., "Year-round", "Nov-Feb peak", "Summer peak" -->
+- **Subscription available**: <!-- Yes / No -->
+- **SKU count**: <!-- e.g., "1 hero", "4 products + 2 bundles", "50+ SKUs" -->
+- **Price range**: <!-- e.g., "$18-$42", "$200+" -->
+- **Margin structure** (optional): <!-- Approximate gross margin % or COGS per unit. Used by campaign-plan and performance-report for contribution margin analysis. -->
+
 ## Hero Products
 
 <!-- Your top 1-3 products that drive the most revenue or define the brand. These get the most protective treatment in promo planning (no deep discounting). -->
@@ -11,7 +23,7 @@
 - **Price**: $XX
 - **One-line description**: What it is and what it does, in one sentence
 - **Key claims**: The top 2-3 things you want customers to know
-- **Ingredients / Materials / What's included**: What it's made of or what comes with it
+- **Materials / What's included**: What it's made of or what comes with it
 - **Differentiator**: What makes this different from competitors
 - **Best for**: Who this product is ideal for
 - **Social proof**: Most common customer praise (from reviews)
@@ -60,13 +72,22 @@
 
 > Delete this section and fill in the templates above with your own products.
 
+### Product Profile
+- **Product type**: Consumable (skincare — regular replenishment)
+- **Replenishment cycle**: 60-90 days per product
+- **Seasonal demand**: Year-round (slight holiday gift spike)
+- **Subscription available**: Yes — 15% off + free shipping
+- **SKU count**: ~12 SKUs across 3 collections + bundles
+- **Price range**: $18-$68
+- **Margin structure**: ~70% gross margin
+
 ### Hero Products
 
 #### Brightening Vitamin C Serum
 - **Price**: $48
 - **One-line description**: A 15% Vitamin C serum that visibly reduces dark spots and evens skin tone in 2-4 weeks
 - **Key claims**: Visibly reduces dark spots in 2-4 weeks; brightens and evens skin tone; lightweight, non-greasy formula
-- **Ingredients**: 15% L-Ascorbic Acid, Ferulic Acid, Vitamin E, Hyaluronic Acid
+- **Materials / What's included**: 15% L-Ascorbic Acid, Ferulic Acid, Vitamin E, Hyaluronic Acid
 - **Differentiator**: Stabilized Vitamin C that doesn't oxidize in the bottle — stays potent for 90 days after opening
 - **Best for**: All skin types, especially those with hyperpigmentation, dullness, or uneven tone
 - **Social proof**: "I've tried every Vitamin C serum on the market. This is the one." (4.8 stars, 12,000+ reviews)
@@ -76,7 +97,7 @@
 - **Price**: $36
 - **One-line description**: A ceramide-rich moisturizer that locks in hydration for 24 hours without feeling heavy
 - **Key claims**: 24-hour hydration; strengthens skin barrier; fragrance-free
-- **Ingredients**: Ceramides, Squalane, Panthenol, Hyaluronic Acid
+- **Materials / What's included**: Ceramides, Squalane, Panthenol, Hyaluronic Acid
 - **Differentiator**: Fragrance-free and fungal acne-safe — works for even the most reactive skin
 - **Best for**: All skin types including sensitive; pairs with actives without interference
 - **Social proof**: "Finally a moisturizer that doesn't break me out." (4.7 stars, 8,500+ reviews)

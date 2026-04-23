@@ -77,6 +77,39 @@ Gather intelligence from these categories of sources:
 - **Competitive monitoring**: monthly (scan for new ads, promos, content, messaging changes)
 - **Real-time alerts**: ongoing (set up alerts for competitor brand mentions, new ads, promo launches)
 
+## Category Position Analysis
+
+Before analyzing competitors, determine the brand's category position. This changes what "competition" means and how the entire brief should be framed.
+
+1. **Established category with direct competitors** → standard competitive analysis (proceed to Competitive Brief Structure below)
+2. **Established category, new entrant** → focus on differentiation and positioning gaps against incumbents
+3. **Category creator (no direct competitor)** → analyze SUBSTITUTES AND WORKAROUNDS, not head-to-head competitors
+
+### Category Creator Analysis
+
+If the brand is creating a new category (the product name has no search volume, customers don't know the solution exists):
+
+- **Identify substitute solutions**: What does the customer currently do instead? (e.g., insulated bottles, anti-fog sprays, stuffing a phone inside a jacket pocket.) These substitutes ARE the competition — even though they're not the same product.
+- **Analyze workaround friction**: How annoying, unreliable, or inadequate is the status quo? High friction = easier sell. Low friction = harder to justify the switch.
+- **Map adjacent competitors**: Brands in neighboring categories that could enter yours. If your product succeeds, who has the manufacturing, audience, or distribution to copy it?
+- **Category naming**: What should this category be called? The brand that names the category owns it. Analyze whether a clear, searchable category name exists, or whether the brand needs to create one.
+- **Education-first positioning**: "We're not a better [existing thing]. We're a new solution to [specific problem]." Frame the competitor section around the problem the buyer faces, not the product they'd compare against.
+
+### Solution Comparison Matrix (for Category Creators)
+
+Replace the standard Messaging Comparison Matrix with a Solution Comparison when the brand has no direct competitors:
+
+| Dimension | Current Workaround A | Current Workaround B | Your Product |
+|-----------|---------------------|---------------------|-------------|
+| Effectiveness | | | |
+| Convenience | | | |
+| Cost (total, including replacement/ongoing) | | | |
+| Reliability | | | |
+| Learning curve | | | |
+| Social proof availability | | | |
+
+This comparison educates the buyer: "Here's what you're doing now. Here's why it doesn't work. Here's what does."
+
 ## Competitive Brief Structure
 
 ### 1. Executive Summary

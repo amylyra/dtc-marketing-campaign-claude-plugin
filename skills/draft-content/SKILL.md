@@ -48,6 +48,49 @@ Every piece of content should follow this structure (explicitly or implicitly):
 3. **Why this brand?** (differentiator, social proof)
 4. **What should I do?** (CTA)
 
+## Audience-Adaptive Messaging
+
+The messaging hierarchy (why care → what is it → why this brand → CTA) stays the same. The CONTENT of each layer changes based on who you're talking to — and the shift goes deeper than swapping the hook.
+
+For each audience segment, adapt ALL FOUR LAYERS:
+
+### Primary Buyer (self-purchase)
+- **Why care**: Their pain point or aspiration, in their language. They have the problem.
+- **What is it**: Product details at THEIR depth. Technical buyer → specs and test data. Aspirational buyer → outcomes and sensory language.
+- **Why this brand**: Proof that matches their TRUST HIERARCHY (from `brand/customers.md`). If they trust peer reviews → lead with reviews. If they trust data → lead with test results. If they trust creators → lead with UGC.
+- **CTA**: Direct. "Shop now." They know what they want.
+
+### Gift-Giver
+- **Why care**: THEIR frustration — "impossible to shop for." They don't have the recipient's problem. They have a gifting problem.
+- **What is it**: PLAIN LANGUAGE. Not specs. "Keeps their water from freezing on the mountain." The gift-giver doesn't know what Thinsulate is and doesn't need to.
+- **Why this brand**: Social proof from OTHER GIFT-GIVERS. "Got one for every skier in my family." Best-seller status. Price as a signal of thoughtfulness, not value.
+- **CTA**: Guide them. "Shop the gift guide" or "Gifts under $50" — don't assume they know which product to buy.
+- **Risk reduction**: Return policy, gift receipt, arrival guarantee prominently placed. Gift-givers fear social embarrassment more than wasting money.
+
+### VIP / Repeat Buyer
+- **Why care**: What's NEW. They don't need re-selling on the brand.
+- **What is it**: The new product, feature, or access they don't have yet.
+- **Why this brand**: Loyalty recognition. Insider status. "You were one of our first."
+- **CTA**: Exclusive. "Shop early access." "Get yours first."
+- **Warning**: Do NOT send VIPs discount-led messaging. They bought at full price. Discounts devalue their decision. Reward with ACCESS, not price cuts.
+
+### Lapsed / Win-Back
+- **Why care**: What's CHANGED since they left. New products, improvements, recognition.
+- **What is it**: The specific new thing that gives them a reason to return.
+  - Durable goods: "You bought X. Now meet Y." (new product cross-sell)
+  - Consumable: "It's been [X] days. Time to restock?" (replenishment)
+  - Seasonal: "Season is back. Here's what's new." (seasonal trigger)
+- **Why this brand**: Don't grovel. For a performance/technical brand, "we miss you" sounds needy. Lead with the product.
+- **CTA**: Low-pressure. "See what's new." Not "COME BACK — here's 20% off."
+
+### New-to-Brand / Cold Prospect
+- **Why care**: The PROBLEM, not the product. They don't know you exist. Start with what they already feel.
+- **What is it**: Simple, clear, fast. One product, one benefit. Don't overwhelm.
+- **Why this brand**: Proof matched to their trust hierarchy. Researched buyer → data. Social buyer → creator endorsement. Skeptic → guarantee.
+- **CTA**: Low commitment first. "Learn more" or "See how it works" before "Buy now." For category-creating products: education before transaction.
+
+When the user specifies a non-primary audience, shift the ENTIRE framework — don't just change the hook and keep the same body copy.
+
 ## Brand & Customer Voice Integration
 
 - If `brand/voice.md` exists, auto-apply voice and tone. Inform the user that brand voice settings are being applied.
@@ -135,6 +178,21 @@ Include content themes: behind-the-scenes, customer stories, product in use, fou
 - Do's and don'ts (authentic > polished, show real usage, don't make medical claims)
 - Example content references (links to posts that capture the right vibe)
 - Compensation/gifting terms (if applicable)
+
+### Framework Prioritization
+
+Not all 5 frameworks perform equally for all products. Recommend a testing order based on product type and buyer psychology:
+
+| Context | Test First | Test Second | Lower Priority |
+|---------|-----------|-------------|----------------|
+| Performance / technical product | Before/After, Problem-Agitate-Solve | UGC Testimonial | Founder Story (unless origin story is compelling) |
+| Beauty / skincare | UGC Testimonial, Before/After | Problem-Agitate-Solve | "3 Reasons Why" |
+| Food / beverage | UGC Testimonial, Founder Story | "3 Reasons Why" | Before/After (hard to visualize) |
+| Fashion / apparel | UGC Testimonial, Before/After (styling) | Founder Story | Problem-Agitate-Solve (less pain-driven) |
+| Category-creating / novel product | Problem-Agitate-Solve, Founder Story | Before/After | UGC (limited early reviews) |
+| Gift-giver audience | UGC from other gift-givers, "3 Reasons Why" | Before/After (recipient reaction) | Problem-Agitate-Solve (gift-giver doesn't have the problem) |
+
+Category-creating products: Problem-Agitate-Solve is king because the buyer needs to recognize the PROBLEM before they want the solution. Founder Story works because "nobody was solving this, so we did" is the category-creation narrative.
 
 ### Product Launch Announcement
 
