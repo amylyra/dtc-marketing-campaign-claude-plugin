@@ -126,8 +126,11 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 > - [x] Launch SMS — Nov 3
 > - [x] BFCM last chance SMS — Nov 29
 >
-> **Google** (essentials only):
-> - [x] Shopping feed update + branded search
+> **Google paid:**
+> - [x] Shopping feed update (winter photography, campaign badges)
+> - [x] Branded search ("Tern bottle parka", "Tern gear protection")
+> - [ ] Non-brand search (problem/category terms)
+> - [ ] Performance Max
 >
 > **Other:**
 > - [x] Organic social (Instagram, TikTok, Pinterest)
@@ -165,8 +168,12 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 - Launch SMS (Nov 3): "Tern's ski season collection is live. Free shipping at $60. [link]" — educate phase.
 - BFCM last chance SMS (Nov 29): "The Full Send bundle ends tonight. $108 for every Tern product. [link]" — convert phase.
 
-### Google — essentials only
-- Shopping feed update (winter photography, campaign badges) + branded search ("Tern bottle parka," "Tern gear protection").
+### Google — confirmed elements
+
+| Element | Creative Direction |
+|---------|-------------------|
+| Shopping feed | Update product titles with "winter gear protection" keywords. Swap to winter photography. Add campaign badges. |
+| Branded search | "Tern bottle parka" + "Tern gear protection." Sitelink to collection page. Ad copy: "Field-tested at 14,000ft." |
 
 ### Organic Social — brief
 - Instagram: 4-5x/week. Field-test photography, athlete features, product Reels. BFCM bundle reveal + countdown Stories.

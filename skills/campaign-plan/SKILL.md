@@ -427,8 +427,11 @@ Then present a channel checklist with recommended sends/concepts. The user confi
 > - [ ] Launch SMS — [date]
 > - [ ] Last chance SMS — [date]
 >
-> **Google** (essentials only):
-> - [ ] Shopping feed update + branded search
+> **Google paid:**
+> - [ ] Shopping feed update (campaign photography, badges)
+> - [ ] Branded search ("brand + product" terms)
+> - [ ] Non-brand search (problem/category terms, if budget allows)
+> - [ ] Performance Max campaign
 >
 > **Other** (brief recommendations):
 > - [ ] Organic social
@@ -446,6 +449,8 @@ Adapt the recommended list based on the campaign type, budget, and audience. Ref
 For each confirmed email send, provide: **angle, arc phase, subject line direction.** Example: "Announcement: educate phase — lead with the problem, not the product. Subject line direction: scenario-based."
 
 For each confirmed Meta concept, provide: **framework, angle, target audience.** Example: "Concept 1: Problem-Agitate-Solve field test video (prove phase). Audience: cold prospecting."
+
+For each confirmed Google element, provide: **campaign type, targeting, and feed/copy notes.** Example: "Shopping: update product titles with campaign keywords, winter photography. Branded search: 'Tern bottle parka' + 'Tern gear protection' — sitelink to collection page."
 
 For SMS: include message angle for each confirmed send.
 
