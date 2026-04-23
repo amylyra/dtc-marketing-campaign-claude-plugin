@@ -1,7 +1,7 @@
 {
   "name": "marketing",
-  "version": "2.0.0",
-  "description": "DTC marketing plugin — campaign planning with promo economics, email/SMS retention flows, ad creative and content drafting, brand voice management, competitive intelligence, SEO audits, and performance reporting built around contribution margin.",
+  "version": "2.1.0",
+  "description": "DTC marketing plugin — campaign planning with promo economics, email/SMS retention flows, ad creative drafting with audience-adaptive messaging, brand voice management with buyer psychology, competitive intelligence (incl. category creation analysis), SEO audits (incl. novel product strategy), and performance reporting built around contribution margin. Adapts by product type (consumable, durable, fashion, subscription) and buyer psychology.",
   "author": {
     "name": "Amy Yuan"
   }

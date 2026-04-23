@@ -8,7 +8,7 @@ A DTC marketing plugin with 8 skills for campaign planning, content creation, em
 
 ### First-Time Setup
 
-1. **Run `/brand-review setup`** — fills in the `brand/` directory (voice, products, customers). This is the foundation. Every other skill reads from these files. Takes 15-30 minutes.
+1. **Run `/brand-review setup`** — fills in the `brand/` directory (voice, products with product profile, customers with buyer psychology). This is the foundation. Every other skill reads from these files. Takes 15-30 minutes.
 
 2. **Run `/campaign-plan`** — builds your first campaign brief with promo economics, channel strategy, and execution checklist. If you provide competitors, it runs a lightweight competitive scan inline.
 
@@ -25,32 +25,33 @@ You can run any skill standalone, but output quality improves significantly when
 | Command | When to Use |
 |---|---|
 | `/brand-review setup` | First time, or when updating brand voice/products/customers |
-| `/brand-review` | QA content before publishing |
-| `/campaign-plan` | Planning any campaign, seasonal promo, or building annual calendar |
+| `/brand-review` | QA content before publishing — checks voice, claims, proof-to-psychology match |
+| `/campaign-plan` | Planning any campaign, seasonal promo, off-season strategy, or building annual calendar |
 | `/draft-content` | Writing product descriptions, ad copy, social posts, gift guides, influencer briefs |
 | `/email-sequence` | Building email + SMS flows (welcome, abandoned cart, post-purchase, etc.) |
-| `/competitive-brief` | Deep competitive research — ad creative, pricing, influencer, storefront teardown |
+| `/competitive-brief` | Deep competitive research — ad creative, pricing, influencer, storefront teardown, or substitute analysis for category creators |
 | `/performance-report` | Post-campaign analysis, weekly/monthly reporting, promo post-mortems |
-| `/seo-audit` | Keyword research, product page SEO, content gap analysis |
+| `/seo-audit` | Keyword research, product page SEO, content gap analysis, novel product keyword strategy |
 
 ## Key Files
 
 ```
 brand/
   voice.md          — brand personality, voice attributes, tone by channel
-  products.md       — product catalog, pricing, claims, hero SKUs
-  customers.md      — customer profiles, language bank, social proof themes
+  products.md       — product profile (type, replenishment, seasonal demand), catalog, pricing, claims, hero SKUs
+  customers.md      — customer segments, buyer psychology (8 dimensions), language bank, social proof themes
 
 skills/
-  brand-review/     — brand setup + content QA
-  campaign-plan/    — campaign briefs with promo economics
-  draft-content/    — DTC content drafting (9 content types)
-  email-sequence/   — email + SMS lifecycle flows (12 flow types)
-  competitive-brief/— DTC competitive intelligence
-  performance-report/— contribution-margin-first reporting
-  seo-audit/        — SEO with e-commerce focus
+  brand-review/     — brand setup + content QA (incl. proof-to-psychology match)
+  campaign-plan/    — campaign briefs with promo economics, product-type offers, audience psychology
+  draft-content/    — DTC content drafting (9 content types, audience-adaptive messaging)
+  email-sequence/   — email + SMS lifecycle flows (12 flow types, product-type matrix, promo psychology)
+  competitive-brief/— DTC competitive intelligence (incl. category position analysis)
+  performance-report/— contribution-margin-first reporting (seasonal adjustments, cohort psychology)
+  seo-audit/        — SEO with e-commerce focus (incl. novel product keyword strategy)
   content-creation/ — background reference skill (not user-invocable)
 
+tests/              — evaluation framework and test suite (Tern brand)
 CONNECTORS.md       — MCP integration reference
 ```
 
@@ -58,9 +59,11 @@ CONNECTORS.md       — MCP integration reference
 
 - **Storefront first** — every campaign starts with the site. Product pages, collection pages, and conversion flows must be ready before any outbound channel launches.
 - **Contribution margin is the north star** — not revenue, not ROAS. Revenue minus discount minus COGS minus shipping minus payment fees minus fulfillment minus promo media, measured against counterfactual baseline.
-- **Offer hierarchy** — exhaust cheaper incentives before going deeper: early access → loyalty perks → free shipping → GWP → bundles → % off secondary SKUs → sitewide % off (last resort).
+- **Offer hierarchy** — exhaust cheaper incentives before going deeper: early access → loyalty perks → free shipping → GWP → bundles → % off secondary SKUs → sitewide % off (last resort). Adapts by product type (single-SKU, durable goods, seasonal demand).
 - **Hero SKU protection** — never deep-discount the anchor product. Once the discount price becomes the reference price, pricing power is permanently lowered.
 - **Brand context flows through everything** — populate `brand/` once, every skill uses it automatically.
+- **Buyer psychology drives adaptation** — each audience segment has different decision-making psychology. Skills adapt proof strategy, flow structure, channel allocation, and messaging based on buyer psychology, not just demographics.
+- **Product type shapes everything** — consumable, durable, fashion, and subscription products need different flows, offers, and retention strategies. Skills check `brand/products.md` Product Profile and adapt.
 
 ## MCP Integrations
 
