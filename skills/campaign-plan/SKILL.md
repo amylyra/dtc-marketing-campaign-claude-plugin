@@ -8,7 +8,7 @@ argument-hint: "<campaign objective or product>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
 
-Plan a DTC campaign in 4 steps. Each step produces output, gets user sign-off, then moves forward. Nothing is generated until the user has aligned on what comes before it. Goal: most engaging on-brand content with minimum team effort.
+Plan a DTC campaign in 4 steps. Start with 3 theme options (safe, competitive, wild card), iterate until the user locks one, then build site assets, channels, and execution from it. Each step gets user sign-off before moving forward. Goal: most engaging on-brand content with minimum team effort.
 
 ## Trigger
 
@@ -239,23 +239,74 @@ If any metric crosses the kill threshold, escalate immediately.
 
 Work through these 4 steps in order. Each step produces output and gets user sign-off before moving to the next. Do not skip ahead.
 
+### Opening: Orient the User
+
+Before starting Step 1, briefly tell the user what to expect. Keep it to 3-4 lines max:
+
+> **Here's how this works:**
+> 1. **Strategy** — we'll pick a campaign theme and offer (you choose from 3 options)
+> 2. **Site assets** — prioritized list of what to build on-site, with copy direction
+> 3. **Channels + calendar** — where to promote, when, and budget
+> 4. **Metrics + execution** — KPIs, risks, go/no-go checklist
+>
+> Each step gets your sign-off before I move on. Let's start with strategy.
+
+Then proceed to intake questions (from the Intake section above) and Step 1.
+
 ### Step 1: Campaign Strategy
 
-**Produce:**
-- **Campaign theme/story** — the central narrative the team rallies around (e.g., "The gear she'd never buy herself"). This is the creative anchor for everything that follows.
-- **Target audience** — primary segment, secondary if applicable, who's excluded and why. Pull buyer psychology from `brand/customers.md` and the Audience Psychology Reference above.
-- **Key messages** — messaging hierarchy (4 layers):
-  1. Why should I care? (pain point, desire, or moment)
-  2. What is it? (product/offer, clear and fast)
-  3. Why this brand? (differentiator, social proof)
-  4. What should I do? (CTA)
-- **Offer mechanic** — what the offer is + challenge: "Why this offer instead of a cheaper incentive higher on the hierarchy?" Reference Promo Calendar Framework and Offer Hierarchy.
-- **Kill threshold** — pre-committed, specific, written down before launch.
-- **Promo economics** — expected margin impact at projected volume, discount penetration contribution.
+Step 1 has two parts: first present 3 theme options, then once the user picks a direction, fill in the full strategy.
 
-If the user mentions competitors, run a lightweight competitive scan inline. If a `/competitive-brief` exists in conversation, pull from it.
+#### Part A: Three Theme Options
 
-**Gate:** "Does this strategy and theme land? Want to adjust before I plan the site assets?"
+Present 3 campaign theme concepts. Each gets a **one-line theme name** and a **2-3 sentence pitch** — that's it. No walls of text. The user needs to react fast, not read an essay.
+
+**Option 1 — Safe Bet** (brand-led, educational, proven):
+The on-brand, well-received angle. Leans into what the brand already does well. Educates, informs, reinforces positioning. Lowest risk.
+- *Example for Tern BFCM: "Gear Up Before It Freezes" — Seasonal education play. Position Tern as essential winter prep. Lead with the problem (frozen gear), not the discount.*
+
+**Option 2 — Competitive Edge** (differentiation-led, stand out in promo noise):
+Focuses on what makes this product/brand different from everything else in market. Designed to cut through a sea of "20% off everything" promos. Leads with the unique product advantage.
+- *Example for Tern BFCM: "Everyone Else Sells Insulated Bottles. We Insulate Yours." — Direct competitive contrast. Position against Hydro Flask, Stanley, etc. The hook is the category difference, not the discount.*
+
+**Option 3 — Wild Card** (on-brand voice, unexpected angle, hook-first):
+Same brand voice, polar opposite idea. Designed to stop the scroll. May be provocative, counterintuitive, or emotional. Higher risk, higher ceiling.
+- *Example for Tern BFCM: "Your $45 Water Bottle Is Broken." — Confrontational hook. Challenges the reader's current gear. Insulated bottles still freeze — that's a design flaw, not a user problem. Tern is the fix.*
+
+**Format for each option:**
+> **[Option name]**: "[Theme line]"
+> [2-3 sentence pitch. What the angle is, why it works, what it leads with.]
+
+Do NOT include full messaging hierarchy, offer mechanics, or audience details yet. The user picks a direction first. All 3 options should be readable in under 30 seconds.
+
+**Gate:** "Which direction resonates? You can pick one, mix elements, or tell me what's missing and I'll riff."
+
+#### Part B: Iterate and Lock Strategy
+
+After the user picks a direction (or gives feedback), this becomes a conversation:
+
+- **Picks one** → flesh it out into the full strategy below
+- **Wants changes** → revise and re-present the theme
+- **Wants to explore** → offer references, research angles, or new variations
+- **Wants competitive context** → run a lightweight scan inline
+- **Has their own idea** → great, use it — shape it into the strategy format below
+
+Keep iterating until the user explicitly confirms the theme. The theme is the foundation — everything downstream (site assets, ad creative, email copy) flows from it. A weak theme wastes all downstream work.
+
+Once the theme is locked, produce the **full strategy** in this table format — concise and scannable:
+
+| Element | Detail |
+|---------|--------|
+| **Theme** | [Locked theme line] |
+| **Audience** | Primary: [who]. Secondary: [if any]. Excluded: [who + why]. |
+| **Messages** | 1. Why care: [one line] 2. What is it: [one line] 3. Why us: [one line] 4. CTA: [one line] |
+| **Offer** | [Mechanic] — hierarchy check: [why not cheaper?] |
+| **Kill threshold** | [Specific metric + number + when to check] |
+| **Promo economics** | [Margin impact, discount penetration estimate] |
+
+Pull audience psychology from `brand/customers.md` and the Audience Psychology Reference. If the user mentions competitors, run a lightweight competitive scan inline. If a `/competitive-brief` exists in conversation, pull from it.
+
+**Gate:** "Strategy locked. Ready for site assets, or want to adjust anything?"
 
 Do not ask about materials yet — let the user focus on strategy alignment.
 

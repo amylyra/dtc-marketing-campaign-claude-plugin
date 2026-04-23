@@ -4,31 +4,47 @@
 
 ---
 
-## Step 1: Campaign Strategy
+## Opening
 
-**Campaign theme:** "Gear Up Before It Freezes" — Tern Ski Season 2026 Launch
+> **Here's how this works:**
+> 1. **Strategy** — we'll pick a campaign theme and offer (you choose from 3 options)
+> 2. **Site assets** — prioritized list of what to build on-site, with copy direction
+> 3. **Channels + calendar** — where to promote, when, and budget
+> 4. **Metrics + execution** — KPIs, risks, go/no-go checklist
+>
+> Each step gets your sign-off before I move on. Let's start with strategy.
 
-**Target audience:**
-- Primary: Serious winter athletes 25-45 who already own premium gear and have experienced frozen water bottles, dead phone batteries, and fogged goggles firsthand. Research-driven buyers — they discover brands through outdoor creator content, Reddit, YouTube gear reviews, and word-of-mouth at trailheads.
-- Secondary: Gift-givers (partners, parents, friends) shopping for "the skier who has everything." Peak: Nov 15 - Dec 20.
-- Excluded: Casual/resort-only skiers. Discount-motivated bargain hunters — they degrade cohort LTV.
+---
 
-**Key messages:**
-1. **Why should I care?** Your gear freezes before you do. Frozen water bottles, dead phone batteries, fogged goggles — all solvable problems.
-2. **What is it?** Tern makes insulation for the gear you already own. Purpose-built. Expedition-grade.
-3. **Why Tern?** Field-tested at 14,000ft. Military-grade Thinsulate. Waterproof YKK zippers. Not an insulated bottle — insulation for YOUR bottle.
-4. **What should I do?** Shop the collection. Or start with The Bottle Parka, $34.
+## Step 1A: Three Theme Options
 
-**Offer mechanic:**
-- Phase 1 (Nov 1-26): No discount. Early access for email list (48 hours). Free shipping at $60. Full margin.
-- Phase 2 (BFCM): The Full Send bundle at $108 (saves $24, ~17% on bundle only). Individual SKU pricing unchanged.
-- Offer hierarchy challenge: Phase 1 IS the cheapest incentive (early access = zero cost). Phase 2 uses bundle savings (obscures per-unit discount, protects individual pricing). "Why not cheaper?" answered.
+**Option 1 — Safe Bet**: "Gear Up Before It Freezes"
+Seasonal education play. Position Tern as essential winter prep — lead with the problem (frozen gear), not the discount. Proven approach for research-driven outdoor buyers.
 
-**Kill threshold:** If BFCM contribution margin/order drops below $18 by midday Friday, revert to free-shipping-only and pull bundle discount.
+**Option 2 — Competitive Edge**: "Everyone Else Sells Insulated Bottles. We Insulate Yours."
+Direct competitive contrast. Position against Hydro Flask, Stanley, etc. The hook is the category difference — you don't replace your bottle, you upgrade it. Stands out in a sea of product promos.
 
-**Promo economics:** BFCM discount applies only to bundles. At projected 40% bundle attach rate, blended discount penetration stays under 20%. Well within guardrails.
+**Option 3 — Wild Card**: "Your $45 Water Bottle Is Broken."
+Confrontational hook. Challenges the reader's gear. Insulated bottles still freeze at altitude — that's a design flaw, not a user problem. Tern is the fix. Higher risk, but scroll-stopping.
 
-**Gate:** "Does this strategy and theme land? Want to adjust before I plan the site assets?"
+**Gate:** "Which direction resonates? You can pick one, mix elements, or tell me what's missing and I'll riff."
+
+*(Simulated user response: "Love the competitive edge angle but the Safe Bet name is better. Combine them — 'Gear Up Before It Freezes' with the competitive positioning.")*
+
+---
+
+## Step 1B: Locked Strategy
+
+| Element | Detail |
+|---------|--------|
+| **Theme** | "Gear Up Before It Freezes" — with competitive angle: Tern insulates the gear you already own (vs. buying a new insulated bottle). |
+| **Audience** | Primary: Serious winter athletes 25-45, research-driven, own premium gear. Secondary: Gift-givers ("the skier who has everything"). Excluded: Casual resort skiers, discount-motivated bargain hunters. |
+| **Messages** | 1. Why care: Your gear freezes before you do. 2. What is it: Insulation for the gear you already own. 3. Why us: Field-tested at 14,000ft, military-grade Thinsulate, not a replacement — an upgrade. 4. CTA: Shop the collection, start with The Bottle Parka at $34. |
+| **Offer** | Phase 1 (Nov 1-26): Early access + free shipping at $60. Phase 2 (BFCM): Full Send bundle $108 (saves $24, ~17% bundle only). Hero SKU never discounted. Hierarchy check: Phase 1 = zero-cost incentive. Phase 2 = bundle obscures per-unit discount. |
+| **Kill threshold** | CM/order < $18 by midday Black Friday → revert to free-shipping-only, pull bundle. |
+| **Promo economics** | Bundle discount only. At 40% bundle attach rate, blended discount penetration < 20%. Within guardrails. |
+
+**Gate:** "Strategy locked. Ready for site assets, or want to adjust anything?"
 
 ---
 

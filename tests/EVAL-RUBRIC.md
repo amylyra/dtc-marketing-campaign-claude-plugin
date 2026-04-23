@@ -122,7 +122,11 @@ Check the output against the skill's SKILL.md — every required section should 
 - [ ] Variant diversity checked (if multi-variant content reviewed)
 
 #### campaign-plan (4-step flow)
-- [ ] Step 1 complete: campaign theme/story, target audience with psychology, key messages (4 layers), offer mechanic with hierarchy challenge, kill threshold, promo economics
+- [ ] Opening orientation present (4-step pipeline explained in 3-4 lines)
+- [ ] Step 1A: 3 theme options presented (Safe Bet, Competitive Edge, Wild Card) — each has one-line name + 2-3 sentence pitch, all readable in under 30 seconds
+- [ ] Step 1A gate asks user to pick, mix, or riff — not "shall I continue?"
+- [ ] Step 1B: theme iterated based on user feedback, then locked strategy in table format (theme, audience, messages, offer, kill threshold, promo economics)
+- [ ] Step 1B gate confirms strategy lock before proceeding to assets
 - [ ] Step 2 complete: site creative asset checklist tiered (essential/recommended/only-if-needed), copy direction per asset tied to campaign story, brand guide/UI kit consulted
 - [ ] Step 3 complete: email tiered (essential/recommended/optional), Meta tiered, SMS essentials only, Google essentials only, campaign timeline table, budget allocation
 - [ ] Step 4 complete: 3-5 KPIs with targets, 2-3 risks with mitigations, condensed execution checklist (top 5 questions)

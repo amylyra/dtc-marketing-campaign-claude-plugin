@@ -218,7 +218,11 @@ The template (#3 in SKILL.md) has 7 touchpoints:
 **Expected:** 4 steps with explicit gates. User is asked to confirm strategy before site assets are produced. Materials question appears at Step 2 opening, not earlier. Each gate asks a specific question, not a generic "shall I continue?"
 
 **What to evaluate:**
-- Step 1 gate: "Does this strategy and theme land?"
+- Opening orientation present (4-step pipeline in 3-4 lines)
+- Step 1A: 3 theme options presented (Safe Bet, Competitive Edge, Wild Card) — each readable in under 30 seconds
+- Step 1A gate: "Which direction resonates?" (not "shall I continue?")
+- Step 1B: locked strategy in table format after user picks/iterates
+- Step 1B gate: "Strategy locked. Ready for site assets?"
 - Step 2 opening: "What do you already have?" (materials question)
 - Step 2 gate: "Here's the prioritized asset list. Anything to add, remove, or change?"
 - Step 3 gate: "Channel plan and calendar look right?"
