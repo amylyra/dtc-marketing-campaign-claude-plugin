@@ -230,6 +230,19 @@ Full campaign traced through all 5 skill phases for Tern (durable goods, gift-gi
 
 > **Scoring scale change (v2.3):** Added 6th eval dimension — Engagement & Persuasion. Scores are now /30. Historical scores (v2.0–v2.2) remain on original /25 scale. New tests and re-runs use /30.
 
+### v2.4 Changes (Connected Pipeline)
+
+All 8 skills wired into a connected pipeline with shared context:
+1. **Research saves** — `/competitive-brief` and `/seo-audit` save findings to `research/` directory
+2. **Campaign brief saves** — `/campaign-plan` saves locked strategy + creative direction to `campaigns/` directory
+3. **Auto-loading** — `/campaign-plan` loads research for richer theme options. `/draft-content` loads campaign brief + research for concept brainstorming and keyword targeting. `/email-sequence` loads brief for arc-aware sends. `/brand-review` loads brief for campaign alignment QA. `/performance-report` loads brief for actuals vs targets.
+4. **Creative direction in Step 3** — each email send and Meta concept gets an angle + arc phase
+5. **Smart handoff in Step 4** — lists specific concepts from Step 3 to draft next
+6. **3 theme options enriched** — renamed to Brand Story / Sharp Edge / Pattern Interrupt, each with sample hooks, "why this works", narrative arc, competitive context
+7. **Orientation opening** — users see the 4-step pipeline + brief handoff before work starts
+
+Files modified: `skills/campaign-plan/SKILL.md`, `skills/draft-content/SKILL.md`, `skills/email-sequence/SKILL.md`, `skills/brand-review/SKILL.md`, `skills/competitive-brief/SKILL.md`, `skills/seo-audit/SKILL.md`, `skills/performance-report/SKILL.md`, `CLAUDE.md`, `README.md`, `tests/EVAL-RUBRIC.md`, `tests/tern/test-1.2-campaign-plan.md`, `tests/tern/test-2-unit-tests.md`
+
 ### v2.3 Changes (Content Quality Standards)
 
 1. `skills/draft-content/SKILL.md` — Added Copy Quality Standards section: hook quality criteria, variant diversity rules, competitive distinctiveness (swap test), persuasion signals, self-check before delivery

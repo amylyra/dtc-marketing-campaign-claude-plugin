@@ -272,6 +272,47 @@ The template (#3 in SKILL.md) has 7 touchpoints:
 
 ---
 
+## 2.15 campaign-plan: Auto-load competitive research (NEW — v2.4)
+
+**Input:** Run `/competitive-brief Hydro Flask, Phoozy` first (saves to `research/competitive-hydro-flask-phoozy.md`). Then run `/campaign-plan BFCM for Tern`.
+**Expected:** Campaign-plan detects research file and informs user. Theme options use specific competitive context (not generic "vs. competitors"), citing actual competitor positioning from the brief.
+
+**What to evaluate:**
+- Campaign-plan informs user: "I found your competitive research — using it for theme options."
+- Theme option "vs. competitors" lines reference specific findings from the competitive brief (e.g., "Hydro Flask runs aspirational lifestyle content" not just "competitors exist")
+- Sharp Edge theme is sharper because it knows the actual competitive gap
+- If no research exists, skill suggests running `/competitive-brief` first (but doesn't gate on it)
+
+---
+
+## 2.16 draft-content: Auto-load campaign brief (NEW — v2.4)
+
+**Input:** Run `/campaign-plan` first (saves brief to `campaigns/tern-bfcm-2026.md`). Then run `/draft-content ad creative for Tern BFCM`.
+**Expected:** Draft-content auto-loads campaign brief. Creative concepts are seeded from Step 3's creative direction. Arc phase is identified. User doesn't re-explain the campaign.
+
+**What to evaluate:**
+- Draft-content informs user: "I found your BFCM brief — theme, audience, offer, and creative direction are loaded."
+- Creative concept brainstorm references concepts from campaign brief Step 3 (e.g., "field test video", "comparison ad")
+- Hooks use the locked theme angle and sample hooks as starting points
+- Audience targeting matches the brief (not re-asked)
+- Arc phase identified (asks if unclear: "Which phase of the campaign is this for?")
+- If no campaign brief exists, proceeds normally (gathers from user)
+
+---
+
+## 2.17 performance-report: Auto-load campaign brief for actuals vs targets (NEW — v2.4)
+
+**Input:** Run `/performance-report post-mortem for Tern BFCM` with a campaign brief in `campaigns/`.
+**Expected:** Performance-report auto-loads brief. Compares actual KPIs against the targets from Step 4. References the kill threshold. Evaluates channel performance against planned budget.
+
+**What to evaluate:**
+- Report references planned KPIs from campaign brief (e.g., "Target: $45K revenue, Actual: $38K — 84% of target")
+- Kill threshold evaluated ("Kill threshold was CM/order < $18. Actual: $21. Threshold not triggered.")
+- Budget allocation compared to plan ("Planned 53% paid, actual 58% — overspent on acquisition")
+- Campaign theme referenced when analyzing what worked/didn't
+
+---
+
 ## Unit Test Summary
 
 | Test | Skill | Score | Pass? | Key Finding |
@@ -290,3 +331,6 @@ The template (#3 in SKILL.md) has 7 touchpoints:
 | 2.12 Step gates and flow | campaign-plan | — | NEW | v2.2: 4-step gates, deferred inputs, materials question timing |
 | 2.13 Hook quality + variant diversity | draft-content | — | NEW | v2.3: Hook pattern interrupt, swap test, angle diversity |
 | 2.14 Engagement quality assessment | brand-review | — | NEW | v2.3: Engagement findings in review, severity, engagement summary line |
+| 2.15 Auto-load competitive research | campaign-plan | — | NEW | v2.4: Theme options enriched by saved competitive brief |
+| 2.16 Auto-load campaign brief | draft-content | — | NEW | v2.4: Concepts seeded from brief, arc-aware, no re-explaining |
+| 2.17 Actuals vs planned targets | performance-report | — | NEW | v2.4: Auto-loads brief, compares KPIs/kill threshold/budget |

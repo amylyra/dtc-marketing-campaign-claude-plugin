@@ -281,6 +281,10 @@ Each phase gets a scorecard. Plus a cross-cutting eval:
 - [ ] No contradictions between skills (e.g., campaign-plan says "no sitewide discount" but email-sequence includes one)
 - [ ] Seasonal timing consistent (all dates align to the same campaign calendar)
 - [ ] Engagement quality consistent — hooks and copy across all skills meet the same pattern-interrupt and specificity bar (no skill producing generic copy while others are sharp)
+- [ ] Campaign brief handoff works — draft-content and email-sequence auto-loaded the campaign brief (theme, arc, audience, offer, creative direction). No re-explaining required.
+- [ ] Research context flows through — if competitive-brief or seo-audit were run, their findings appear in campaign-plan theme options and draft-content hooks
+- [ ] Performance-report references campaign targets — actuals compared against the KPIs, kill threshold, and budget from the campaign brief
+- [ ] Arc awareness — content produced for different campaign phases (teaser vs. last-chance) is meaningfully different in tone, urgency, and proof strategy
 
 ### Determining Root Cause
 
