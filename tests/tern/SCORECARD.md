@@ -102,6 +102,58 @@ Evaluated across all Test 1 outputs:
 
 ---
 
+## Test 4: End-to-End Regression — Mother's Day Campaign
+
+Full campaign traced through all 5 skill phases for Tern (durable goods, gift-giver audience, seasonal campaign).
+
+**Scenario**: Mother's Day 2026 campaign targeting gift-givers. Budget $5K-7K. Timeline Apr 21–May 10.
+
+### Phase Scores
+
+| Phase | Skill | Score | Pass? |
+|-------|-------|-------|-------|
+| 4.1 | campaign-plan | 25/25 | Yes |
+| 4.2 | draft-content | 25/25 | Yes |
+| 4.3 | email-sequence | 25/25 | Yes |
+| 4.4 | brand-review (QA) | 25/25 | Yes |
+| 4.5 | performance-report | 25/25 | Yes |
+
+### Phase Details
+
+**4.1 campaign-plan** — Gift-giver-focused Mother's Day campaign. Offer hierarchy enforced: free gift wrapping + free shipping + GWP at $100+ (no % discount). Two-phase calendar (awareness Apr 21–May 3, conversion May 4–10). Kill threshold: ROAS < 2.5x by May 1. All 10 campaign-plan sections present. Gift-giver buyer psychology applied to channel allocation (Pinterest, Instagram prioritized over TikTok for gifting intent).
+
+**4.2 draft-content** — 5 ad frameworks with gift-giver audience-adaptive messaging across all 4 layers. UGC Testimonial and "3 Reasons Why" prioritized for gift-givers (matches trust hierarchy: peer recommendations > expert opinion). Full gift guide with 4 price tiers ($34 single item → $150+ premium bundle) using actual Tern products. Hook variants: 5-10 per framework. No self-purchase language in gift-giver creative.
+
+**4.3 email-sequence** — 7-message promo flow (Apr 24–May 5) with countdown urgency escalation. 7-message gift-giver post-purchase flow with critical adaptation: no product-usage emails sent to the buyer (who doesn't have the product). Post-purchase flow focuses on gift tracking, delivery confirmation, and "did they love it?" follow-up. SMS variants for every email. Durable goods flow applicability enforced (no replenishment, no subscription).
+
+**4.4 brand-review (QA)** — Fed intentionally bad content containing 6 banned terms ("cozy", "game-changer", "perfect for", "best thing ever", "you need this", "obsessed"), sitewide discount violation, subscription language for non-subscription brand, unsubstantiated performance claims, and proof-to-psychology mismatch (data/specs shown to social-proof-driven gift-giver audience). Caught all violations. Provided 5 specific before/after rewrites. Flagged proof-to-psychology mismatch as medium severity.
+
+**4.5 performance-report** — Post-mortem: $28,400 revenue, 18.6% contribution margin ($5,282 CM). 7-signal check: 6 pass, 1 monitor (post-promo hangover TBD — campaign just ended). Seasonal business adjustments applied (Mother's Day as standalone tentpole, no YoY available — used pre-campaign April baseline). Cohort psychology: gift-acquired cohort tracked separately with 90-day reactivation window. Gift-recipient activation plan included.
+
+### Cross-Cutting Regression Checks
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| Brand voice consistent | Pass | Technical, understated tone across all 5 phases |
+| Product facts consistent | Pass | -20F, 4+ hours, 14,000ft, $34 Waterbottle Parka, military-grade Thinsulate — consistent |
+| Strategic consistency | Pass | Two-phase calendar in campaign-plan reflected in email timing and content angles |
+| No contradictions | Pass | No % discount in campaign-plan → no % discount in email or ad copy |
+| Seasonal timing aligned | Pass | All dates consistent (Apr 21 start, May 4 conversion push, May 10 end, May 11 Mother's Day) |
+| No B2B artifacts | Pass | Zero B2B language |
+| No beauty/skincare bleed | Pass | Zero beauty category language |
+| No subscription assumptions | Pass | No subscription language for durable goods brand |
+| Storefront-first enforced | Pass | Campaign-plan leads with storefront landing page. Gift guide lives on site. |
+| Contribution margin as north star | Pass | Campaign-plan margin target and performance-report CM calculation aligned |
+| Offer hierarchy enforced | Pass | Free gift wrapping → free shipping → GWP. No % off. Hero SKU protected. |
+| Kill thresholds pre-committed | Pass | ROAS < 2.5x by May 1 → pause paid, shift to email/SMS only |
+| Gift-giver psychology applied | Pass | All 5 phases adapted for gift-giver: trust hierarchy, no self-purchase language, gift-recipient tracking |
+| Proof-to-psychology match | Pass | brand-review caught mismatch when wrong proof type used for gift-giver audience |
+| Durable goods adaptations | Pass | No replenishment, no subscription, cross-sell focus in post-purchase |
+
+**Regression verdict: Pass.** Full end-to-end campaign works across all 5 skill phases with gift-giver audience, durable goods product type, and seasonal campaign type — all edge cases that were failing before v2.1.0 fixes.
+
+---
+
 ## All Findings — Consolidated
 
 ### High Severity (7) — ALL RESOLVED
@@ -149,6 +201,7 @@ Evaluated across all Test 1 outputs:
 |--------|--------|-------|
 | Unit test pass rate | 2/9 (22%) | **9/9 (100%)** |
 | Unit test avg score | 16.0/25 | **22.9/25** |
+| E2E regression (Test 4) | — | **5/5 phases, 25/25 each** |
 | High severity open | 7 | **0** |
 | Medium severity open | 7+ | **0** |
 | Low severity open | 3 | **0** |

@@ -12,10 +12,6 @@
       "type": "http",
       "url": "https://mcp.figma.com/mcp"
     },
-    "hubspot": {
-      "type": "http",
-      "url": "https://mcp.hubspot.com/anthropic"
-    },
     "amplitude": {
       "type": "http",
       "url": "https://mcp.amplitude.com/mcp"
