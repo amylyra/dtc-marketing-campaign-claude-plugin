@@ -25,9 +25,9 @@ You can run any skill standalone, but output quality improves significantly when
 | Command | When to Use |
 |---|---|
 | `/brand-review setup` | First time, or when updating brand voice/products/customers |
-| `/brand-review` | QA content before publishing — checks voice, claims, proof-to-psychology match |
-| `/campaign-plan` | Planning any campaign, seasonal promo, off-season strategy, or building annual calendar |
-| `/draft-content` | Writing product descriptions, ad copy, social posts, gift guides, influencer briefs |
+| `/brand-review` | QA content before publishing — checks voice, claims, proof-to-psychology match, engagement quality (hook strength, competitive distinctiveness, persuasion) |
+| `/campaign-plan` | Planning any campaign in 4 steps: strategy lock → site creative assets → channels/calendar → metrics/execution |
+| `/draft-content` | Writing product descriptions, ad copy, social posts, gift guides, influencer briefs — with copy quality standards (hook quality, variant diversity, swap test) |
 | `/email-sequence` | Building email + SMS flows (welcome, abandoned cart, post-purchase, etc.) |
 | `/competitive-brief` | Deep competitive research — ad creative, pricing, influencer, storefront teardown, or substitute analysis for category creators |
 | `/performance-report` | Post-campaign analysis, weekly/monthly reporting, promo post-mortems |
@@ -43,7 +43,7 @@ brand/
 
 skills/
   brand-review/     — brand setup + content QA (incl. proof-to-psychology match)
-  campaign-plan/    — campaign briefs with promo economics, product-type offers, audience psychology
+  campaign-plan/    — 4-step campaign planning: strategy → site creative assets → channels/calendar → metrics/execution
   draft-content/    — DTC content drafting (9 content types, audience-adaptive messaging)
   email-sequence/   — email + SMS lifecycle flows (12 flow types, product-type matrix, promo psychology)
   competitive-brief/— DTC competitive intelligence (incl. category position analysis)

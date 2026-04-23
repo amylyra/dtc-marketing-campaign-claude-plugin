@@ -4,7 +4,7 @@ How to score skill output quality — not just "did it run" but "is it good."
 
 ## Scoring Framework
 
-Every skill output is scored on 5 dimensions. Each dimension is 1-5. A passing score is 4+ on every dimension. A 3 in any dimension means the output needs revision. A 2 or below means the skill instruction itself likely needs a fix.
+Every skill output is scored on 6 dimensions. Each dimension is 1-5. A passing score is 4+ on every dimension. A 3 in any dimension means the output needs revision. A 2 or below means the skill instruction itself likely needs a fix.
 
 | Score | Meaning |
 |-------|---------|
@@ -16,7 +16,7 @@ Every skill output is scored on 5 dimensions. Each dimension is 1-5. A passing s
 
 ---
 
-## 5 Evaluation Dimensions
+## 6 Evaluation Dimensions
 
 ### 1. Brand Fidelity (Does it sound like Tern?)
 
@@ -111,19 +111,24 @@ Check the output against the skill's SKILL.md — every required section should 
 
 #### brand-review (review mode)
 - [ ] Summary with overall assessment
-- [ ] Detailed findings table with severity levels
+- [ ] Summary includes engagement assessment line ("Engagement: Strong/Needs work/Weak — reason")
+- [ ] Detailed findings table with severity levels (includes engagement findings)
 - [ ] Product claim cross-check table
 - [ ] Before/after revisions for top 3-5 issues
 - [ ] Legal/compliance flags section
 - [ ] Channel appropriateness check
+- [ ] Hook strength evaluated (pattern interrupt, specificity)
+- [ ] Swap test applied (competitive distinctiveness flagged if fails)
+- [ ] Variant diversity checked (if multi-variant content reviewed)
 
-#### campaign-plan
-- [ ] All 10 sections present (overview, audience, messages, channels, calendar, content pieces, metrics, budget, risks, checklist)
-- [ ] Promo economics with margin impact and kill threshold
-- [ ] Offer hierarchy rationale
-- [ ] 10 pre-launch questions answered
-- [ ] Daily check-in metrics defined
-- [ ] Post-mortem framework referenced
+#### campaign-plan (4-step flow)
+- [ ] Step 1 complete: campaign theme/story, target audience with psychology, key messages (4 layers), offer mechanic with hierarchy challenge, kill threshold, promo economics
+- [ ] Step 2 complete: site creative asset checklist tiered (essential/recommended/only-if-needed), copy direction per asset tied to campaign story, brand guide/UI kit consulted
+- [ ] Step 3 complete: email tiered (essential/recommended/optional), Meta tiered, SMS essentials only, Google essentials only, campaign timeline table, budget allocation
+- [ ] Step 4 complete: 3-5 KPIs with targets, 2-3 risks with mitigations, condensed execution checklist (top 5 questions)
+- [ ] Gates present between each step (user sign-off requested)
+- [ ] Materials question asked at start of Step 2 (not Step 1)
+- [ ] Output is concise and scannable (tables, bullets, not walls of text)
 
 #### draft-content
 - [ ] Correct content type template used
@@ -132,6 +137,10 @@ Check the output against the skill's SKILL.md — every required section should 
 - [ ] SEO recommendations for web content
 - [ ] Platform-specific formatting (ad specs, character limits, aspect ratios)
 - [ ] Multiple variants where specified (hooks, subject lines)
+- [ ] Hook quality self-check passed (pattern interrupt, specificity, platform-native)
+- [ ] Variant diversity: 4+ distinct angles in any 5+ variant set
+- [ ] Swap test passed: copy is not usable by a competitor with a name change
+- [ ] Audience-adaptive messaging applied when non-primary audience specified
 
 #### email-sequence
 - [ ] Flow overview table
@@ -168,7 +177,36 @@ Check the output against the skill's SKILL.md — every required section should 
 - 2: Multiple required sections missing. Output is incomplete.
 - 1: Severely incomplete. Only produced a fraction of what the skill promises.
 
-### 5. Adaptability (Did it actually handle the edge case?)
+### 5. Engagement & Persuasion (Is the copy actually compelling?)
+
+Would this content perform in market — not just pass a brand check, but actually stop a scroll, open an email, or drive a click? This dimension catches the gap between "correct" and "competitive."
+
+**Checks:**
+- Hook / headline / subject line passes the pattern interrupt test — would it stop a scroll between competitor content?
+- Hooks use specificity (scenarios, numbers, sensory details), not generic benefits or cleverness
+- Variants are genuinely diverse angles, not the same idea reworded (minimum 4 distinct angles in 5+ variant sets)
+- Swap test: a competitor could NOT put their name on this and use it
+- Tension before resolution — problem or gap appears before the product/solution
+- Proof is placed at the moment of doubt, not just listed as features
+- CTA is specific (product name, price, action) not vague ("Shop now", "Learn more")
+- Urgency is real (deadline, inventory, season) not manufactured ("Don't miss out!")
+- Objections are anticipated and addressed, not ignored
+
+**Scoring:**
+- 5: Copy is ready to run. Hooks are thumb-stopping. Variants are diverse. Would outperform typical category content. An operator would test this immediately.
+- 4: Strong foundation. One or two hooks need sharpening, or proof placement could be tighter. Minor competitive lift needed.
+- 3: Correct but not compelling. Hooks are generic or share the same angle. Passes brand check but wouldn't outperform competitor content. Needs significant copy revision.
+- 2: Informational, not persuasive. Reads like a brief, not a draft. No tension, no specificity, no pattern interrupt.
+- 1: Would actively underperform. Generic to the point of being invisible in-feed. "Introducing the [product] — shop now!"
+
+**Red flags that auto-fail:**
+- All hooks are the same angle reworded
+- Hook starts with brand name or "Introducing..."
+- Swap test fails — copy could be any competitor's with a name change
+- No specific numbers, scenarios, or proof anywhere in the content
+- CTA is "Shop now" with no product, price, or action specificity
+
+### 6. Adaptability (Did it actually handle the edge case?)
 
 The most important eval dimension for unit tests. Did the skill genuinely adapt to the unusual input, or did it just run its default template and ignore the constraint?
 
@@ -214,13 +252,16 @@ Input: [what was provided]
 | Strategic Soundness | /5 | |
 | Specificity & Usefulness | /5 | |
 | Completeness | /5 | |
+| Engagement & Persuasion | /5 | |
 | Adaptability | /5 | |
 
-Overall: /25
+Overall: /30
 Pass: Yes/No (all dimensions 4+)
 Red flags: [any auto-fails]
 Action needed: [None / Revise output / Fix skill instruction]
 ```
+
+Note: Engagement & Persuasion applies most directly to content-producing skills (draft-content, email-sequence, campaign-plan copy direction). For analytical skills (performance-report, seo-audit, competitive-brief), score this dimension on the persuasiveness and actionability of recommendations — are they specific enough that the team would act on them immediately, or are they generic "consider doing X" suggestions?
 
 ### For Regression Test (Test 3)
 
@@ -232,6 +273,7 @@ Each phase gets a scorecard. Plus a cross-cutting eval:
 - [ ] Strategic consistency (campaign-plan strategy reflected in draft-content and email-sequence)
 - [ ] No contradictions between skills (e.g., campaign-plan says "no sitewide discount" but email-sequence includes one)
 - [ ] Seasonal timing consistent (all dates align to the same campaign calendar)
+- [ ] Engagement quality consistent — hooks and copy across all skills meet the same pattern-interrupt and specificity bar (no skill producing generic copy while others are sharp)
 
 ### Determining Root Cause
 
@@ -288,6 +330,34 @@ Why it fails: Generic. No brand, no product, no specificity. Could be from any D
 > "-20F. 4 hours. Still liquid."
 
 Why it passes: Specific to Tern. References the pain point. Uses approved specs. Understated tone.
+
+### Hook Variants — Score 5 Example (Tern, Ad Creative)
+
+**Bad (score 2) — same angle reworded:**
+> 1. "Keep your water from freezing on the trail"
+> 2. "Stop your water bottle from freezing"
+> 3. "Don't let your water freeze on winter hikes"
+> 4. "Prevent frozen water bottles on the mountain"
+> 5. "Your water won't freeze anymore"
+
+Why it fails: All 5 are the same direct-benefit angle. No diversity. No pattern interrupt. Any outdoor gear brand could use these.
+
+**Good (score 5) — genuinely diverse angles:**
+> 1. **Scenario**: "You're 3 miles from the trailhead. Your water bottle is a solid block of ice. Now what?"
+> 2. **Contrarian**: "Insulated bottles cost $45 and still freeze. This costs $34 and insulates the bottle you already own."
+> 3. **Social proof**: "2,847 skiers switched last winter. Here's what they figured out."
+> 4. **Identity**: "For the person who's 'fine' at 14,000ft but their water bottle isn't."
+> 5. **Curiosity gap**: "The reason ski patrol started buying these isn't what you'd think."
+
+Why it passes: 5 distinct angles (scenario, contrarian, social proof, identity, curiosity). Each earns the next line differently. Swap test passed — the specifics (14,000ft, $34, ski patrol) are ownable. Platform-native (these read like social/ad hooks, not product page copy).
+
+### Brand Review — Engagement Assessment Examples
+
+**Weak engagement flag:**
+> "Copy is on-brand and factually accurate. However, hook 'Introducing the Bottle Parka — our newest product' starts with the brand name and uses an announcement frame. A competitor could use this copy with a name swap. Hooks need specific scenarios or proof to create pattern interrupts."
+
+**Strong engagement pass:**
+> "Engagement: Strong. Hooks use specific scenarios (frozen water at altitude) and brand-ownable proof (-20F, 14,000ft). Swap test passed — competitor couldn't replicate the specificity. Subject line 'Your water bottle froze on the last run. This fixes that.' creates tension before resolution."
 
 ---
 

@@ -56,9 +56,21 @@
 | 2.8 No direct competitor | competitive-brief | 15/25 | **24/25** | **Yes** | F21 resolved |
 | 2.9 Novel product SEO | seo-audit | 18/25 | **23/25** | **Yes** | F22 resolved |
 
-**Unit test average: 16.0 → 22.9/25 (+43%)**
+**Unit test average (v2.1): 16.0 → 22.9/25 (+43%)**
 
-### Post-Fix Dimension Breakdown
+### v2.2 Stepped Flow Tests (campaign-plan)
+
+| Test | Skill | Score | Pass? | Notes |
+|------|-------|-------|-------|-------|
+| 2.2 Single-product (re-run) | campaign-plan | **24/25** | Yes | Offer hierarchy compressed, site assets adapted (Nav Merch/Inline Promo N/A), multi-unit attach KPI |
+| 2.3 Off-season (re-run) | campaign-plan | **24/25** | Yes | Lighter output all steps — Step 2 minimal assets, Step 3 email+organic only, Step 4 inventory-cleared metrics |
+| 2.10 Site asset tiering (NEW) | campaign-plan | **25/25** | Yes | All 10 assets considered, tiers adapted for campaign, brand-specific copy direction |
+| 2.11 Channel tiering (NEW) | campaign-plan | **24/25** | Yes | Email/Meta tiered, SMS/Google essentials-only, scannable output |
+| 2.12 Step gates + flow (NEW) | campaign-plan | **24/25** | Yes | All gates correct, no bleed-forward, budget deferred to Step 3 |
+
+**Stepped flow test average: 24.2/25**
+
+### Post-Fix Dimension Breakdown (v2.1)
 
 | Test | Brand Fidelity | Strategic | Specificity | Completeness | Adaptability |
 |------|---------------|-----------|-------------|-------------|-------------|
@@ -71,9 +83,18 @@
 | 2.8 | 5 | 5 | 4 | 5 | 5 |
 | 2.9 | 4 | 5 | 5 | 4 | 5 |
 
+### v2.2 Dimension Breakdown
+
+| Test | Brand Fidelity | Strategic | Specificity | Completeness | Adaptability |
+|------|---------------|-----------|-------------|-------------|-------------|
+| 2.2 (re-run) | 5 | 5 | 4 | 5 | 5 |
+| 2.3 (re-run) | 5 | 5 | 4 | 5 | 5 |
+| 2.10 | 5 | 5 | 5 | 5 | 5 |
+| 2.11 | 5 | 5 | 4 | 5 | 5 |
+| 2.12 | 5 | 5 | 4 | 5 | 5 |
+
 ### Minor Enhancement Opportunities (Not Blockers)
 
-- **2.2**: Single-SKU + hero protection tension could be stated more explicitly — currently in separate paragraphs
 - **2.9**: SEO competitor comparison section lacks parallel guidance for substitute-domain comparison (competitive-brief got this, seo-audit didn't)
 
 ---
@@ -195,16 +216,37 @@ Full campaign traced through all 5 skill phases for Tern (durable goods, gift-gi
 
 ## Summary
 
-**22 findings identified. 22 findings resolved. 0 remaining.**
+**22 findings identified. 22 findings resolved. 0 remaining. v2.2 stepped flow: 0 new findings.**
 
-| Metric | Before | After |
-|--------|--------|-------|
-| Unit test pass rate | 2/9 (22%) | **9/9 (100%)** |
-| Unit test avg score | 16.0/25 | **22.9/25** |
-| E2E regression (Test 4) | — | **5/5 phases, 25/25 each** |
-| High severity open | 7 | **0** |
-| Medium severity open | 7+ | **0** |
-| Low severity open | 3 | **0** |
+| Metric | v2.0 | v2.1 | v2.2 | v2.3 |
+|--------|------|------|------|------|
+| Eval dimensions | 5 (/25) | 5 (/25) | 5 (/25) | **6 (/30)** |
+| Unit test pass rate | 2/9 (22%) | **9/9 (100%)** | **12/12 (100%)** | — (re-run pending) |
+| Unit test avg score | 16.0/25 | **22.9/25** | **24.2/25** (stepped flow) | /30 scale |
+| E2E regression (Test 4) | — | **5/5 phases, 25/25 each** | — | — |
+| High severity open | 7 | **0** | **0** | **0** |
+| Medium severity open | 7+ | **0** | **0** | **0** |
+| Low severity open | 3 | **0** | **0** | **0** |
+
+> **Scoring scale change (v2.3):** Added 6th eval dimension — Engagement & Persuasion. Scores are now /30. Historical scores (v2.0–v2.2) remain on original /25 scale. New tests and re-runs use /30.
+
+### v2.3 Changes (Content Quality Standards)
+
+1. `skills/draft-content/SKILL.md` — Added Copy Quality Standards section: hook quality criteria, variant diversity rules, competitive distinctiveness (swap test), persuasion signals, self-check before delivery
+2. `skills/brand-review/SKILL.md` — Added Engagement & Persuasion Quality review dimension: hook strength, variant diversity, swap test, persuasion structure scoring with severity guide
+3. `tests/EVAL-RUBRIC.md` — Added 6th dimension (Engagement & Persuasion), updated scoring to /30, updated per-skill completeness checklists, added hook variant and brand-review engagement quality baselines
+
+### v2.2 Changes (Stepped Campaign Flow)
+
+`skills/campaign-plan/SKILL.md` restructured from single-pass 10-section brief to 4-step conversational flow:
+1. **Step 1: Strategy** — campaign theme, audience psychology, offer mechanic, kill threshold
+2. **Step 2: Site Creative Assets** — tiered checklist (essential/recommended/only-if-needed), brand-specific copy direction, brand guide/UI kit consultation
+3. **Step 3: Channels + Calendar** — email/Meta tiered, SMS/Google essentials-only, milestone timeline table
+4. **Step 4: Metrics + Execution** — 3-5 KPIs, risks, condensed checklist
+
+Supporting files updated: `CLAUDE.md`, `README.md`, `tests/EVAL-RUBRIC.md`
+
+### v2.1 Changes (22 Findings Fixed)
 
 Files modified (10):
 1. `brand/customers.md` — Buyer Psychology framework

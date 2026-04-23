@@ -212,6 +212,80 @@ For product descriptions, collection pages, and landing pages:
 - Suggest internal linking opportunities
 - Recommend image alt text
 
+## Copy Quality Standards
+
+Before delivering ANY draft, pressure-test it against these standards. These are not optional polish — they are the difference between content that performs and content that gets scrolled past.
+
+### Hook Quality
+
+The hook (first line of ad copy, email subject line, social post opening, hero headline) is the single highest-leverage line in any piece of content. Every hook must pass these tests:
+
+1. **Pattern interrupt** — does it break the scroll? If the reader is moving through a feed of competitor content, would this make them stop? Test: read it between two competitor ads. Does it still stand out?
+2. **Specificity over cleverness** — concrete details outperform wordplay. "Your water bottle freezes at 10,000ft" beats "The ultimate hydration solution." Numbers, scenarios, and sensory details stop thumbs.
+3. **Earns the next line** — the hook's only job is to get the reader to read line two. It doesn't need to sell the product, explain the brand, or deliver the CTA.
+4. **Native to the platform** — a TikTok hook sounds like a person talking, not a brand announcing. An email subject line creates curiosity or states a benefit, not both. A product page headline is clear and benefit-led, not clever and ambiguous.
+
+**Hook red flags (rewrite immediately):**
+- Starts with the brand name (nobody cares yet)
+- Uses "Introducing..." or "Meet the..." (brand announcement, not reader benefit)
+- Generic benefit without specificity ("Stay hydrated" / "Level up your routine")
+- Pun or wordplay that sacrifices clarity
+- Could apply to any competitor's product with a name swap
+
+### Variant Diversity
+
+When generating multiple hooks, subject lines, or copy variants, each must take a GENUINELY different angle. Five rewrites of the same idea is not five variants.
+
+**Diversity test:** Label each variant's angle. If two share the same label, one must be rewritten.
+
+Angle categories:
+- **Pain point** — names the problem the reader already feels
+- **Scenario** — puts the reader in a specific moment ("You're 3 miles from the trailhead...")
+- **Social proof** — leads with what others say or do
+- **Contrarian/myth-bust** — challenges what the reader assumes is true
+- **Curiosity gap** — creates an open loop the reader wants closed
+- **Direct benefit** — states the outcome clearly (works best for warm audiences)
+- **Comparison** — positions against the alternative (not necessarily a competitor — could be the old way of doing things)
+- **Identity** — speaks to who the reader is, not what the product does ("For the person who...")
+
+Minimum 4 distinct angles across any set of 5+ variants. Never more than 2 variants from the same angle category.
+
+### Competitive Distinctiveness
+
+Every piece of content must pass the **swap test**: could a competitor put their name on this and use it? If yes, it's not distinctive enough.
+
+Distinctiveness comes from:
+- **Specific proof** — your product's actual test data, specs, or results (not generic category claims)
+- **Brand voice** — the way you say it, not just what you say. Tern sounds nothing like Hydro Flask even when discussing similar benefits.
+- **Customer's exact language** — pull from `brand/customers.md` language bank. Real customer phrases are harder to replicate than marketing copy.
+- **Scenario specificity** — "frozen water bottle at 10,000ft" is ownable. "Stay hydrated outdoors" is not.
+
+### Persuasion Signals
+
+Content should MOVE the reader, not just inform them. Check for:
+
+- **Tension before resolution** — present the problem or gap BEFORE the solution. If the product appears in the first sentence, there's no tension.
+- **Proof placement** — proof (specs, reviews, test data) should appear at the moment of doubt, not at the moment of introduction. Lead with the claim, follow with the proof.
+- **Objection anticipation** — address the reader's "yeah but..." before they think it. Pull common objections from `brand/products.md` and `brand/customers.md`.
+- **Specific CTA** — "Shop the Bottle Parka — $34" outperforms "Shop now." The reader should know exactly what action to take and what it costs.
+- **Urgency only when real** — manufactured urgency ("Don't miss out!") erodes trust. Real urgency (shipping deadlines, limited inventory, seasonal relevance) drives action.
+
+### Self-Check Before Delivery
+
+Run every draft through this checklist before presenting to the user:
+
+- [ ] **Hook passes pattern interrupt test** — would this stop a scroll between competitor content?
+- [ ] **Swap test passed** — a competitor could NOT use this copy with a name swap
+- [ ] **Variants are genuinely diverse** — at least 4 distinct angles in any 5+ variant set
+- [ ] **Specificity check** — numbers, scenarios, or sensory details present (not just adjectives)
+- [ ] **Proof matches audience** — the type of proof aligns with the target buyer's trust hierarchy
+- [ ] **Tension before resolution** — problem/gap appears before the product
+- [ ] **CTA is specific** — reader knows exactly what to do and what it costs
+- [ ] **Platform-native** — tone, format, and length match the channel (not repurposed from another)
+- [ ] **No banned patterns** — no "Introducing...", no generic superlatives, no brand-name leads
+
+If any item fails, revise before delivering. Do not present a draft with a note saying "you might want to strengthen the hook" — strengthen it yourself.
+
 ## Output
 
 Present the draft with clear formatting. After the draft, include:

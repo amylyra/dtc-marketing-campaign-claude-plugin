@@ -206,6 +206,38 @@ If buyer psychology sections don't exist in `brand/customers.md`, skip this chec
 - Emoji usage appropriate to channel
 - Hashtag and mention conventions (for social content)
 
+#### Engagement & Persuasion Quality
+
+Beyond on-brand checks, evaluate whether the content is actually GOOD — would it perform in market? This is the difference between "correct" and "compelling."
+
+**Hook strength:**
+- Does the first line / subject line / headline stop the scroll? Read it between two competitor ads — does it stand out?
+- Is it specific (scenario, number, sensory detail) or generic ("Don't miss out", "You'll love this")?
+- Does it earn the next line, or does it try to do everything at once?
+
+**Variant diversity (for multi-variant content):**
+- Are hooks/subject lines genuinely different angles, or the same idea reworded?
+- Label each variant's angle (pain point, scenario, social proof, curiosity, direct benefit, identity, contrarian, comparison). Flag if 2+ share the same angle.
+- Minimum 4 distinct angles in any set of 5+ variants.
+
+**Competitive distinctiveness:**
+- Apply the **swap test**: could a competitor put their name on this copy and use it? If yes, flag as Medium severity: "Copy is on-brand but not distinctive — a competitor could use this with a name swap."
+- Check for brand-specific proof (product specs, test data, customer language) vs. generic category claims.
+
+**Persuasion structure:**
+- Is there tension before resolution? (Problem/gap before product.) Content that leads with the product has no pull.
+- Is proof placed at the moment of doubt, not the moment of introduction?
+- Are objections anticipated and addressed, or left for the reader to stew on?
+- Is the CTA specific ("Shop the Bottle Parka — $34") or vague ("Shop now")?
+- Is urgency real (shipping deadline, seasonal, inventory) or manufactured ("Don't miss out!")?
+
+**Severity guide for engagement issues:**
+- **High**: Hook is generic enough to be any brand's. Multiple variants are the same angle reworded. CTA is missing or vague.
+- **Medium**: Copy is on-brand and correct but wouldn't outperform a competitor's content. Proof placement is suboptimal. Swap test borderline.
+- **Low**: Minor persuasion improvements — could reorder for better tension, could add a specificity detail.
+
+Include engagement findings in the main Detailed Findings table alongside voice, claims, and compliance issues. In the Summary, add a one-line engagement assessment: "Engagement: [Strong / Needs work / Weak] — [reason]."
+
 ### Without Brand Guidelines (Generic Review)
 
 If brand files are not configured, evaluate the content for:

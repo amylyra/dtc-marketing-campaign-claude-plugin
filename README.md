@@ -106,8 +106,8 @@ This psychology cascades through every skill — it shapes ad creative proof str
 #### `/brand-review` — Brand Setup & Review
 Two modes. **Setup**: guides you through creating brand voice, product catalog (with product profile), and customer profiles (with buyer psychology) — saves to `brand/` directory. **Review**: audits content against those files for voice consistency, terminology, messaging alignment, proof-to-psychology match, and DTC compliance (FTC influencer disclosure, subscription language, health/beauty claims).
 
-#### `/campaign-plan` — Campaign Planning with Promo Economics
-Generates a campaign brief with DTC channel strategy (storefront-first), promo calendar framework (offer hierarchy adapted by product type, hero SKU protection, no-promo zones), audience psychology and channel implications, execution checklists (before/during/after), and pre-committed kill thresholds. Supports standard promos, seasonal tentpoles, product launches, off-season campaigns, and sport/activity season launches. Includes optional inline competitive context.
+#### `/campaign-plan` — Stepped Campaign Planning
+Plans a campaign in 4 conversational steps: (1) **Strategy lock** — campaign theme, audience psychology, offer mechanic, kill threshold; (2) **Site creative assets** — prioritized asset checklist (HP Banner, Nav Merch, Collection Banners, Announcement Bar, Inline Promo, PDP badges, etc.) tiered essential/recommended/optional with brand-specific copy direction; (3) **Channels + calendar** — email, Meta paid, SMS, Google with tiered recommendations + milestone timeline; (4) **Metrics + execution** — KPIs, risks, condensed checklist. Each step gets user sign-off before proceeding. Consults brand guide / UI kit via Figma if connected. Supports standard promos, seasonal tentpoles, product launches, off-season campaigns, and sport/activity season launches.
 
 #### `/draft-content` — DTC Content Drafting
 Writes product descriptions, ad creative (5 frameworks with hook variants and framework prioritization by product type), collection page copy, social posts (Instagram/TikTok/Pinterest first), email/SMS copy, gift guides, influencer briefs, and product launch announcements. Adapts messaging across 5 audience segments (primary buyer, gift-giver, VIP, lapsed, cold prospect) — shifting all 4 messaging layers, not just the hook.
@@ -169,7 +169,7 @@ Key principle: content, ads, and email/SMS flows are built **in parallel**, not 
 | Command | What It Does |
 |---|---|
 | `/brand-review` | Set up brand voice/products/customers (with buyer psychology), or review content against them |
-| `/campaign-plan` | Campaign brief with promo economics, product-type offers, audience psychology, execution checklist |
+| `/campaign-plan` | 4-step campaign planning: strategy → site creative assets → channels/calendar → metrics/execution |
 | `/draft-content` | Product descriptions, ad copy (audience-adaptive), social posts, gift guides, influencer briefs |
 | `/email-sequence` | Email + SMS flows — adapted by product type and buyer psychology, with promo safety rules |
 | `/competitive-brief` | Competitor research — ads, pricing, influencers, storefront, category position analysis |
