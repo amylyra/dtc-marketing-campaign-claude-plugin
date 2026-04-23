@@ -259,25 +259,54 @@ Step 1 has two parts: first present 3 theme options, then once the user picks a 
 
 #### Part A: Three Theme Options
 
-Present 3 campaign theme concepts. Each gets a **one-line theme name** and a **2-3 sentence pitch** — that's it. No walls of text. The user needs to react fast, not read an essay.
+Present 3 campaign theme concepts. The user needs to FEEL the difference between them — not read about it abstractly. Each option gets:
 
-**Option 1 — Safe Bet** (brand-led, educational, proven):
-The on-brand, well-received angle. Leans into what the brand already does well. Educates, informs, reinforces positioning. Lowest risk.
-- *Example for Tern BFCM: "Gear Up Before It Freezes" — Seasonal education play. Position Tern as essential winter prep. Lead with the problem (frozen gear), not the discount.*
+1. **Theme line** — one sentence, the rally cry
+2. **Sample hooks** — 2-3 example headlines/ad hooks so the user can feel the tone
+3. **Why this works** — one sentence explaining the psychological lever for THIS audience
+4. **Narrative arc** — how the campaign story unfolds (one line: "educate → reveal → convert")
+5. **Competitive context** — if competitors are known, where this sits relative to what they're doing
 
-**Option 2 — Competitive Edge** (differentiation-led, stand out in promo noise):
-Focuses on what makes this product/brand different from everything else in market. Designed to cut through a sea of "20% off everything" promos. Leads with the unique product advantage.
-- *Example for Tern BFCM: "Everyone Else Sells Insulated Bottles. We Insulate Yours." — Direct competitive contrast. Position against Hydro Flask, Stanley, etc. The hook is the category difference, not the discount.*
+Keep each option tight — the full set of 3 should be readable in under 60 seconds.
 
-**Option 3 — Wild Card** (on-brand voice, unexpected angle, hook-first):
+**Option 1 — Brand Story** (brand-led, educational, trust-building):
+Leans into what the brand already does well. Educates, informs, builds authority. Lowest risk, proven playbook.
+
+*Example for Tern BFCM:*
+> **"Gear Up Before It Freezes"**
+> Hooks: "Your water bottle freezes at 10,000ft. Here's why." · "3 pieces of gear that fail in winter — and the fix." · "What ski patrol packs that you don't."
+> Why it works: Research-driven buyers want to feel smart. This teaches first, sells second — the way they prefer to discover brands.
+> Arc: Educate (why gear fails) → Reveal (Tern's solution) → Convert (BFCM bundle).
+> vs. competitors: Hydro Flask sells the bottle. Phoozy sells the case. This positions Tern as the expert in the problem space, not just another product.
+
+**Option 2 — Sharp Edge** (differentiation-led, competitive contrast):
+Leads with what makes this product different from everything else in market. Designed to cut through a sea of "20% off" promos. The hook is the product advantage.
+
+*Example for Tern BFCM:*
+> **"Everyone Else Sells Insulated Bottles. We Insulate Yours."**
+> Hooks: "Your Hydro Flask still freezes at altitude. Here's why." · "Stop buying insulated bottles. Start insulating the one you have." · "$34 to fix a $45 problem."
+> Why it works: Reframes the buying decision. Instead of "which bottle should I buy?", it's "why am I replacing bottles when I could just insulate mine?"
+> Arc: Challenge assumption (your bottle isn't the problem) → Differentiate (insulation, not replacement) → Close (the bundle).
+> vs. competitors: Every competitor sells a PRODUCT. This sells a CATEGORY SHIFT — insulation as an accessory, not a feature.
+
+**Option 3 — Pattern Interrupt** (on-brand voice, unexpected angle, hook-first):
 Same brand voice, polar opposite idea. Designed to stop the scroll. May be provocative, counterintuitive, or emotional. Higher risk, higher ceiling.
-- *Example for Tern BFCM: "Your $45 Water Bottle Is Broken." — Confrontational hook. Challenges the reader's current gear. Insulated bottles still freeze — that's a design flaw, not a user problem. Tern is the fix.*
+
+*Example for Tern BFCM:*
+> **"Your $45 Water Bottle Is Broken."**
+> Hooks: "I tested 12 insulated bottles at 14,000ft. They all failed." · "The insulated bottle industry has a dirty secret." · "Your water bottle isn't broken. The design is."
+> Why it works: Confrontation gets attention. Backcountry skiers pride themselves on gear knowledge — telling them their gear is broken triggers the need to investigate.
+> Arc: Provoke (your gear fails) → Prove (field test data) → Fix (Tern exists because this problem shouldn't).
+> vs. competitors: Nobody in the space is running confrontational. Hydro Flask is aspirational, Phoozy is functional. This is the only brand picking a fight.
 
 **Format for each option:**
-> **[Option name]**: "[Theme line]"
-> [2-3 sentence pitch. What the angle is, why it works, what it leads with.]
+> **"[Theme line]"**
+> Hooks: [2-3 sample hooks, separated by ·]
+> Why it works: [One sentence — the psychological lever for this audience]
+> Arc: [Phase 1] → [Phase 2] → [Phase 3]
+> vs. competitors: [One sentence — where this sits relative to what competitors do]
 
-Do NOT include full messaging hierarchy, offer mechanics, or audience details yet. The user picks a direction first. All 3 options should be readable in under 30 seconds.
+Do NOT include full messaging hierarchy, offer mechanics, or audience details yet. The user picks a direction first.
 
 **Gate:** "Which direction resonates? You can pick one, mix elements, or tell me what's missing and I'll riff."
 

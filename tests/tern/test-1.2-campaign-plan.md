@@ -18,18 +18,27 @@
 
 ## Step 1A: Three Theme Options
 
-**Option 1 — Safe Bet**: "Gear Up Before It Freezes"
-Seasonal education play. Position Tern as essential winter prep — lead with the problem (frozen gear), not the discount. Proven approach for research-driven outdoor buyers.
+**Option 1 — Brand Story**: "Gear Up Before It Freezes"
+Hooks: "Your water bottle freezes at 10,000ft. Here's why." · "3 pieces of gear that fail in winter — and the fix." · "What ski patrol packs that you don't."
+Why it works: Research-driven buyers want to feel smart. This teaches first, sells second — the way they prefer to discover brands.
+Arc: Educate (why gear fails) → Reveal (Tern's solution) → Convert (BFCM bundle).
+vs. competitors: Hydro Flask sells the bottle. Phoozy sells the case. This positions Tern as the expert in the problem space.
 
-**Option 2 — Competitive Edge**: "Everyone Else Sells Insulated Bottles. We Insulate Yours."
-Direct competitive contrast. Position against Hydro Flask, Stanley, etc. The hook is the category difference — you don't replace your bottle, you upgrade it. Stands out in a sea of product promos.
+**Option 2 — Sharp Edge**: "Everyone Else Sells Insulated Bottles. We Insulate Yours."
+Hooks: "Your Hydro Flask still freezes at altitude. Here's why." · "Stop buying insulated bottles. Start insulating the one you have." · "$34 to fix a $45 problem."
+Why it works: Reframes the buying decision. Instead of "which bottle?", it's "why replace when you could insulate?"
+Arc: Challenge assumption → Differentiate (insulation, not replacement) → Close (the bundle).
+vs. competitors: Every competitor sells a product. This sells a category shift.
 
-**Option 3 — Wild Card**: "Your $45 Water Bottle Is Broken."
-Confrontational hook. Challenges the reader's gear. Insulated bottles still freeze at altitude — that's a design flaw, not a user problem. Tern is the fix. Higher risk, but scroll-stopping.
+**Option 3 — Pattern Interrupt**: "Your $45 Water Bottle Is Broken."
+Hooks: "I tested 12 insulated bottles at 14,000ft. They all failed." · "The insulated bottle industry has a dirty secret." · "Your water bottle isn't broken. The design is."
+Why it works: Confrontation gets attention. Telling backcountry skiers their gear is broken triggers the need to investigate.
+Arc: Provoke (your gear fails) → Prove (field test data) → Fix (Tern exists for this).
+vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phoozy is functional. This picks a fight.
 
 **Gate:** "Which direction resonates? You can pick one, mix elements, or tell me what's missing and I'll riff."
 
-*(Simulated user response: "Love the competitive edge angle but the Safe Bet name is better. Combine them — 'Gear Up Before It Freezes' with the competitive positioning.")*
+*(Simulated user response: "Love the Sharp Edge angle but the Brand Story name is better. Combine them — 'Gear Up Before It Freezes' with the competitive positioning.")*
 
 ---
 

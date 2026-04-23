@@ -123,7 +123,7 @@ Check the output against the skill's SKILL.md — every required section should 
 
 #### campaign-plan (4-step flow)
 - [ ] Opening orientation present (4-step pipeline explained in 3-4 lines)
-- [ ] Step 1A: 3 theme options presented (Safe Bet, Competitive Edge, Wild Card) — each has one-line name + 2-3 sentence pitch, all readable in under 30 seconds
+- [ ] Step 1A: 3 theme options presented (Brand Story, Sharp Edge, Pattern Interrupt) — each has theme line, 2-3 sample hooks, "why this works" line, narrative arc, and competitive context. All 3 readable in under 60 seconds.
 - [ ] Step 1A gate asks user to pick, mix, or riff — not "shall I continue?"
 - [ ] Step 1B: theme iterated based on user feedback, then locked strategy in table format (theme, audience, messages, offer, kill threshold, promo economics)
 - [ ] Step 1B gate confirms strategy lock before proceeding to assets

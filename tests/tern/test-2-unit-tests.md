@@ -219,7 +219,7 @@ The template (#3 in SKILL.md) has 7 touchpoints:
 
 **What to evaluate:**
 - Opening orientation present (4-step pipeline in 3-4 lines)
-- Step 1A: 3 theme options presented (Safe Bet, Competitive Edge, Wild Card) — each readable in under 30 seconds
+- Step 1A: 3 theme options (Brand Story, Sharp Edge, Pattern Interrupt) — each has theme line, sample hooks, "why this works", narrative arc, competitive context
 - Step 1A gate: "Which direction resonates?" (not "shall I continue?")
 - Step 1B: locked strategy in table format after user picks/iterates
 - Step 1B gate: "Strategy locked. Ready for site assets?"
