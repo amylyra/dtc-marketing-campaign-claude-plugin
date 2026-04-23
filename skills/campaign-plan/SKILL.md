@@ -372,11 +372,16 @@ If the user provided existing materials, note which assets can be adapted vs. bu
 **Produce a concise channel plan.** Reference the Channel Reference section above. Only include channels relevant to this campaign.
 
 **Tiered channels (essential / recommended / optional):**
+
+For each channel, include **creative direction** — not full concepts, but enough that `/draft-content` knows what to build. One line per concept describing the angle and which campaign arc phase it serves.
+
 - **Email** — Essential: Announcement + Last chance (2 sends). Recommended: VIP early access, segment-specific variants. Optional: educational content, post-campaign nurture.
+  - Creative direction per send: angle, arc phase, subject line direction. Example: "Announcement: educate phase — lead with the problem, not the product. Subject line direction: scenario-based ('Your water bottle freezes at 10,000ft')."
 - **Meta paid** — Essential: 2-3 ad concepts + retargeting creative. Recommended: 5-10 hook variants, UGC-style creative, lookalike audiences. Optional: whitelisted influencer ads, broad awareness.
+  - Creative direction per concept: framework (PAS, UGC, comparison, etc.), angle, target audience. Example: "Concept 1: Problem-Agitate-Solve field test video (prove phase). Concept 2: Comparison ad — '$34 to fix a $45 problem' (differentiate phase)."
 
 **Essentials-only channels (no tiering — just the core):**
-- **SMS** — Launch + Last chance (2 sends max).
+- **SMS** — Launch + Last chance (2 sends max). Include message angle.
 - **Google** — Shopping feed update + branded search.
 - **Organic social, Influencer/UGC, SEO** — Brief, relevant recommendations only.
 
@@ -416,12 +421,27 @@ If the user provided existing materials, note which assets can be adapted vs. bu
 
 Full 10-question checklist + daily/post-mortem checklists available in the Execution Checklist Reference section.
 
-**End with:** "What do you want me to draft first?"
-- Copy for site assets from Step 2
-- Ad creative (hooks + concepts)
-- Email/SMS copy
-- Competitive scan
-- Full annual promo calendar
+**Save the campaign brief** to `campaigns/[campaign-slug].md` — this file is the handoff to downstream skills (`/draft-content`, `/email-sequence`, `/brand-review`). Include:
+- Locked theme + narrative arc
+- Target audience + buyer psychology
+- Key messages (4-layer hierarchy)
+- Offer mechanics + kill threshold
+- Channel plan with creative direction per concept
+- Campaign timeline
+- Site asset list from Step 2
+
+Other skills auto-detect this file and inherit campaign context so the user doesn't have to re-explain.
+
+**End with a specific menu** — list the actual creative concepts from Step 3, not a generic list. Example:
+
+> "Campaign brief saved. What do you want me to draft first?"
+> 1. HP Banner + Announcement Bar copy (site assets from Step 2)
+> 2. Field test video script for Meta (Concept 1 from Step 3)
+> 3. Comparison ad — "$34 to fix a $45 problem" (Concept 2)
+> 4. Announcement email + SMS (educate phase)
+> 5. Full email/SMS promo sequence
+>
+> Or run `/draft-content` or `/email-sequence` anytime — they'll pick up this campaign brief automatically.
 
 ## Step Transitions
 

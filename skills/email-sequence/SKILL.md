@@ -14,6 +14,17 @@ Design and draft complete email + SMS flows with full copy, timing, branching lo
 
 User runs `/email-sequence` or asks to create, design, build, or draft an email flow, SMS flow, lifecycle sequence, abandoned cart flow, welcome series, post-purchase flow, win-back sequence, or any DTC retention flow.
 
+## Campaign Context
+
+Before drafting, check for an active campaign brief:
+
+1. **Check `campaigns/` directory** — if a campaign brief exists (saved by `/campaign-plan`), auto-load it. Pull the locked theme, narrative arc, target audience, offer mechanics, email creative direction, and timeline.
+2. **Inform the user**: "I found your [campaign name] brief — theme, offer, audience, and email direction are loaded."
+3. **Match sends to the campaign arc** — each email/SMS in a promo sequence maps to a phase of the narrative arc. A teaser send (educate) is fundamentally different from a last-chance send (convert). Use the arc to shape the angle, urgency level, and proof strategy for each message.
+4. **Use creative direction seeds** — if the campaign brief includes email creative direction per send (from Step 3), use those angles as the starting point.
+
+If no campaign brief exists, proceed normally.
+
 ## Brand Context
 
 Before drafting any copy, check for the `brand/` directory:

@@ -91,6 +91,17 @@ For each audience segment, adapt ALL FOUR LAYERS:
 
 When the user specifies a non-primary audience, shift the ENTIRE framework — don't just change the hook and keep the same body copy.
 
+## Campaign Context
+
+Before drafting, check for an active campaign brief:
+
+1. **Check `campaigns/` directory** — if a campaign brief exists (saved by `/campaign-plan`), auto-load it. Pull the locked theme, narrative arc, target audience, offer mechanics, and creative direction for the channel being drafted.
+2. **Inform the user**: "I found your [campaign name] brief and will use it for context — theme, audience, offer, and creative direction are loaded."
+3. **Match the arc phase** — if the campaign brief includes a narrative arc (e.g., "Educate → Prove → Convert"), identify which phase this content is for based on timing or user input. A teaser email is completely different from a last-chance email. Ask if unclear: "Which phase of the campaign is this for?"
+4. **Use creative direction seeds** — if the campaign brief includes creative direction per channel/concept (from Step 3), use those as the starting brief. Don't reinvent from scratch.
+
+If no campaign brief exists, proceed normally — gather context from the user.
+
 ## Brand & Customer Voice Integration
 
 - If `brand/voice.md` exists, auto-apply voice and tone. Inform the user that brand voice settings are being applied.
@@ -113,6 +124,22 @@ When the user specifies a non-primary audience, shift the ENTIRE framework — d
 - Pull from `brand/products.md` if available
 
 ### Ad Creative Copy (Meta, TikTok, Google)
+
+#### Creative Concept Brainstorm (before writing)
+
+Before jumping to copy, brainstorm 3-5 creative concepts — each is a distinct idea for an ad, not just a different hook on the same idea. Present them as a quick menu so the user can pick which to develop:
+
+> **Concept 1**: [Name] — [One sentence: what the ad shows/says and why it works]
+> **Concept 2**: [Name] — [One sentence]
+> **Concept 3**: [Name] — [One sentence]
+
+If a campaign brief is loaded, seed concepts from its Step 3 creative direction. If not, generate from the product, audience, and competitive context.
+
+Each concept should use a different angle (problem, comparison, social proof, education, provocation, demonstration). Don't present 5 variations of the same idea.
+
+After the user picks concepts to develop, write the full copy using the frameworks below.
+
+#### Ad Frameworks
 
 Provide 5 DTC ad frameworks, each with hook/body/CTA structure:
 

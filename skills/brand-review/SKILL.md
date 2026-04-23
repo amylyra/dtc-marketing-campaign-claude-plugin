@@ -145,6 +145,8 @@ Review marketing content against the brand guidelines stored in `brand/voice.md`
 
 2. **Brand guidelines** — loaded automatically from `brand/` directory files. If files are missing or incomplete, offer to run setup first.
 
+3. **Campaign context** (if applicable) — check `campaigns/` directory for an active campaign brief. If found, also review content against the locked campaign strategy: is the content on-theme? Does it match the campaign arc phase? Does it use the right offer mechanics? Does it align with the creative direction from the brief? Flag deviations as Medium severity.
+
 ### Review Process
 
 Evaluate the content against each of these dimensions:

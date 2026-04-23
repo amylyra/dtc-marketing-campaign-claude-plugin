@@ -98,22 +98,28 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 
 ### Email (tiered)
 
-| Tier | What | Timing |
-|------|------|--------|
-| **Essential** | Launch announcement (subscriber early access) + BFCM last chance | Nov 1, Nov 29 |
-| **Recommended** | VIP early BFCM access (24hrs before public), gift guide for gift-giver segment | Nov 25, Nov 15 |
-| **Optional** | Public launch, BFCM public launch, holiday shipping cutoff reminder | Nov 3, Nov 27, Dec 5 |
+| Tier | Send | Timing | Creative Direction |
+|------|------|--------|--------------------|
+| **Essential** | Launch announcement | Nov 1 | Educate phase — lead with the problem, not the product. Subject line: scenario-based. |
+| **Essential** | BFCM last chance | Nov 29 | Convert phase — urgency, bundle value, countdown. Subject line: deadline + savings. |
+| **Recommended** | VIP early BFCM access | Nov 25 | Reward phase — insider access, no discount language. Subject line: exclusivity. |
+| **Recommended** | Gift guide (gift-giver segment) | Nov 15 | Gift-giver angle — "for the person who..." framing, price tiers. |
+| **Optional** | Public launch, BFCM public, holiday cutoff | Nov 3, Nov 27, Dec 5 | Supporting sends — standard cadence. |
 
 ### Meta Paid — $5K (tiered)
 
-| Tier | What |
-|------|------|
-| **Essential** | 2-3 ad concepts (field-test video, UGC testimonial, "will it survive?" native) + retargeting (product-specific) |
-| **Recommended** | 5+ hook variants per concept, UGC-style creative from influencer whitelisting |
-| **Optional** | Broad awareness campaign, lookalike audiences beyond core outdoor segment |
+| Tier | Concept | Creative Direction |
+|------|---------|-------------------|
+| **Essential** | Field test video | PAS framework, prove phase — "We tested 12 bottles at 14,000ft." Native feel. |
+| **Essential** | Comparison ad | Sharp Edge angle — "$34 to fix a $45 problem." Static or carousel. |
+| **Essential** | Retargeting | Product-specific, PDP viewers. CTA: return to product page. |
+| **Recommended** | UGC testimonial | Whitelisted creator content. "I switched last winter. Here's why." |
+| **Recommended** | 5+ hook variants per concept | Test volume on winning concepts. |
+| **Optional** | Broad awareness | Lookalike audiences beyond core outdoor segment. |
 
 ### SMS — essentials only
-- Launch SMS (Nov 3) + BFCM last chance SMS (Nov 29). 2 sends max.
+- Launch SMS (Nov 3): "Tern's ski season collection is live. Free shipping at $60. [link]" — educate phase.
+- BFCM last chance SMS (Nov 29): "The Full Send bundle ends tonight. $108 for every Tern product. [link]" — convert phase.
 
 ### Google — essentials only
 - Shopping feed update (winter photography, campaign badges) + branded search ("Tern bottle parka," "Tern gear protection").
@@ -188,4 +194,13 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 
 Full 10-question checklist + daily/post-mortem in Execution Checklist Reference.
 
-**End:** "What do you want me to draft first?"
+**Campaign brief saved to `campaigns/tern-ski-season-bfcm-2026.md`.**
+
+**End:** "Campaign brief saved. What do you want me to draft first?"
+1. HP Banner + Announcement Bar copy (site assets from Step 2)
+2. Field test video script for Meta (Concept 1)
+3. Comparison ad — "$34 to fix a $45 problem" (Concept 2)
+4. Launch announcement email (educate phase)
+5. Full BFCM email/SMS promo sequence
+
+Or run `/draft-content` or `/email-sequence` anytime — they'll pick up this brief automatically.

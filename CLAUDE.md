@@ -10,9 +10,9 @@ A DTC marketing plugin with 8 skills for campaign planning, content creation, em
 
 1. **Run `/brand-review setup`** — fills in the `brand/` directory (voice, products with product profile, customers with buyer psychology). This is the foundation. Every other skill reads from these files. Takes 15-30 minutes.
 
-2. **Run `/campaign-plan`** — builds your first campaign brief with promo economics, channel strategy, and execution checklist. If you provide competitors, it runs a lightweight competitive scan inline.
+2. **Run `/campaign-plan`** — pick from 3 theme directions, lock strategy, plan site assets and channels. Saves a campaign brief to `campaigns/` that downstream skills auto-load.
 
-3. **Run `/draft-content` and `/email-sequence` in parallel** — these produce the actual content and retention flows for the campaign. Both auto-apply brand context from step 1.
+3. **Run `/draft-content` and `/email-sequence`** — these auto-load your campaign brief (theme, arc, audience, creative direction) and produce channel-specific content. No need to re-explain the campaign.
 
 4. **Run `/brand-review`** — QA all content before launch.
 
@@ -41,11 +41,13 @@ brand/
   products.md       — product profile (type, replenishment, seasonal demand), catalog, pricing, claims, hero SKUs
   customers.md      — customer segments, buyer psychology (8 dimensions), language bank, social proof themes
 
+campaigns/          — saved campaign briefs (created by /campaign-plan, auto-loaded by /draft-content, /email-sequence, /brand-review)
+
 skills/
-  brand-review/     — brand setup + content QA (incl. proof-to-psychology match)
-  campaign-plan/    — 4-step campaign planning: strategy → site creative assets → channels/calendar → metrics/execution
-  draft-content/    — DTC content drafting (9 content types, audience-adaptive messaging)
-  email-sequence/   — email + SMS lifecycle flows (12 flow types, product-type matrix, promo psychology)
+  brand-review/     — brand setup + content QA (incl. proof-to-psychology match, engagement quality, campaign alignment)
+  campaign-plan/    — 4-step campaign planning: 3 theme options → site creative assets → channels/calendar → metrics/execution. Saves brief for downstream skills.
+  draft-content/    — DTC content drafting (9 content types, audience-adaptive messaging, creative concept brainstorm). Auto-loads campaign briefs.
+  email-sequence/   — email + SMS lifecycle flows (12 flow types, product-type matrix, promo psychology). Auto-loads campaign briefs.
   competitive-brief/— DTC competitive intelligence (incl. category position analysis)
   performance-report/— contribution-margin-first reporting (seasonal adjustments, cohort psychology)
   seo-audit/        — SEO with e-commerce focus (incl. novel product keyword strategy)
@@ -62,6 +64,7 @@ CONNECTORS.md       — MCP integration reference
 - **Offer hierarchy** — exhaust cheaper incentives before going deeper: early access → loyalty perks → free shipping → GWP → bundles → % off secondary SKUs → sitewide % off (last resort). Adapts by product type (single-SKU, durable goods, seasonal demand).
 - **Hero SKU protection** — never deep-discount the anchor product. Once the discount price becomes the reference price, pricing power is permanently lowered.
 - **Brand context flows through everything** — populate `brand/` once, every skill uses it automatically.
+- **Campaign briefs are the handoff** — `/campaign-plan` saves a brief to `campaigns/`. Downstream skills (`/draft-content`, `/email-sequence`, `/brand-review`) auto-load it so the user never re-explains the campaign. Theme, arc, audience, offer, and creative direction flow through.
 - **Buyer psychology drives adaptation** — each audience segment has different decision-making psychology. Skills adapt proof strategy, flow structure, channel allocation, and messaging based on buyer psychology, not just demographics.
 - **Product type shapes everything** — consumable, durable, fashion, and subscription products need different flows, offers, and retention strategies. Skills check `brand/products.md` Product Profile and adapt.
 
