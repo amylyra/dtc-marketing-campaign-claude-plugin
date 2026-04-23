@@ -32,6 +32,10 @@ Gather before starting Step 1. Ask for anything missing — batch questions, max
 3. **Timeline** — campaign duration and any fixed dates (launch date, seasonal deadline, shipping cutoff)
 4. **Product or collection** — what's being promoted (mandatory, not optional)
 5. **Brand context** — If a `brand/` directory exists, auto-apply product catalog and customer profiles. Reference products by name and price. If no `brand/` directory is found, prompt the user to set one up or paste key details.
+6. **Research context** — Auto-load if available:
+   - `research/competitive-*.md` — use for theme options (what competitors are doing, positioning gaps, ad patterns). Makes the "vs. competitors" line in each theme option specific, not generic.
+   - `research/seo-*.md` — use for content/SEO channel planning in Step 3.
+   - If no research exists, inform the user: "No competitive or SEO research found. Want to run `/competitive-brief` or `/seo-audit` first, or should I work with what we have?"
 
 **Deferred to later steps** (don't ask upfront):
 - Budget range → Step 3 (Channels + Calendar)
@@ -249,7 +253,11 @@ Before starting Step 1, briefly tell the user what to expect. Keep it to 3-4 lin
 > 3. **Channels + calendar** — where to promote, when, and budget
 > 4. **Metrics + execution** — KPIs, risks, go/no-go checklist
 >
+> I'll save the campaign brief when we're done. Then `/draft-content` and `/email-sequence` auto-load it — no re-explaining needed.
+>
 > Each step gets your sign-off before I move on. Let's start with strategy.
+
+If competitive research (`research/competitive-*.md`) or SEO findings (`research/seo-*.md`) exist, mention them: "I found your competitive research / SEO audit — I'll use it for theme options and channel planning."
 
 Then proceed to intake questions (from the Intake section above) and Step 1.
 

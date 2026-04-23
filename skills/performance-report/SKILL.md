@@ -41,6 +41,14 @@ User runs `/performance-report` or asks for a marketing report, performance anal
 
 4. **Comparison baseline** — prior period, same period last year, or counterfactual
 
+### Campaign Context
+
+If `campaigns/` directory contains a brief for the campaign being reported on, auto-load it:
+- Compare actuals against the KPI targets from Step 4
+- Check if the kill threshold was triggered (and whether the team acted on it)
+- Evaluate channel performance against the planned budget allocation
+- Reference the campaign theme and offer mechanics when analyzing what worked/didn't
+
 ### Brand Context
 
 If `brand/` directory exists, auto-apply:

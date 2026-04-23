@@ -102,6 +102,15 @@ Before drafting, check for an active campaign brief:
 
 If no campaign brief exists, proceed normally — gather context from the user.
 
+## Research Context
+
+Check for saved research that improves content quality:
+
+- **`research/competitive-*.md`** — if a competitive brief exists, load it. Use competitor ad patterns and positioning gaps to strengthen the swap test (what are competitors saying? how do we sound different?). Reference competitive gaps when brainstorming creative concepts.
+- **`research/seo-*.md`** — if an SEO audit exists, load keyword targets for web content (product pages, collection pages, blog posts). Weave primary keywords into headlines, meta descriptions, and body copy naturally.
+
+If research files exist, inform the user: "I found competitive research and/or SEO findings — using them for competitive distinctiveness and keyword targeting."
+
 ## Brand & Customer Voice Integration
 
 - If `brand/voice.md` exists, auto-apply voice and tone. Inform the user that brand voice settings are being applied.

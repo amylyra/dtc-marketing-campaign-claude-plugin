@@ -323,6 +323,13 @@ Identify which quadrant is underserved or where your differentiation is stronges
 
 Present the full competitive brief with clear formatting. Note the date of the research so the user knows the freshness of the data.
 
+**Save findings** to `research/competitive-[competitor-or-market].md` so other skills can auto-load them. Include: key competitors, positioning gaps, promo intelligence, ad creative patterns, and recommended actions.
+
+Other skills use this file:
+- `/campaign-plan` — loads competitive context for theme options (what competitors are doing, where the gaps are)
+- `/draft-content` — loads competitive ad patterns for swap test and competitive distinctiveness
+- `/brand-review` — checks content against competitive landscape
+
 After the brief, ask:
 
 "Would you like me to:

@@ -8,17 +8,19 @@ A DTC marketing plugin with 8 skills for campaign planning, content creation, em
 
 ### First-Time Setup
 
-1. **Run `/brand-review setup`** — fills in the `brand/` directory (voice, products with product profile, customers with buyer psychology). This is the foundation. Every other skill reads from these files. Takes 15-30 minutes.
+1. **Run `/brand-review setup`** — fills in the `brand/` directory (voice, products, customers). Foundation — every skill reads from these files.
 
-2. **Run `/campaign-plan`** — pick from 3 theme directions, lock strategy, plan site assets and channels. Saves a campaign brief to `campaigns/` that downstream skills auto-load.
+2. **Run `/competitive-brief` and/or `/seo-audit`** (optional) — research saves to `research/`. Campaign-plan and draft-content auto-load findings for better theme options, competitive distinctiveness, and keyword targeting.
 
-3. **Run `/draft-content` and `/email-sequence`** — these auto-load your campaign brief (theme, arc, audience, creative direction) and produce channel-specific content. No need to re-explain the campaign.
+3. **Run `/campaign-plan`** — pick from 3 theme directions, lock strategy, plan site assets and channels. Saves brief to `campaigns/` that all downstream skills auto-load.
 
-4. **Run `/brand-review`** — QA all content before launch.
+4. **Run `/draft-content` and `/email-sequence`** — auto-load campaign brief + research. Brainstorm creative concepts per channel, write arc-aware copy. No re-explaining.
 
-5. **Run `/performance-report`** — post-mortem after campaign ends.
+5. **Run `/brand-review`** — QA content against brand + campaign brief + engagement standards.
 
-You can run any skill standalone, but output quality improves significantly when `brand/` files are populated first.
+6. **Run `/performance-report`** — post-mortem. Auto-loads campaign brief to compare actuals vs. planned KPIs and kill thresholds.
+
+Each skill works standalone, but output quality compounds when the pipeline is connected — research feeds strategy, strategy feeds creative, creative gets QA'd, results close the loop.
 
 ### Skill Quick Reference
 
@@ -41,7 +43,8 @@ brand/
   products.md       — product profile (type, replenishment, seasonal demand), catalog, pricing, claims, hero SKUs
   customers.md      — customer segments, buyer psychology (8 dimensions), language bank, social proof themes
 
-campaigns/          — saved campaign briefs (created by /campaign-plan, auto-loaded by /draft-content, /email-sequence, /brand-review)
+campaigns/          — saved campaign briefs (created by /campaign-plan, auto-loaded by all downstream skills)
+research/           — saved competitive briefs and SEO audits (created by /competitive-brief and /seo-audit, auto-loaded by /campaign-plan and /draft-content)
 
 skills/
   brand-review/     — brand setup + content QA (incl. proof-to-psychology match, engagement quality, campaign alignment)

@@ -234,6 +234,12 @@ For each action item, include:
 
 ## Follow-Up
 
+**Save findings** to `research/seo-[topic-or-domain].md` so other skills can auto-load them. Include: top keyword opportunities, content gaps, on-page priorities, and recommended content types.
+
+Other skills use this file:
+- `/draft-content` — loads keyword targets for web content (product pages, collection pages, blog posts)
+- `/campaign-plan` — references SEO findings for content/SEO channel planning
+
 After presenting the audit, ask:
 
 "Would you like me to:
