@@ -23,7 +23,9 @@ User runs `/campaign-plan` or asks to plan, design, or build a marketing campaig
 5. **Strategy first.** Campaign theme determines which assets matter and what they say.
 6. **Concise output.** Scannable — bullet points, tables, short copy direction. No walls of text.
 
-## Intake
+## Intake (Reference)
+
+This section defines what information is needed. **Do not start gathering intake until after the orientation (see Stepped Flow → Opening).** The opening orientation is always the first thing the user sees.
 
 Gather before starting Step 1. Ask for anything missing — batch questions, max 3 per message.
 
@@ -31,14 +33,14 @@ Gather before starting Step 1. Ask for anything missing — batch questions, max
 2. **Target audience** — who the campaign is aimed at (new customers, VIP/repeat buyers, lapsed, gift-givers, specific segment)
 3. **Timeline** — campaign duration and any fixed dates (launch date, seasonal deadline, shipping cutoff)
 4. **Product or collection** — what's being promoted (mandatory, not optional)
-5. **Brand context** — If a `brand/` directory exists, auto-apply product catalog and customer profiles. Reference products by name and price. If no `brand/` directory is found, prompt the user to set one up or paste key details.
-6. **Research context** — Auto-load if available:
+5. **Budget range** — total campaign budget. This determines the number of paid creative concepts, influencer partnerships, and channel breadth in Step 3. Ask upfront so strategy and scope stay realistic.
+6. **Brand context** — If a `brand/` directory exists, auto-apply product catalog and customer profiles. Reference products by name and price. If no `brand/` directory is found, prompt the user to set one up or paste key details.
+7. **Research context** — Auto-load if available:
    - `research/competitive-*.md` — use for theme options (what competitors are doing, positioning gaps, ad patterns). Makes the "vs. competitors" line in each theme option specific, not generic.
    - `research/seo-*.md` — use for content/SEO channel planning in Step 3.
    - If no research exists, inform the user: "No competitive or SEO research found. Want to run `/competitive-brief` or `/seo-audit` first, or should I work with what we have?"
 
 **Deferred to later steps** (don't ask upfront):
-- Budget range → Step 3 (Channels + Calendar)
 - Competitors → offer to scan inline during Step 1 if mentioned, but don't gate on it
 - Previous campaign performance → ask during Step 1 if relevant
 
@@ -243,9 +245,9 @@ If any metric crosses the kill threshold, escalate immediately.
 
 Work through these 4 steps in order. Each step produces output and gets user sign-off before moving to the next. Do not skip ahead.
 
-### Opening: Orient the User
+### Opening: Orient the User (MANDATORY FIRST OUTPUT)
 
-Before starting Step 1, briefly tell the user what to expect. Keep it to 3-4 lines max:
+**This is the very first thing the user sees when `/campaign-plan` is triggered.** Do not ask intake questions, gather info, or produce any other output before this orientation. Present it immediately.
 
 > **Here's how this works:**
 > 1. **Strategy** — we'll pick a campaign theme and offer (you choose from 3 options)
@@ -253,13 +255,11 @@ Before starting Step 1, briefly tell the user what to expect. Keep it to 3-4 lin
 > 3. **Channels + calendar** — where to promote, when, and budget
 > 4. **Metrics + execution** — KPIs, risks, go/no-go checklist
 >
-> I'll save the campaign brief when we're done. Then `/draft-content` and `/email-sequence` auto-load it — no re-explaining needed.
->
-> Each step gets your sign-off before I move on. Let's start with strategy.
+> Each step gets your sign-off before I move on. I'll save the campaign brief when we're done — then `/draft-content` and `/email-sequence` auto-load it, no re-explaining needed.
 
-If competitive research (`research/competitive-*.md`) or SEO findings (`research/seo-*.md`) exist, mention them: "I found your competitive research / SEO audit — I'll use it for theme options and channel planning."
+If competitive research (`research/competitive-*.md`) or SEO findings (`research/seo-*.md`) exist, add one line: "I found your competitive research / SEO audit — I'll use it for theme options and channel planning."
 
-Then proceed to intake questions (from the Intake section above) and Step 1.
+**Then — in the same message — gather intake.** Use whatever the user already provided in their prompt, and ask only for what's missing (from the Intake Reference section above). Batch missing questions, max 3 per message. If the user's prompt already contains enough to start, move directly to Step 1.
 
 ### Step 1: Campaign Strategy
 
@@ -334,9 +334,10 @@ Once the theme is locked, produce the **full strategy** in this table format —
 
 | Element | Detail |
 |---------|--------|
-| **Theme** | [Locked theme line] |
+| **Theme** | [Locked theme line + one-sentence description] |
 | **Audience** | Primary: [who]. Secondary: [if any]. Excluded: [who + why]. |
 | **Messages** | 1. Why care: [one line] 2. What is it: [one line] 3. Why us: [one line] 4. CTA: [one line] |
+| **Featured products** | Hero SKUs: [list with prices]. Bundles: [list with composition + prices]. Landing page structure if applicable. |
 | **Offer** | [Mechanic] — hierarchy check: [why not cheaper?] |
 | **Kill threshold** | [Specific metric + number + when to check] |
 | **Promo economics** | [Margin impact, discount penetration estimate] |
@@ -357,14 +358,14 @@ Do not ask about materials yet — let the user focus on strategy alignment.
 1. "What do you already have? Past campaign assets, brand guide, Figma/UI kit, previous creative that worked?"
 2. "Here's what I'd recommend for this campaign — check off what you need:"
 
-Present a checklist with your recommended tier for each asset. The user confirms, adds, or removes before you write anything.
+Present a checklist with your recommended tier for each asset. **Pre-check items you recommend** so the user can confirm, uncheck, or add — don't make them build the list from scratch.
 
 > **Site assets for [campaign name]:**
 >
 > **Essential** (recommend for this campaign):
-> - [ ] HP Banner
-> - [ ] Collection Page Banner (Shop All)
-> - [ ] Announcement Bar
+> - [x] HP Banner
+> - [x] Collection Page Banner (Shop All)
+> - [x] Announcement Bar
 >
 > **Recommended** (if team has bandwidth):
 > - [ ] Nav Super Menu Merch
@@ -372,24 +373,32 @@ Present a checklist with your recommended tier for each asset. The user confirms
 > - [ ] PDP Badges / Callouts
 >
 > **Only if needed:**
-> - [ ] Landing Page *(only if paid traffic needs a dedicated destination)*
-> - [ ] Cart / Checkout Messaging *(only if threshold offer or upsell play)*
-> - [ ] Pop-up / Slide-in *(only if running email/SMS capture for this campaign)*
+> - [ ] Landing Page
+> - [ ] Cart / Checkout Messaging
+> - [ ] Pop-up / Slide-in
 >
 > "Which of these do you need? I'll write copy direction for your confirmed list."
 
-Adapt the recommended tiers based on the specific campaign — a threshold-offer campaign makes Cart Messaging essential; a brand awareness campaign may skip PDP Badges. Reference the Site Creative Asset Checklist above.
+**Smart tier promotion — adapt based on campaign mechanics from Step 1:**
+- Threshold offer active (e.g., "25% off $80+") → promote Cart / Checkout Messaging to Essential
+- User mentioned a dedicated landing page or LP → promote Landing Page to Essential
+- Campaign has per-SKU badges or callouts (e.g., "Best Seller", "New") → promote PDP Badges to Recommended with pre-check
+- Gift-giver campaign → promote Collection Page Banner (Category) if gift-specific collection exists
 
 **Wait for the user to confirm their list before proceeding to Part B.**
 
 #### Part B: Copy Direction for Confirmed Assets
 
-For each asset the user confirmed, provide:
-- **Specific copy direction tied to the campaign story** — not generic. Reference brand voice and energy.
-- Key message (from Step 1 messaging hierarchy)
-- Design notes from brand guide / UI kit / Figma if available
+For each asset the user confirmed, produce a table:
 
-If the user mentioned existing materials, note which assets can be adapted vs. built from scratch.
+| Asset | Copy Direction | Notes |
+|-------|---------------|-------|
+| [Asset name] | [Specific copy direction tied to campaign story — headline, CTA, key message from Step 1] | [Adapt vs. new? Design constraints? Character limits?] |
+
+- Copy direction must be specific to THIS campaign story — not generic. Reference brand voice.
+- Pull key message from Step 1 messaging hierarchy.
+- Include design notes from brand guide / UI kit / Figma if available.
+- If the user mentioned existing materials, note which assets can be adapted vs. built from scratch.
 
 **Gate:** "Here's the copy direction for your confirmed assets. Anything to adjust?"
 
@@ -399,15 +408,15 @@ If the user mentioned existing materials, note which assets can be adapted vs. b
 
 #### Part A: Scope the Channel Plan
 
-**Ask:** Budget range, channel preferences/constraints.
+Using the budget from intake, present a channel checklist with recommended sends/concepts scaled to that budget. **Pre-check items you recommend** — the user confirms, unchecks, or adds. Ask about any channel preferences or constraints.
 
-Then present a channel checklist with recommended sends/concepts. The user confirms scope before you write creative direction.
+**Meta paid concepts must be derived from the locked theme** — not generic placeholders. Each concept should name a specific angle seeded from the theme, narrative arc, or competitive positioning from Step 1.
 
 > **Email sends for [campaign name]:**
 >
 > **Essential:**
-> - [ ] Launch announcement — [date]
-> - [ ] Last chance — [date]
+> - [x] Launch announcement — [date]
+> - [x] Last chance — [date]
 >
 > **Recommended:**
 > - [ ] VIP early access — [date]
@@ -417,44 +426,56 @@ Then present a channel checklist with recommended sends/concepts. The user confi
 > - [ ] Public launch
 > - [ ] Post-campaign nurture
 >
-> **Meta paid concepts:**
-> - [ ] Concept 1: [angle, e.g., "field test video — Problem-Agitate-Solve"]
-> - [ ] Concept 2: [angle, e.g., "comparison ad — '$34 to fix a $45 problem'"]
-> - [ ] Concept 3: [angle, e.g., "UGC testimonial"]
-> - [ ] Retargeting (product-specific)
+> **Meta paid concepts ([budget allocation] of [total budget]):**
+> - [x] Concept 1: [specific angle from theme, e.g., "scenario ad — frozen water at 10,000ft"]
+> - [x] Concept 2: [specific angle from theme, e.g., "comparison — '$34 to fix a $45 problem'"]
+> - [ ] Concept 3: [specific angle, e.g., "UGC testimonial — creator winter field test"]
+> - [x] Retargeting (product-specific, PDP viewers)
 >
 > **SMS** (essentials only):
-> - [ ] Launch SMS — [date]
-> - [ ] Last chance SMS — [date]
+> - [x] Launch SMS — [date]
+> - [x] Last chance SMS — [date]
 >
 > **Google paid:**
-> - [ ] Shopping feed update (campaign photography, badges)
-> - [ ] Branded search ("brand + product" terms)
+> - [x] Shopping feed update (campaign photography, badges)
+> - [x] Branded search ("brand + product" terms)
 > - [ ] Non-brand search (problem/category terms, if budget allows)
 > - [ ] Performance Max campaign
 >
-> **Other** (brief recommendations):
-> - [ ] Organic social
-> - [ ] Influencer/UGC
-> - [ ] SEO content
+> **Other:**
+> - [x] Organic social (Instagram, TikTok, Pinterest — brief cadence plan)
+> - [ ] Influencer/UGC ([estimated budget] — [estimated # creators])
+> - [ ] SEO content (blog/guide to support campaign keywords)
 >
 > "Which sends and concepts do you want? Anything to add or cut?"
 
-Adapt the recommended list based on the campaign type, budget, and audience. Reference the Channel Reference section above.
+Scale the number of recommended concepts and sends to the budget — a $5K budget gets fewer Meta concepts than $20K. Reference the Channel Reference and Budget Framework sections above.
 
 **Wait for the user to confirm before proceeding to Part B.**
 
 #### Part B: Creative Direction + Calendar
 
-For each confirmed email send, provide: **angle, arc phase, subject line direction.** Example: "Announcement: educate phase — lead with the problem, not the product. Subject line direction: scenario-based."
+**Email — table format:**
 
-For each confirmed Meta concept, provide: **framework, angle, target audience.** Example: "Concept 1: Problem-Agitate-Solve field test video (prove phase). Audience: cold prospecting."
+| Send | Timing | Creative Direction |
+|------|--------|--------------------|
+| [Send name] | [Date] | [Arc phase] — [angle, tone]. Subject line direction: [type]. |
 
-For each confirmed Google element, provide: **campaign type, targeting, and feed/copy notes.** Example: "Shopping: update product titles with campaign keywords, winter photography. Branded search: 'Tern bottle parka' + 'Tern gear protection' — sitelink to collection page."
+**Meta paid — table format:**
 
-For SMS: include message angle for each confirmed send.
+| Concept | Creative Direction |
+|---------|-------------------|
+| [Concept name] | [Framework] — [specific angle from theme]. [Format: video/static/carousel]. Audience: [targeting]. |
 
-For other channels: brief, relevant recommendations only.
+**Google — table format:**
+
+| Element | Creative Direction |
+|---------|-------------------|
+| [Element] | [Campaign type, targeting, feed/copy notes]. |
+
+**SMS:** one line per send — timing, message angle, arc phase.
+
+**Other channels:** brief, relevant recommendations only. No padding.
 
 **Campaign timeline** — simple date/milestone/asset table. Site assets from Step 2 are blocking dependencies; outbound builds in parallel.
 
@@ -492,16 +513,50 @@ For other channels: brief, relevant recommendations only.
 
 Full 10-question checklist + daily/post-mortem checklists available in the Execution Checklist Reference section.
 
-**Save the campaign brief** to `campaigns/[campaign-slug].md` — this file is the handoff to downstream skills (`/draft-content`, `/email-sequence`, `/brand-review`). Include:
-- Locked theme + narrative arc
-- Target audience + buyer psychology
-- Key messages (4-layer hierarchy)
-- Offer mechanics + kill threshold
-- Channel plan with creative direction per concept
-- Campaign timeline
-- Site asset list from Step 2
+**Save the campaign brief** to `campaigns/[campaign-slug].md` using this standard structure. Downstream skills (`/draft-content`, `/email-sequence`, `/brand-review`, `/performance-report`) auto-detect and parse this file.
 
-Other skills auto-detect this file and inherit campaign context so the user doesn't have to re-explain.
+```markdown
+# [Campaign Name]
+
+## Strategy
+- **Theme**: [locked theme line]
+- **Narrative arc**: [Phase 1] → [Phase 2] → [Phase 3]
+- **Audience**: Primary: [who]. Secondary: [if any]. Excluded: [who].
+- **Messages**: 1. Why care: ... 2. What is it: ... 3. Why us: ... 4. CTA: ...
+- **Featured products**: [hero SKUs + bundles with prices]
+
+## Offer
+- **Mechanic**: [offer details]
+- **Kill threshold**: [metric + number + when]
+- **Promo economics**: [margin impact, discount penetration]
+
+## Site Assets
+[Table from Step 2B — asset, copy direction, notes]
+
+## Channel Plan
+### Email
+[Table from Step 3B — send, timing, creative direction]
+### Meta Paid
+[Table from Step 3B — concept, creative direction]
+### Google
+[Table from Step 3B — element, creative direction]
+### SMS
+[Sends from Step 3B]
+### Other
+[Organic, influencer, SEO from Step 3B]
+
+## Timeline
+[Table from Step 3B — date, milestone, what goes live]
+
+## Budget
+[Table from Step 3B — category, amount, %]
+
+## Metrics
+[KPI table from Step 4]
+
+## Risks
+[Risk/mitigation table from Step 4]
+```
 
 **End with a specific menu** — list the actual creative concepts from Step 3, not a generic list. Example:
 

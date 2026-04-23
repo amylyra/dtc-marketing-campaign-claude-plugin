@@ -122,16 +122,17 @@ Check the output against the skill's SKILL.md — every required section should 
 - [ ] Variant diversity checked (if multi-variant content reviewed)
 
 #### campaign-plan (4-step flow)
-- [ ] Opening orientation present (4-step pipeline explained in 3-4 lines)
+- [ ] Opening orientation is the FIRST output (before any intake questions) — 4-step pipeline explained, brief saving + downstream auto-loading mentioned
+- [ ] Budget gathered at intake (not deferred to Step 3) — shapes number of paid concepts and channel breadth
 - [ ] Step 1A: 3 theme options presented (Brand Story, Sharp Edge, Pattern Interrupt) — each has theme line, 2-3 sample hooks, "why this works" line, narrative arc, and competitive context. All 3 readable in under 60 seconds.
 - [ ] Step 1A gate asks user to pick, mix, or riff — not "shall I continue?"
-- [ ] Step 1B: theme iterated based on user feedback, then locked strategy in table format (theme, audience, messages, offer, kill threshold, promo economics)
+- [ ] Step 1B: theme iterated based on user feedback, then locked strategy in table format (theme, audience, messages, featured products/bundles, offer, kill threshold, promo economics)
 - [ ] Step 1B gate confirms strategy lock before proceeding to assets
-- [ ] Step 2A: asset checklist presented for user to confirm scope (not just produced — user picks which assets to build)
-- [ ] Step 2B: copy direction produced ONLY for user-confirmed assets, tied to campaign story, brand guide/UI kit consulted
-- [ ] Step 3A: channel checklist presented for user to confirm scope — which email sends, which Meta concepts, SMS sends (user picks, not assumed)
-- [ ] Step 3B: creative direction produced ONLY for user-confirmed sends/concepts (angle + arc phase), campaign timeline table, budget allocation
-- [ ] Step 4 complete: 3-5 KPIs with targets, 2-3 risks with mitigations, condensed execution checklist (top 5 questions), campaign brief saved to `campaigns/`, smart handoff menu listing specific concepts from Step 3
+- [ ] Step 2A: asset checklist presented with recommended items pre-checked — smart tier promotion applied (threshold offer → Cart essential; user mentions LP → LP essential)
+- [ ] Step 2B: copy direction in table format (Asset | Copy Direction | Notes) ONLY for user-confirmed assets, tied to campaign story
+- [ ] Step 3A: channel checklist with recommended items pre-checked, Meta concepts seeded from locked theme (not generic placeholders), scaled to budget
+- [ ] Step 3B: creative direction in table format ONLY for user-confirmed sends/concepts (angle + arc phase), campaign timeline table, budget allocation table
+- [ ] Step 4 complete: 3-5 KPIs with targets, 2-3 risks with mitigations, condensed execution checklist (top 5 questions), campaign brief saved to `campaigns/` in standard template, smart handoff menu listing specific concepts from Step 3
 - [ ] Gates present between each step (user sign-off requested)
 - [ ] Materials question asked at start of Step 2 (not Step 1)
 - [ ] Output is concise and scannable (tables, bullets, not walls of text)

@@ -4,7 +4,7 @@
 
 ---
 
-## Opening
+## Opening (First Output — Before Any Questions)
 
 > **Here's how this works:**
 > 1. **Strategy** — we'll pick a campaign theme and offer (you choose from 3 options)
@@ -12,7 +12,7 @@
 > 3. **Channels + calendar** — where to promote, when, and budget
 > 4. **Metrics + execution** — KPIs, risks, go/no-go checklist
 >
-> Each step gets your sign-off before I move on. Let's start with strategy.
+> Each step gets your sign-off before I move on. I'll save the campaign brief when we're done — then `/draft-content` and `/email-sequence` auto-load it, no re-explaining needed.
 
 ---
 
@@ -49,6 +49,7 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 | **Theme** | "Gear Up Before It Freezes" — with competitive angle: Tern insulates the gear you already own (vs. buying a new insulated bottle). |
 | **Audience** | Primary: Serious winter athletes 25-45, research-driven, own premium gear. Secondary: Gift-givers ("the skier who has everything"). Excluded: Casual resort skiers, discount-motivated bargain hunters. |
 | **Messages** | 1. Why care: Your gear freezes before you do. 2. What is it: Insulation for the gear you already own. 3. Why us: Field-tested at 14,000ft, military-grade Thinsulate, not a replacement — an upgrade. 4. CTA: Shop the collection, start with The Bottle Parka at $34. |
+| **Featured products** | Hero: Bottle Parka ($34), Phone Parka ($24). Bundle: The Full Send ($108, all 4 products, saves $24). Collection page: Winter Gear Protection. |
 | **Offer** | Phase 1 (Nov 1-26): Early access + free shipping at $60. Phase 2 (BFCM): Full Send bundle $108 (saves $24, ~17% bundle only). Hero SKU never discounted. Hierarchy check: Phase 1 = zero-cost incentive. Phase 2 = bundle obscures per-unit discount. |
 | **Kill threshold** | CM/order < $18 by midday Black Friday → revert to free-shipping-only, pull bundle. |
 | **Promo economics** | Bundle discount only. At 40% bundle attach rate, blended discount penetration < 20%. Within guardrails. |
@@ -71,6 +72,7 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 > - [x] HP Banner
 > - [x] Collection Page Banner (Shop All)
 > - [x] Announcement Bar
+> - [x] Cart / Checkout Messaging *(promoted — threshold offer active: free shipping at $60)*
 >
 > **Recommended** (if team has bandwidth):
 > - [ ] Nav Super Menu Merch
@@ -79,7 +81,6 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 >
 > **Only if needed:**
 > - [ ] BFCM Landing Page *(only if running paid to dedicated destination)*
-> - [x] Cart / Checkout Messaging *(threshold offer active — recommend including)*
 > - [ ] Pop-up / Slide-in
 >
 > "Which of these do you need? I'll write copy direction for your confirmed list."
@@ -104,7 +105,7 @@ vs. competitors: Nobody runs confrontational. Hydro Flask is aspirational, Phooz
 
 ## Step 3A: Scope Channel Plan
 
-**Budget:** ~$15K confirmed.
+**Budget:** ~$15K (gathered at intake).
 
 > **Email sends:**
 > - [x] Launch announcement — Nov 1

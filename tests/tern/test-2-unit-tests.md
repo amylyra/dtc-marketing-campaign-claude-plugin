@@ -231,7 +231,7 @@ The template (#3 in SKILL.md) has 7 touchpoints:
 - Step 3B: creative direction + calendar produced only for confirmed scope
 - Step 4 ends with: "What do you want me to draft first?" (not a gate — final output)
 - No content from later steps bleeds into earlier steps
-- Budget is NOT asked in Step 1 (deferred to Step 3)
+- Budget is gathered at intake (not deferred to Step 3) — shapes paid concept count and channel breadth
 
 ---
 

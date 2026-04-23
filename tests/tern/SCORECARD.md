@@ -66,7 +66,7 @@
 | 2.3 Off-season (re-run) | campaign-plan | **24/25** | Yes | Lighter output all steps — Step 2 minimal assets, Step 3 email+organic only, Step 4 inventory-cleared metrics |
 | 2.10 Site asset tiering (NEW) | campaign-plan | **25/25** | Yes | All 10 assets considered, tiers adapted for campaign, brand-specific copy direction |
 | 2.11 Channel tiering (NEW) | campaign-plan | **24/25** | Yes | Email/Meta tiered, SMS/Google essentials-only, scannable output |
-| 2.12 Step gates + flow (NEW) | campaign-plan | **24/25** | Yes | All gates correct, no bleed-forward, budget deferred to Step 3 |
+| 2.12 Step gates + flow (NEW) | campaign-plan | **24/25** | Yes | All gates correct, no bleed-forward, budget gathered at intake |
 
 **Stepped flow test average: 24.2/25**
 
