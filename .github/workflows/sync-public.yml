@@ -1,0 +1,42 @@
+name: Sync to public repo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sanitize .mcp.json
+        run: |
+          # Replace all URL values with empty strings
+          python3 -c "
+          import json
+          with open('.mcp.json') as f:
+              data = json.load(f)
+          for server in data.get('mcpServers', {}).values():
+              server['url'] = ''
+          with open('.mcp.json', 'w') as f:
+              json.dump(data, f, indent=2)
+              f.write('\n')
+          "
+
+      - name: Push to public repo
+        run: |
+          git config user.name "Amy"
+          git config user.email "amy@durinlab.com"
+
+          # Check if .mcp.json was changed by sanitization
+          if ! git diff --quiet .mcp.json; then
+            git add .mcp.json
+            git commit --author="Amy <amy@durinlab.com>" -m "Sanitize endpoints for public repo"
+          fi
+
+          git remote add public https://x-access-token:${{ secrets.PUBLIC_REPO_TOKEN }}@github.com/amylyra/dtc-marketing-campaign-claude-plugin.git
+          git push public main --force
