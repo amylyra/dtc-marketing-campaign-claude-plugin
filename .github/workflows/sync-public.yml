@@ -38,9 +38,12 @@ jobs:
               f.write('\n')
           "
 
-          # Stage sanitized file so filter-branch won't complain
-          git add .mcp.json
-          git commit --author="Amy <amy@durinlab.com>" -m "Sanitize endpoints" || true
+          # Remove workflow file — only needed in private repo, and avoids needing workflow scope on PAT
+          rm -rf .github
+
+          # Stage changes so filter-branch won't complain about unstaged files
+          git add -A
+          git commit --author="Amy <amy@durinlab.com>" -m "Prepare for public sync" || true
 
           # Rewrite all commit authors to clean email
           FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --env-filter '
