@@ -245,6 +245,8 @@ If any metric crosses the kill threshold, escalate immediately.
 
 Work through these 4 steps in order. Each step produces output and gets user sign-off before moving to the next. Do not skip ahead.
 
+**Every message must end with a suggested next prompt.** Show the user 2-3 example responses they could type (e.g., "Go with Option 2" / "Adjust the audience" / "Skip to channels"). This removes guesswork and keeps the flow moving.
+
 ### Opening: Orient the User (MANDATORY FIRST OUTPUT)
 
 **This is the very first thing the user sees when `/campaign-plan` is triggered.** Do not ask intake questions, gather info, or produce any other output before this orientation. Present it immediately.
@@ -259,7 +261,23 @@ Work through these 4 steps in order. Each step produces output and gets user sig
 
 If competitive research (`research/competitive-*.md`) or SEO findings (`research/seo-*.md`) exist, add one line: "I found your competitive research / SEO audit — I'll use it for theme options and channel planning."
 
-**Then — in the same message — gather intake.** Use whatever the user already provided in their prompt, and ask only for what's missing (from the Intake Reference section above). Batch missing questions, max 3 per message. If the user's prompt already contains enough to start, move directly to Step 1.
+**Then — in the same message — present the intake confirmation table.** This is mandatory every time, even if the user provided details in their prompt. Pre-fill what you know, mark gaps with "❓". The user must confirm or correct before you proceed to Step 1.
+
+> **Before we start — confirm the basics:**
+>
+> | | Detail |
+> |---|---|
+> | **Goal** | [pre-fill or ❓ What's the primary objective?] |
+> | **Audience** | [pre-fill or ❓ Who is this for?] |
+> | **Product/collection** | [pre-fill or ❓ What's being promoted?] |
+> | **Timeline** | [pre-fill or ❓ Launch date and duration?] |
+> | **Budget** | [pre-fill or ❓ Total campaign budget?] |
+>
+> "Anything to correct? Once confirmed, I'll present 3 theme directions."
+
+If `brand/` directory exists, auto-fill product and audience from `brand/products.md` and `brand/customers.md`. If research files exist, note them. Ask for any rows marked ❓ — batch missing questions, max 3 per message.
+
+**Do not proceed to Step 1 until the user confirms the table.** A quick "looks good" is sufficient.
 
 ### Step 1: Campaign Strategy
 
@@ -318,6 +336,8 @@ Do NOT include full messaging hierarchy, offer mechanics, or audience details ye
 
 **Gate:** "Which direction resonates? You can pick one, mix elements, or tell me what's missing and I'll riff."
 
+**Suggest next prompt:** e.g., "Go with Option 2" / "Mix 1 and 3 — use the hooks from 3 with the arc from 1" / "None of these — here's my idea: ..."
+
 #### Part B: Iterate and Lock Strategy
 
 After the user picks a direction (or gives feedback), this becomes a conversation:
@@ -345,6 +365,8 @@ Once the theme is locked, produce the **full strategy** in this table format —
 Pull audience psychology from `brand/customers.md` and the Audience Psychology Reference. If the user mentions competitors, run a lightweight competitive scan inline. If a `/competitive-brief` exists in conversation, pull from it.
 
 **Gate:** "Strategy locked. Ready for site assets, or want to adjust anything?"
+
+**Suggest next prompt:** e.g., "Looks good, move to site assets" / "Change the offer to GWP instead" / "Adjust the audience — exclude existing subscribers"
 
 Do not ask about materials yet — let the user focus on strategy alignment.
 
@@ -378,6 +400,8 @@ Present a checklist with your recommended tier for each asset. **Pre-check items
 > - [ ] Pop-up / Slide-in
 >
 > "Which of these do you need? I'll write copy direction for your confirmed list."
+>
+> e.g., "Just the essentials" / "Essentials + PDP badges" / "All of them"
 
 **Smart tier promotion — adapt based on campaign mechanics from Step 1:**
 - Threshold offer active (e.g., "25% off $80+") → promote Cart / Checkout Messaging to Essential
@@ -401,6 +425,8 @@ For each asset the user confirmed, produce a table:
 - If the user mentioned existing materials, note which assets can be adapted vs. built from scratch.
 
 **Gate:** "Here's the copy direction for your confirmed assets. Anything to adjust?"
+
+**Suggest next prompt:** e.g., "Looks good, move to channels" / "Rewrite the HP Banner — make the CTA more urgent" / "Add a landing page too"
 
 ### Step 3: Channels + Calendar
 
@@ -448,6 +474,8 @@ Using the budget from intake, present a channel checklist with recommended sends
 > - [ ] SEO content (blog/guide to support campaign keywords)
 >
 > "Which sends and concepts do you want? Anything to add or cut?"
+>
+> e.g., "Go with your recommendations" / "Cut influencer, add a third Meta concept" / "Add TikTok Spark Ads"
 
 Scale the number of recommended concepts and sends to the budget — a $5K budget gets fewer Meta concepts than $20K. Reference the Channel Reference and Budget Framework sections above.
 
@@ -490,6 +518,8 @@ Scale the number of recommended concepts and sends to the budget — a $5K budge
 **Budget allocation** — one table using the Budget Framework reference. No narrative.
 
 **Gate:** "Channel plan and calendar look right? I'll finalize with metrics and execution."
+
+**Suggest next prompt:** e.g., "Looks good, finalize it" / "Cut the influencer line — no budget" / "Add a Google Shopping campaign"
 
 ### Step 4: Metrics, Risks + Execution
 
