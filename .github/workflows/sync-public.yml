@@ -13,20 +13,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sanitize .mcp.json
-        run: |
-          python3 -c "
-          import json
-          with open('.mcp.json') as f:
-              data = json.load(f)
-          for server in data.get('mcpServers', {}).values():
-              server['url'] = ''
-          with open('.mcp.json', 'w') as f:
-              json.dump(data, f, indent=2)
-              f.write('\n')
-          "
-
-      - name: Rewrite author and push to public repo
+      - name: Sanitize and push to public repo
         env:
           PUBLIC_REPO_TOKEN: ${{ secrets.PUBLIC_REPO_TOKEN }}
         run: |
@@ -38,19 +25,29 @@ jobs:
           git config user.name "Amy"
           git config user.email "amy@durinlab.com"
 
+          # Sanitize .mcp.json — strip all server URLs
+          python3 -c "
+          import json
+          with open('.mcp.json') as f:
+              data = json.load(f)
+          for server in data.get('mcpServers', {}).values():
+              server['url'] = ''
+          with open('.mcp.json', 'w') as f:
+              json.dump(data, f, indent=2)
+              f.write('\n')
+          "
+
+          # Stage sanitized file so filter-branch won't complain
+          git add .mcp.json
+          git commit --author="Amy <amy@durinlab.com>" -m "Sanitize endpoints" || true
+
           # Rewrite all commit authors to clean email
-          git filter-branch --env-filter '
+          FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --env-filter '
             export GIT_AUTHOR_NAME="Amy"
             export GIT_AUTHOR_EMAIL="amy@durinlab.com"
             export GIT_COMMITTER_NAME="Amy"
             export GIT_COMMITTER_EMAIL="amy@durinlab.com"
           ' --force HEAD
-
-          # Commit sanitized .mcp.json if changed
-          if ! git diff --quiet .mcp.json; then
-            git add .mcp.json
-            git commit --author="Amy <amy@durinlab.com>" -m "Sanitize endpoints for public repo"
-          fi
 
           git remote add public "https://x-access-token:${PUBLIC_REPO_TOKEN}@github.com/amylyra/dtc-marketing-campaign-claude-plugin.git"
           git push public main --force
