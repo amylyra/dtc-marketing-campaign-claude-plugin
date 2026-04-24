@@ -2,43 +2,43 @@
   "mcpServers": {
     "slack": {
       "type": "http",
-      "url": "https://mcp.slack.com/mcp"
+      "url": ""
     },
     "canva": {
       "type": "http",
-      "url": "https://mcp.canva.com/mcp"
+      "url": ""
     },
     "figma": {
       "type": "http",
-      "url": "https://mcp.figma.com/mcp"
+      "url": ""
     },
     "amplitude": {
       "type": "http",
-      "url": "https://mcp.amplitude.com/mcp"
+      "url": ""
     },
     "amplitude-eu": {
       "type": "http",
-      "url": "https://mcp.eu.amplitude.com/mcp"
+      "url": ""
     },
     "notion": {
       "type": "http",
-      "url": "https://mcp.notion.com/mcp"
+      "url": ""
     },
     "ahrefs": {
       "type": "http",
-      "url": "https://api.ahrefs.com/mcp/mcp"
+      "url": ""
     },
     "similarweb": {
       "type": "http",
-      "url": "https://mcp.similarweb.com"
+      "url": ""
     },
     "klaviyo": {
       "type": "http",
-      "url": "https://mcp.klaviyo.com/mcp"
+      "url": ""
     },
     "supermetrics": {
       "type": "http",
-      "url": "https://mcp.supermetrics.com/mcp"
+      "url": ""
     },
     "google calendar": {
       "type": "http",
